@@ -124,7 +124,7 @@
 			"id": "771e5636-4e9b-4f9a-b2e9-ee7914ed48e9"
 		},
 		{
-			"name": "New Folder",
+			"name": "SOAP",
 			"item": [],
 			"id": "f4c5ba5b-52db-4970-b034-23cb4a2a2cc0"
 		}
@@ -153,7 +153,7 @@
 	],
 	"variable": [
 		{
-			"id": "1d4bc4b6-fd8f-4b2c-8d56-eb2acb1aa27b",
+			"id": "b4be5a3b-dc04-47b3-ba42-377554efc40e",
 			"key": "url",
 			"value": "",
 			"type": "string"
