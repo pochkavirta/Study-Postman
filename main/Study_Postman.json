@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "41775f3a-6644-4c8d-bd11-4fbe045a13a4",
+		"name": "Study",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Users",
+			"id": "da9b5b29-ea3d-4998-8d3f-a7d520fda103",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users?page=2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registration",
+			"id": "1796b5fa-52f5-4d35-b9c6-8986b1291942",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://reqres.in/api/register/"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/user",
+			"id": "b6abcc15-85fe-44ef-a4a2-528291118e2f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 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",
+						"type": "text"
+					}
+				],
+				"url": "https://api.github.com/user"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "45904b3c-8232-4589-985f-1b33fb1e0216",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
