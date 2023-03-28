@@ -133,8 +133,42 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CapitalCity xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>RU</sCountryISOCode>\r\n        </CapitalCity>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -166,7 +200,7 @@
 	],
 	"variable": [
 		{
-			"id": "5a790645-b590-4c90-8a6f-396d37f88e0e",
+			"id": "ddd16c3f-9dcc-4daa-9342-c4885eca7d64",
 			"key": "url",
 			"value": "",
 			"type": "string"
