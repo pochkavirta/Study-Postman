@@ -1542,140 +1542,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "http://app-server2.tradeskillmaster.com/v2/sales/EU/0JPQvtC70LTRgNC40L3QvQ==/NDAwMjY2Mzg3IzI=?time=1680034216&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&ver",
-			"id": "1f20259e-a23b-446e-be9d-47b0fd2ad690",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "host",
-						"value": "app-server2.tradeskillmaster.com"
-					},
-					{
-						"key": "accept",
-						"value": "*/*"
-					},
-					{
-						"key": "connection",
-						"value": "keep-alive"
-					},
-					{
-						"key": "user-agent",
-						"value": "python-requests/2.13.0"
-					},
-					{
-						"key": "accept-encoding",
-						"value": "gzip, deflate"
-					}
-				],
-				"url": {
-					"raw": "http://app-server2.tradeskillmaster.com/v2/sales/EU/0JPQvtC70LTRgNC40L3QvQ==/NDAwMjY2Mzg3IzI=?time=1680034216&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=5296b6ff45354751729615c979d04499de3cb8adb6c2d94d22d7ebb4bfd01488",
-					"protocol": "http",
-					"host": [
-						"app-server2",
-						"tradeskillmaster",
-						"com"
-					],
-					"path": [
-						"v2",
-						"sales",
-						"EU",
-						"0JPQvtC70LTRgNC40L3QvQ==",
-						"NDAwMjY2Mzg3IzI="
-					],
-					"query": [
-						{
-							"key": "time",
-							"value": "1680034216"
-						},
-						{
-							"key": "session",
-							"value": "z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D"
-						},
-						{
-							"key": "version",
-							"value": "41200"
-						},
-						{
-							"key": "token",
-							"value": "5296b6ff45354751729615c979d04499de3cb8adb6c2d94d22d7ebb4bfd01488"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://app-server2.tradeskillmaster.com/v2/sales/EU/0JPQvtGA0LTRg9C90L3QuA==/NDAwMjY2Mzg3IzI=?time=1680034216&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&ver",
-			"id": "0301c7ea-c71d-448e-9509-73bea7b46515",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "host",
-						"value": "app-server2.tradeskillmaster.com"
-					},
-					{
-						"key": "accept",
-						"value": "*/*"
-					},
-					{
-						"key": "connection",
-						"value": "keep-alive"
-					},
-					{
-						"key": "user-agent",
-						"value": "python-requests/2.13.0"
-					},
-					{
-						"key": "accept-encoding",
-						"value": "gzip, deflate"
-					}
-				],
-				"url": {
-					"raw": "http://app-server2.tradeskillmaster.com/v2/sales/EU/0JPQvtGA0LTRg9C90L3QuA==/NDAwMjY2Mzg3IzI=?time=1680034216&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=5296b6ff45354751729615c979d04499de3cb8adb6c2d94d22d7ebb4bfd01488",
-					"protocol": "http",
-					"host": [
-						"app-server2",
-						"tradeskillmaster",
-						"com"
-					],
-					"path": [
-						"v2",
-						"sales",
-						"EU",
-						"0JPQvtGA0LTRg9C90L3QuA==",
-						"NDAwMjY2Mzg3IzI="
-					],
-					"query": [
-						{
-							"key": "time",
-							"value": "1680034216"
-						},
-						{
-							"key": "session",
-							"value": "z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D"
-						},
-						{
-							"key": "version",
-							"value": "41200"
-						},
-						{
-							"key": "token",
-							"value": "5296b6ff45354751729615c979d04499de3cb8adb6c2d94d22d7ebb4bfd01488"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -1702,7 +1568,7 @@
 	],
 	"variable": [
 		{
-			"id": "f3cb8b34-de26-4c4d-8b7d-9c29ecf2b6a3",
+			"id": "db4ccc17-03ba-4807-9513-e06a42fae09b",
 			"key": "url",
 			"value": "",
 			"type": "string"
