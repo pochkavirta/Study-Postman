@@ -7,6 +7,20 @@
 	"item": [
 		{
 			"name": "List Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a8be0ad4-110b-42b6-a992-a0d7385d4099",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "da9b5b29-ea3d-4998-8d3f-a7d520fda103",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -95,7 +109,7 @@
 	],
 	"variable": [
 		{
-			"id": "129b91bb-df5c-4a21-99b4-a85186f4e935",
+			"id": "e7042369-b9cc-4fa7-9d36-032a848c594d",
 			"key": "url",
 			"value": "",
 			"type": "string"
