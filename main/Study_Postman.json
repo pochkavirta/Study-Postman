@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
+			"name": "CSV + json",
 			"item": [],
 			"id": "5a2f4ea5-b5db-452a-ba02-6b42a530ea23"
 		},
@@ -119,7 +119,7 @@
 	],
 	"variable": [
 		{
-			"id": "8bd7495f-6e73-4299-b563-6a77932615a1",
+			"id": "83950ced-f278-4a76-9dce-b89cce641997",
 			"key": "url",
 			"value": "",
 			"type": "string"
