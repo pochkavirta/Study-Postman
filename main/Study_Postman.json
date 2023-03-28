@@ -127,7 +127,7 @@
 			"name": "SOAP",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Untitled Request",
 					"id": "d24e639d-6482-4f75-b4f8-655b9a44db94",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -166,7 +166,7 @@
 	],
 	"variable": [
 		{
-			"id": "260ab10c-21fd-485b-a797-d35759c1a18b",
+			"id": "5a790645-b590-4c90-8a6f-396d37f88e0e",
 			"key": "url",
 			"value": "",
 			"type": "string"
