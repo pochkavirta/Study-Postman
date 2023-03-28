@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "CSV + json",
+			"name": "CSV + JSON",
 			"item": [
 				{
 					"name": "New Request",
@@ -132,7 +132,7 @@
 	],
 	"variable": [
 		{
-			"id": "e2a53646-c5b6-454c-9f0b-83e15f8a64ab",
+			"id": "76a5ca4c-331f-43ef-bc38-941263767d6c",
 			"key": "url",
 			"value": "",
 			"type": "string"
