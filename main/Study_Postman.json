@@ -19,7 +19,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}",
+							"raw": "{\r\n    \"email\": \"{{email}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -35,92 +35,93 @@
 		},
 		{
 			"name": "Test Collection 1",
-			"item": [],
-			"id": "771e5636-4e9b-4f9a-b2e9-ee7914ed48e9"
-		},
-		{
-			"name": "List Users",
-			"event": [
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "a8be0ad4-110b-42b6-a992-a0d7385d4099",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Verify than page equals 2\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.page).to.eql(2);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
+					"name": "List Users",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a8be0ad4-110b-42b6-a992-a0d7385d4099",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify than page equals 2\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.page).to.eql(2);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "da9b5b29-ea3d-4998-8d3f-a7d520fda103",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://reqres.in/api/users?page=2",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration",
+					"id": "1796b5fa-52f5-4d35-b9c6-8986b1291942",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/register/"
+					},
+					"response": []
+				},
+				{
+					"name": "Single User",
+					"id": "1c891cf3-4f5a-424b-8938-447908632fce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}api/users/2"
+					},
+					"response": []
 				}
 			],
-			"id": "da9b5b29-ea3d-4998-8d3f-a7d520fda103",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://reqres.in/api/users?page=2",
-					"protocol": "https",
-					"host": [
-						"reqres",
-						"in"
-					],
-					"path": [
-						"api",
-						"users"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "2"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Registration",
-			"id": "1796b5fa-52f5-4d35-b9c6-8986b1291942",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://reqres.in/api/register/"
-			},
-			"response": []
-		},
-		{
-			"name": "Single User",
-			"id": "1c891cf3-4f5a-424b-8938-447908632fce",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "{{url}}api/users/2"
-			},
-			"response": []
+			"id": "771e5636-4e9b-4f9a-b2e9-ee7914ed48e9"
 		}
 	],
 	"event": [
@@ -147,7 +148,7 @@
 	],
 	"variable": [
 		{
-			"id": "a4612cf9-3b20-4575-9ed6-2e07be439174",
+			"id": "5f3cffb3-de20-4ebd-ab75-d01d571487dd",
 			"key": "url",
 			"value": "",
 			"type": "string"
