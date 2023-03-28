@@ -9,7 +9,7 @@
 			"name": "CSV + json",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Register",
 					"id": "e73faf9d-8859-4efa-839f-bb6892e64ac4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -142,7 +142,7 @@
 	],
 	"variable": [
 		{
-			"id": "e2347e5b-4649-4daa-9c7e-09ea14706f2a",
+			"id": "50697eb6-3c06-4492-88e5-553c526a39d6",
 			"key": "url",
 			"value": "",
 			"type": "string"
