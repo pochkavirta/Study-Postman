@@ -15,6 +15,11 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify than page equals 2\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.page).to.eql(2);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -109,7 +114,7 @@
 	],
 	"variable": [
 		{
-			"id": "e7042369-b9cc-4fa7-9d36-032a848c594d",
+			"id": "fed7cc02-087e-4ac4-b221-d42bf9db9747",
 			"key": "url",
 			"value": "",
 			"type": "string"
