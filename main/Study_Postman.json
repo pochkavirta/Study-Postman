@@ -7,7 +7,20 @@
 	"item": [
 		{
 			"name": "CSV + json",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "e73faf9d-8859-4efa-839f-bb6892e64ac4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "5a2f4ea5-b5db-452a-ba02-6b42a530ea23"
 		},
 		{
@@ -119,7 +132,7 @@
 	],
 	"variable": [
 		{
-			"id": "83950ced-f278-4a76-9dce-b89cce641997",
+			"id": "e2a53646-c5b6-454c-9f0b-83e15f8a64ab",
 			"key": "url",
 			"value": "",
 			"type": "string"
