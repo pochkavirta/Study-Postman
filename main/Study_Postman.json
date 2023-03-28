@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "5a2f4ea5-b5db-452a-ba02-6b42a530ea23"
+		},
+		{
 			"name": "List Users",
 			"event": [
 				{
@@ -114,7 +119,7 @@
 	],
 	"variable": [
 		{
-			"id": "fed7cc02-087e-4ac4-b221-d42bf9db9747",
+			"id": "8bd7495f-6e73-4299-b563-6a77932615a1",
 			"key": "url",
 			"value": "",
 			"type": "string"
