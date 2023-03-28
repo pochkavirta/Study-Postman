@@ -552,6 +552,83 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://update.googleapis.com/service/update2/json?cup2key=12:2eFOsfGfp9olEeDH-TKKc1xgp8L3JyrhVblknDHZRMk&cup2hreq=02f59e15c64cd43fd62d0a6f5e35e8d98383ba1247febc3c4ca9d67e02e93848",
+			"id": "1140b97d-8186-401d-83e9-04d7f324ca89",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "host",
+						"value": "update.googleapis.com"
+					},
+					{
+						"key": "proxy-connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "content-length",
+						"value": "2283"
+					},
+					{
+						"key": "x-goog-update-appid",
+						"value": "hfnkpimlhhgieaddgfemjhofmfblmnib,oimompecagnajdejgnnjijobebaeigek,hnimpnehoodheedghdeeijklkeaacbdc,efniojlnjndmcbiieegkicadnoecjjef,dnhnnofocefcglhjeigmkhcgfoaipbaa"
+					},
+					{
+						"key": "x-goog-update-interactivity",
+						"value": "bg"
+					},
+					{
+						"key": "x-goog-update-updater",
+						"value": "chromium-108.0.5359.179"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "��\u0006�U\b*��\u001e����\u0012jJR�%���2r�~^R\u0007{n��/;g�\u0006�]ڠe\r��������&��I��<�\"�B��ڋ��t���׺�� ��̏�N�y�9Q58�4�5\u0004J��@"
+				},
+				"url": {
+					"raw": "http://update.googleapis.com/service/update2/json?cup2key=12:2eFOsfGfp9olEeDH-TKKc1xgp8L3JyrhVblknDHZRMk&cup2hreq=02f59e15c64cd43fd62d0a6f5e35e8d98383ba1247febc3c4ca9d67e02e93848",
+					"protocol": "http",
+					"host": [
+						"update",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"service",
+						"update2",
+						"json"
+					],
+					"query": [
+						{
+							"key": "cup2key",
+							"value": "12:2eFOsfGfp9olEeDH-TKKc1xgp8L3JyrhVblknDHZRMk"
+						},
+						{
+							"key": "cup2hreq",
+							"value": "02f59e15c64cd43fd62d0a6f5e35e8d98383ba1247febc3c4ca9d67e02e93848"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -578,7 +655,7 @@
 	],
 	"variable": [
 		{
-			"id": "7e9e5d4c-ed69-41bd-b841-055dfd96e28b",
+			"id": "a7129ac8-d832-402e-b129-d904aeb38b97",
 			"key": "url",
 			"value": "",
 			"type": "string"
