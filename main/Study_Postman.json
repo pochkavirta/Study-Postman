@@ -65,7 +65,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "{{url}}api/users/2"
 			},
 			"response": []
 		}
@@ -94,7 +95,7 @@
 	],
 	"variable": [
 		{
-			"id": "a93e5211-9568-46e9-b71a-04a8787eabb1",
+			"id": "129b91bb-df5c-4a21-99b4-a85186f4e935",
 			"key": "url",
 			"value": "",
 			"type": "string"
