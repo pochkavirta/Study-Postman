@@ -125,7 +125,20 @@
 		},
 		{
 			"name": "SOAP",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "d24e639d-6482-4f75-b4f8-655b9a44db94",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "f4c5ba5b-52db-4970-b034-23cb4a2a2cc0"
 		}
 	],
@@ -153,7 +166,7 @@
 	],
 	"variable": [
 		{
-			"id": "b4be5a3b-dc04-47b3-ba42-377554efc40e",
+			"id": "260ab10c-21fd-485b-a797-d35759c1a18b",
 			"key": "url",
 			"value": "",
 			"type": "string"
