@@ -56,18 +56,6 @@
 				"url": "https://reqres.in/api/register/"
 			},
 			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "45904b3c-8232-4589-985f-1b33fb1e0216",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -94,7 +82,7 @@
 	],
 	"variable": [
 		{
-			"id": "ad12c6d5-6dcf-4282-a38b-37ec3482c470",
+			"id": "75d1a40d-be1e-4922-8bbc-0720ef9121c5",
 			"key": "url",
 			"value": "",
 			"type": "string"
