@@ -1347,136 +1347,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "http://analytics.tradeskillmaster.com/v2/analytics/NDAwMjY2Mzg3IzI=?time=1680034214&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=5e8950e2d",
-			"id": "55320631-ca43-485b-9d53-73de2e1a1b62",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "host",
-						"value": "analytics.tradeskillmaster.com"
-					},
-					{
-						"key": "accept",
-						"value": "*/*"
-					},
-					{
-						"key": "connection",
-						"value": "keep-alive"
-					},
-					{
-						"key": "user-agent",
-						"value": "python-requests/2.13.0"
-					},
-					{
-						"key": "accept-encoding",
-						"value": "gzip, deflate"
-					}
-				],
-				"url": {
-					"raw": "http://analytics.tradeskillmaster.com/v2/analytics/NDAwMjY2Mzg3IzI=?time=1680034214&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=5e8950e2ded0fda7939440f9976704db1c275a1e4ec1b85ed11bb2173790705b",
-					"protocol": "http",
-					"host": [
-						"analytics",
-						"tradeskillmaster",
-						"com"
-					],
-					"path": [
-						"v2",
-						"analytics",
-						"NDAwMjY2Mzg3IzI="
-					],
-					"query": [
-						{
-							"key": "time",
-							"value": "1680034214"
-						},
-						{
-							"key": "session",
-							"value": "z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D"
-						},
-						{
-							"key": "version",
-							"value": "41200"
-						},
-						{
-							"key": "token",
-							"value": "5e8950e2ded0fda7939440f9976704db1c275a1e4ec1b85ed11bb2173790705b"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://analytics.tradeskillmaster.com/v2/analytics/NDAwMjY2Mzg3IzItQkND?time=1680034215&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=7c1be",
-			"id": "90dba907-c4f2-471a-ada5-094f50887ad7",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "host",
-						"value": "analytics.tradeskillmaster.com"
-					},
-					{
-						"key": "accept",
-						"value": "*/*"
-					},
-					{
-						"key": "connection",
-						"value": "keep-alive"
-					},
-					{
-						"key": "user-agent",
-						"value": "python-requests/2.13.0"
-					},
-					{
-						"key": "accept-encoding",
-						"value": "gzip, deflate"
-					}
-				],
-				"url": {
-					"raw": "http://analytics.tradeskillmaster.com/v2/analytics/NDAwMjY2Mzg3IzItQkND?time=1680034215&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=7c1be6554b2808bcdcc62130dfe95d4b8ac6dc125d99429d03822dfcfd4afdab",
-					"protocol": "http",
-					"host": [
-						"analytics",
-						"tradeskillmaster",
-						"com"
-					],
-					"path": [
-						"v2",
-						"analytics",
-						"NDAwMjY2Mzg3IzItQkND"
-					],
-					"query": [
-						{
-							"key": "time",
-							"value": "1680034215"
-						},
-						{
-							"key": "session",
-							"value": "z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D"
-						},
-						{
-							"key": "version",
-							"value": "41200"
-						},
-						{
-							"key": "token",
-							"value": "7c1be6554b2808bcdcc62130dfe95d4b8ac6dc125d99429d03822dfcfd4afdab"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -1503,7 +1373,7 @@
 	],
 	"variable": [
 		{
-			"id": "90bca426-6688-47ce-b48c-d5735f69195a",
+			"id": "dc588a35-b79e-42ae-9e45-aa4f295aaeff",
 			"key": "url",
 			"value": "",
 			"type": "string"
