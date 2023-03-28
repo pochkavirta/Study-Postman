@@ -849,6 +849,75 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://app-server.tradeskillmaster.com/v2/app/win?time=1680034211&channel=release&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=e5f5c5ac7f5",
+			"id": "237b9272-8d22-4879-aa5e-8d4f05a4b2c5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "host",
+						"value": "app-server.tradeskillmaster.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "user-agent",
+						"value": "python-requests/2.13.0"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					}
+				],
+				"url": {
+					"raw": "http://app-server.tradeskillmaster.com/v2/app/win?time=1680034211&channel=release&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=e5f5c5ac7f55537c6fa084ccedff796c2ccd3683a6e8fc0b6b10e3699161364a",
+					"protocol": "http",
+					"host": [
+						"app-server",
+						"tradeskillmaster",
+						"com"
+					],
+					"path": [
+						"v2",
+						"app",
+						"win"
+					],
+					"query": [
+						{
+							"key": "time",
+							"value": "1680034211"
+						},
+						{
+							"key": "channel",
+							"value": "release"
+						},
+						{
+							"key": "session",
+							"value": "z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D"
+						},
+						{
+							"key": "version",
+							"value": "41200"
+						},
+						{
+							"key": "token",
+							"value": "e5f5c5ac7f55537c6fa084ccedff796c2ccd3683a6e8fc0b6b10e3699161364a"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -875,7 +944,7 @@
 	],
 	"variable": [
 		{
-			"id": "c74c5742-ebc3-4100-b3a1-0a8ce309125d",
+			"id": "0ffa56f3-5d1f-4f69-815d-51f4792b8aaf",
 			"key": "url",
 			"value": "",
 			"type": "string"
