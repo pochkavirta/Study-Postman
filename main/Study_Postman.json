@@ -69,5 +69,35 @@
 			},
 			"response": []
 		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8052d9d4-3203-4961-9c3e-18aa4c3cebdc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "adf2f278-b224-4f6d-85be-5f3fb88386d0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "ad12c6d5-6dcf-4282-a38b-37ec3482c470",
+			"key": "url",
+			"value": "",
+			"type": "string"
+		}
 	]
 }
