@@ -176,28 +176,6 @@
 			"id": "f4c5ba5b-52db-4970-b034-23cb4a2a2cc0"
 		},
 		{
-			"name": "http://users.bugred.ru/tasks/rest/doregister",
-			"id": "80b6615e-88d5-483f-8cdc-a31647e2aedc",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"test59359@mail.ru\",\r\n    \"name\": \"test59359\",\r\n    \"password\": \"1\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "http://users.bugred.ru/tasks/rest/doregister"
-			},
-			"response": []
-		},
-		{
 			"name": "http://users.bugred.ru/user/login/index.html",
 			"id": "cbbd51b2-62d9-4591-9268-505288ed938c",
 			"protocolProfileBehavior": {
@@ -305,7 +283,7 @@
 	],
 	"variable": [
 		{
-			"id": "7c3dca0f-4cdd-41cb-a8b1-65ad8602a906",
+			"id": "d83594a6-7ae6-4374-bbfe-508759e3e4a1",
 			"key": "url",
 			"value": "",
 			"type": "string"
