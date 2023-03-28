@@ -176,6 +176,11 @@
 			"id": "f4c5ba5b-52db-4970-b034-23cb4a2a2cc0"
 		},
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "263de2b6-cd5d-485b-adf6-9403371795cc"
+		},
+		{
 			"name": "http://users.bugred.ru/user/login/index.html",
 			"id": "cbbd51b2-62d9-4591-9268-505288ed938c",
 			"protocolProfileBehavior": {
@@ -283,7 +288,7 @@
 	],
 	"variable": [
 		{
-			"id": "d83594a6-7ae6-4374-bbfe-508759e3e4a1",
+			"id": "3a11a08a-3951-4359-aabc-60240e621e27",
 			"key": "url",
 			"value": "",
 			"type": "string"
