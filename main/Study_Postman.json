@@ -3952,57 +3952,6 @@
 				"url": "http://91.105.192.100:80/api"
 			},
 			"response": []
-		},
-		{
-			"name": "http://91.105.192.100:80/api",
-			"id": "728cc938-580e-494e-8fc4-cc1527d32ae1",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "host",
-						"value": "91.105.192.100:80"
-					},
-					{
-						"key": "content-type",
-						"value": "application/x-www-form-urlencoded"
-					},
-					{
-						"key": "content-length",
-						"value": "136"
-					},
-					{
-						"key": "connection",
-						"value": "Keep-Alive"
-					},
-					{
-						"key": "accept-encoding",
-						"value": "gzip, deflate"
-					},
-					{
-						"key": "accept-language",
-						"value": "en-US,*"
-					},
-					{
-						"key": "user-agent",
-						"value": "Mozilla/5.0"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "��\u0006�U\b*�陵��y��DLf�\u001b� ��]b\u001a���E��\u0016 �\u001f�����S\u0013�E\u0003�,�o���p\u001c���\u000eQ\u0015��\u001f�v뺓���}�4��_���Ӟo��\"ѭ��\u0011��Nfa3g\u00009�g:�o8�4�W�\fE{��`�}�G��Ø�\u0013�Y!�,�κ�m�\u0005B�H�i�7�\b'�M��\u0015#QV�I�4��!��a\\�)\u00197\u0006���/�yDS��\u0017M\u0010ڢ���qDH��{�}nmA�\u0013`��KRl\u0013f�\u0014�m �\u000f\u001axj�{R���r(��b--\u0007]���",
-							"value": ""
-						}
-					]
-				},
-				"url": "http://91.105.192.100:80/api"
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -4029,7 +3978,7 @@
 	],
 	"variable": [
 		{
-			"id": "7b46c6e5-e7c8-4571-bd20-32d329397341",
+			"id": "116ede3c-b84b-4c15-b1ac-7ce6cd7e1655",
 			"key": "url",
 			"value": "",
 			"type": "string"
