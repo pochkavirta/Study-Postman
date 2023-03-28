@@ -34,7 +34,7 @@
 			"id": "5a2f4ea5-b5db-452a-ba02-6b42a530ea23"
 		},
 		{
-			"name": "New Folder",
+			"name": "Test Collection 1",
 			"item": [],
 			"id": "771e5636-4e9b-4f9a-b2e9-ee7914ed48e9"
 		},
@@ -147,7 +147,7 @@
 	],
 	"variable": [
 		{
-			"id": "716149b2-d694-42aa-84bc-9850dceeb804",
+			"id": "a4612cf9-3b20-4575-9ed6-2e07be439174",
 			"key": "url",
 			"value": "",
 			"type": "string"
