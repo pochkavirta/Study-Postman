@@ -58,7 +58,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Single User",
 			"id": "1c891cf3-4f5a-424b-8938-447908632fce",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -94,7 +94,7 @@
 	],
 	"variable": [
 		{
-			"id": "827710c3-229a-4c31-853a-fc32190b35c8",
+			"id": "a93e5211-9568-46e9-b71a-04a8787eabb1",
 			"key": "url",
 			"value": "",
 			"type": "string"
