@@ -1743,6 +1743,73 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://app-server2.tradeskillmaster.com/v2/sales/EU-BCC/0J_Qu9Cw0LzQtdCz0L7RgA==/NDc3NjQ3NDM3IzEtQkND?time=1680034217&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3",
+			"id": "11809ed1-44b2-49ab-a4ca-49c4910c8835",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "host",
+						"value": "app-server2.tradeskillmaster.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "user-agent",
+						"value": "python-requests/2.13.0"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					}
+				],
+				"url": {
+					"raw": "http://app-server2.tradeskillmaster.com/v2/sales/EU-BCC/0J_Qu9Cw0LzQtdCz0L7RgA==/NDc3NjQ3NDM3IzEtQkND?time=1680034217&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=ea1f4ba477a76fcc5e29bcefa76ac7a298e91a6321c62192fa3e4aa273753a5f",
+					"protocol": "http",
+					"host": [
+						"app-server2",
+						"tradeskillmaster",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sales",
+						"EU-BCC",
+						"0J_Qu9Cw0LzQtdCz0L7RgA==",
+						"NDc3NjQ3NDM3IzEtQkND"
+					],
+					"query": [
+						{
+							"key": "time",
+							"value": "1680034217"
+						},
+						{
+							"key": "session",
+							"value": "z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D"
+						},
+						{
+							"key": "version",
+							"value": "41200"
+						},
+						{
+							"key": "token",
+							"value": "ea1f4ba477a76fcc5e29bcefa76ac7a298e91a6321c62192fa3e4aa273753a5f"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -1769,7 +1836,7 @@
 	],
 	"variable": [
 		{
-			"id": "2d5bb65e-0152-4273-8a4f-e67a9e023e9f",
+			"id": "097a89c6-4e27-41e4-95b6-1ace8071df10",
 			"key": "url",
 			"value": "",
 			"type": "string"
