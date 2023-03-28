@@ -196,6 +196,89 @@
 				"url": "http://users.bugred.ru/tasks/rest/doregister"
 			},
 			"response": []
+		},
+		{
+			"name": "http://users.bugred.ru/user/login/index.html",
+			"id": "cbbd51b2-62d9-4591-9268-505288ed938c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "host",
+						"value": "users.bugred.ru"
+					},
+					{
+						"key": "proxy-connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "content-length",
+						"value": "36"
+					},
+					{
+						"key": "cache-control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "origin",
+						"value": "http://users.bugred.ru"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.5.708 Yowser/2.5 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+					},
+					{
+						"key": "referer",
+						"value": "http://users.bugred.ru/user/login/index.html"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "PHPSESSID=20472e437f8ada7b2101e60ccc04f9c6"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "login",
+							"value": "test59359@mail.ru"
+						},
+						{
+							"key": "password",
+							"value": "1"
+						}
+					]
+				},
+				"url": "http://users.bugred.ru/user/login/index.html"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -222,7 +305,7 @@
 	],
 	"variable": [
 		{
-			"id": "27f67dd0-edf2-4b63-b63a-cbde023f75ef",
+			"id": "7c3dca0f-4cdd-41cb-a8b1-65ad8602a906",
 			"key": "url",
 			"value": "",
 			"type": "string"
