@@ -3551,103 +3551,6 @@
 				"url": "http://91.105.192.100:80/api"
 			},
 			"response": []
-		},
-		{
-			"name": "http://91.105.192.100:80/api",
-			"id": "e5782c8a-938c-4931-94a5-d677eff9b2bd",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "host",
-						"value": "91.105.192.100:80"
-					},
-					{
-						"key": "content-type",
-						"value": "application/x-www-form-urlencoded"
-					},
-					{
-						"key": "content-length",
-						"value": "216"
-					},
-					{
-						"key": "connection",
-						"value": "Keep-Alive"
-					},
-					{
-						"key": "accept-encoding",
-						"value": "gzip, deflate"
-					},
-					{
-						"key": "accept-language",
-						"value": "en-US,*"
-					},
-					{
-						"key": "user-agent",
-						"value": "Mozilla/5.0"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "��\u0006�U\b*��\u0018i\u0000�����Q�p�OMI��j\u000f5s�_�\u0017�pWh��1�\u0003�\u0012�Ӎf�'-ԉw��,�Tl�;�t������\u0004\u000f8�I����֒_��8Ֆ�9 \r��Ȱ� ^�O�u����)��IOai�1��\u0003n�L�\u001a�8�r���A�\u0003�o���\u0005yU\u000f��;�k$�A�w���\u0006l\u0003\u000b��",
-							"value": ""
-						}
-					]
-				},
-				"url": "http://91.105.192.100:80/api"
-			},
-			"response": []
-		},
-		{
-			"name": "http://91.105.192.100:80/api",
-			"id": "d3d8a1b1-d8aa-41f5-b059-38522d89ee18",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "host",
-						"value": "91.105.192.100:80"
-					},
-					{
-						"key": "content-type",
-						"value": "application/x-www-form-urlencoded"
-					},
-					{
-						"key": "content-length",
-						"value": "280"
-					},
-					{
-						"key": "connection",
-						"value": "Keep-Alive"
-					},
-					{
-						"key": "accept-encoding",
-						"value": "gzip, deflate"
-					},
-					{
-						"key": "accept-language",
-						"value": "en-US,*"
-					},
-					{
-						"key": "user-agent",
-						"value": "Mozilla/5.0"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": []
-				},
-				"url": "http://91.105.192.100:80/api"
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -3674,7 +3577,7 @@
 	],
 	"variable": [
 		{
-			"id": "fb715315-665f-489d-a705-ac4fc50fe90b",
+			"id": "23f22c67-42c6-4957-827c-4254f83c9076",
 			"key": "url",
 			"value": "",
 			"type": "string"
