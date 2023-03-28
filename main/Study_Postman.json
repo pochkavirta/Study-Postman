@@ -176,7 +176,7 @@
 			"id": "f4c5ba5b-52db-4970-b034-23cb4a2a2cc0"
 		},
 		{
-			"name": "New Folder",
+			"name": "Users",
 			"item": [],
 			"id": "263de2b6-cd5d-485b-adf6-9403371795cc"
 		},
@@ -288,7 +288,7 @@
 	],
 	"variable": [
 		{
-			"id": "3a11a08a-3951-4359-aabc-60240e621e27",
+			"id": "9482e32f-04be-4a11-9a85-67e644c94929",
 			"key": "url",
 			"value": "",
 			"type": "string"
