@@ -2152,6 +2152,57 @@
 				"url": "http://91.105.192.100:80/api"
 			},
 			"response": []
+		},
+		{
+			"name": "http://91.105.192.100:80/api",
+			"id": "6b3cbc3b-c921-4a93-8bf9-9e4ed5d865da",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "host",
+						"value": "91.105.192.100:80"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "content-length",
+						"value": "136"
+					},
+					{
+						"key": "connection",
+						"value": "Keep-Alive"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "��\u0006�U\b*��赉�\u000f*1��;�fh�rPi�gC.�\u0010�u_��N�*�J�-W(��M\u001f�P<\u001a�\u0013��Y�Ĳ�������}!�O^5vg\"\u000e\u0011\u0013��S�6��\u000f���B��\u0011��߆�R�\u001e��c��ň\fz�E0\u0015�:�G��",
+							"value": "TI�V\u0019-LIׂ�\u00110\u0012��mk�?�ƚ��"
+						}
+					]
+				},
+				"url": "http://91.105.192.100:80/api"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -2178,7 +2229,7 @@
 	],
 	"variable": [
 		{
-			"id": "bc356c48-52fa-4d61-84a5-127147946125",
+			"id": "88f576b7-f3a1-4f89-8253-411562af44f2",
 			"key": "url",
 			"value": "",
 			"type": "string"
