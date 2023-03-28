@@ -15,8 +15,18 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/register/"
 					},
 					"response": []
 				}
@@ -132,7 +142,7 @@
 	],
 	"variable": [
 		{
-			"id": "9c4ca076-7cba-4226-8363-fd5afcabae4f",
+			"id": "e2347e5b-4649-4daa-9c7e-09ea14706f2a",
 			"key": "url",
 			"value": "",
 			"type": "string"
