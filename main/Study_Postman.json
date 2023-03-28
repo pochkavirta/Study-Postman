@@ -2783,6 +2783,57 @@
 				"url": "http://91.105.192.100:80/api"
 			},
 			"response": []
+		},
+		{
+			"name": "http://91.105.192.100:80/api",
+			"id": "58f4b9f1-419f-4a0e-8903-7591c00a6590",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "host",
+						"value": "91.105.192.100:80"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "content-length",
+						"value": "196"
+					},
+					{
+						"key": "connection",
+						"value": "Keep-Alive"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "��\u0006�U\b*�:/��X����wή�-]C7i\u0003\u001e��LeE\u0006�Jޢ�",
+							"value": ""
+						}
+					]
+				},
+				"url": "http://91.105.192.100:80/api"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -2809,7 +2860,7 @@
 	],
 	"variable": [
 		{
-			"id": "46999975-00da-4724-8d2f-a94183aa1217",
+			"id": "12fa0823-4e59-4fdb-9f3e-990670887769",
 			"key": "url",
 			"value": "",
 			"type": "string"
