@@ -918,6 +918,78 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://app-server.tradeskillmaster.com/v2/status?time=1680034212&tsm_version=v4.12.33&channel=release&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=412",
+			"id": "4f864e32-13b1-4b68-806c-4c92f7553753",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "host",
+						"value": "app-server.tradeskillmaster.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "user-agent",
+						"value": "python-requests/2.13.0"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					}
+				],
+				"url": {
+					"raw": "http://app-server.tradeskillmaster.com/v2/status?time=1680034212&tsm_version=v4.12.33&channel=release&session=z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D&version=41200&token=180ea2b5ed8079baae72de57ec0ed1287729829d9cf8538e8cc067ea41e8f968",
+					"protocol": "http",
+					"host": [
+						"app-server",
+						"tradeskillmaster",
+						"com"
+					],
+					"path": [
+						"v2",
+						"status"
+					],
+					"query": [
+						{
+							"key": "time",
+							"value": "1680034212"
+						},
+						{
+							"key": "tsm_version",
+							"value": "v4.12.33"
+						},
+						{
+							"key": "channel",
+							"value": "release"
+						},
+						{
+							"key": "session",
+							"value": "z09zcU4L7dWmwFvWzzxya4XSFIRHpKpZgd3en11ut8Bnx6zRCFxJbSFXLTSzfOQ%2B1vcFRUB%2FukfrE%2F5h2%2Bxznw%3D%3D%3AYYNL%2FFConkGdWQBHeRpOtQ%3D%3D"
+						},
+						{
+							"key": "version",
+							"value": "41200"
+						},
+						{
+							"key": "token",
+							"value": "180ea2b5ed8079baae72de57ec0ed1287729829d9cf8538e8cc067ea41e8f968"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -944,7 +1016,7 @@
 	],
 	"variable": [
 		{
-			"id": "0ffa56f3-5d1f-4f69-815d-51f4792b8aaf",
+			"id": "0ad568be-f2e5-4d13-a64e-6e6b1dd962f2",
 			"key": "url",
 			"value": "",
 			"type": "string"
