@@ -475,6 +475,83 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://update.googleapis.com/service/update2/json?cup2key=12:2eFOsfGfp9olEeDH-TKKc1xgp8L3JyrhVblknDHZRMk&cup2hreq=02f59e15c64cd43fd62d0a6f5e35e8d98383ba1247febc3c4ca9d67e02e93848",
+			"id": "084dfaaa-ab63-47ce-b75a-45607f215bf3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "host",
+						"value": "update.googleapis.com"
+					},
+					{
+						"key": "proxy-connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "content-length",
+						"value": "2283"
+					},
+					{
+						"key": "x-goog-update-appid",
+						"value": "hfnkpimlhhgieaddgfemjhofmfblmnib,oimompecagnajdejgnnjijobebaeigek,hnimpnehoodheedghdeeijklkeaacbdc,efniojlnjndmcbiieegkicadnoecjjef,dnhnnofocefcglhjeigmkhcgfoaipbaa"
+					},
+					{
+						"key": "x-goog-update-interactivity",
+						"value": "bg"
+					},
+					{
+						"key": "x-goog-update-updater",
+						"value": "chromium-108.0.5359.179"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "��\u0006�U\b*�\u0005�\t��C��u�G��� 8:U��8@\u0007�v�9'ʯ� ����p�h#\u0003J��H\u0006��>\u001b��A_�\u0012ԋ����W�פ�!�X��0\u001e��^_����1~ҝ\u00187�g\u0004�\u000e�~��\u0010��\u001e��1�X�be�\u001eiş��#ϩ UQHz|�,�1_`�pf��\u0013�R����a32��#Ob�⚲��OE&�A+D\u000ee�7��ѡ�\u0000�5uz\u0007\u0011���G�\u001f�`\u0016�A�p\bsj@��`�"
+				},
+				"url": {
+					"raw": "http://update.googleapis.com/service/update2/json?cup2key=12:2eFOsfGfp9olEeDH-TKKc1xgp8L3JyrhVblknDHZRMk&cup2hreq=02f59e15c64cd43fd62d0a6f5e35e8d98383ba1247febc3c4ca9d67e02e93848",
+					"protocol": "http",
+					"host": [
+						"update",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"service",
+						"update2",
+						"json"
+					],
+					"query": [
+						{
+							"key": "cup2key",
+							"value": "12:2eFOsfGfp9olEeDH-TKKc1xgp8L3JyrhVblknDHZRMk"
+						},
+						{
+							"key": "cup2hreq",
+							"value": "02f59e15c64cd43fd62d0a6f5e35e8d98383ba1247febc3c4ca9d67e02e93848"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -501,7 +578,7 @@
 	],
 	"variable": [
 		{
-			"id": "a58b6a2a-a5be-45eb-b771-80bd5cf55b99",
+			"id": "7e9e5d4c-ed69-41bd-b841-055dfd96e28b",
 			"key": "url",
 			"value": "",
 			"type": "string"
