@@ -122,6 +122,11 @@
 				}
 			],
 			"id": "771e5636-4e9b-4f9a-b2e9-ee7914ed48e9"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "f4c5ba5b-52db-4970-b034-23cb4a2a2cc0"
 		}
 	],
 	"event": [
@@ -148,7 +153,7 @@
 	],
 	"variable": [
 		{
-			"id": "6824b195-4df5-400a-94bc-2c216f8b2194",
+			"id": "1d4bc4b6-fd8f-4b2c-8d56-eb2acb1aa27b",
 			"key": "url",
 			"value": "",
 			"type": "string"
