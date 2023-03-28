@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "CSV + json",
+			"name": "CSV + JSON",
 			"item": [
 				{
 					"name": "Register",
@@ -148,7 +148,7 @@
 	],
 	"variable": [
 		{
-			"id": "5f3cffb3-de20-4ebd-ab75-d01d571487dd",
+			"id": "6824b195-4df5-400a-94bc-2c216f8b2194",
 			"key": "url",
 			"value": "",
 			"type": "string"
