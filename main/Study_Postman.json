@@ -177,89 +177,102 @@
 		},
 		{
 			"name": "Users",
-			"item": [],
+			"item": [
+				{
+					"name": "http://users.bugred.ru/user/login/index.html",
+					"id": "cbbd51b2-62d9-4591-9268-505288ed938c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "host",
+								"value": "users.bugred.ru"
+							},
+							{
+								"key": "proxy-connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "content-length",
+								"value": "36"
+							},
+							{
+								"key": "cache-control",
+								"value": "max-age=0"
+							},
+							{
+								"key": "origin",
+								"value": "http://users.bugred.ru"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "upgrade-insecure-requests",
+								"value": "1"
+							},
+							{
+								"key": "content-type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.5.708 Yowser/2.5 Safari/537.36"
+							},
+							{
+								"key": "accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+							},
+							{
+								"key": "referer",
+								"value": "http://users.bugred.ru/user/login/index.html"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip, deflate"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru,en;q=0.9"
+							},
+							{
+								"key": "cookie",
+								"value": "PHPSESSID=20472e437f8ada7b2101e60ccc04f9c6"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "login",
+									"value": "test59359@mail.ru"
+								},
+								{
+									"key": "password",
+									"value": "1"
+								}
+							]
+						},
+						"url": "http://users.bugred.ru/user/login/index.html"
+					},
+					"response": []
+				}
+			],
 			"id": "263de2b6-cd5d-485b-adf6-9403371795cc"
 		},
 		{
-			"name": "http://users.bugred.ru/user/login/index.html",
-			"id": "cbbd51b2-62d9-4591-9268-505288ed938c",
+			"name": "New Request",
+			"id": "3e6728cb-5cd0-4cdd-ba35-62b2d356facf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "host",
-						"value": "users.bugred.ru"
-					},
-					{
-						"key": "proxy-connection",
-						"value": "keep-alive"
-					},
-					{
-						"key": "content-length",
-						"value": "36"
-					},
-					{
-						"key": "cache-control",
-						"value": "max-age=0"
-					},
-					{
-						"key": "origin",
-						"value": "http://users.bugred.ru"
-					},
-					{
-						"key": "dnt",
-						"value": "1"
-					},
-					{
-						"key": "upgrade-insecure-requests",
-						"value": "1"
-					},
-					{
-						"key": "content-type",
-						"value": "application/x-www-form-urlencoded"
-					},
-					{
-						"key": "user-agent",
-						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.5.708 Yowser/2.5 Safari/537.36"
-					},
-					{
-						"key": "accept",
-						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-					},
-					{
-						"key": "referer",
-						"value": "http://users.bugred.ru/user/login/index.html"
-					},
-					{
-						"key": "accept-encoding",
-						"value": "gzip, deflate"
-					},
-					{
-						"key": "accept-language",
-						"value": "ru,en;q=0.9"
-					},
-					{
-						"key": "cookie",
-						"value": "PHPSESSID=20472e437f8ada7b2101e60ccc04f9c6"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "login",
-							"value": "test59359@mail.ru"
-						},
-						{
-							"key": "password",
-							"value": "1"
-						}
-					]
-				},
-				"url": "http://users.bugred.ru/user/login/index.html"
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
@@ -288,7 +301,7 @@
 	],
 	"variable": [
 		{
-			"id": "9482e32f-04be-4a11-9a85-67e644c94929",
+			"id": "18a7b17c-d056-4c96-afb8-55dfa9af0697",
 			"key": "url",
 			"value": "",
 			"type": "string"
