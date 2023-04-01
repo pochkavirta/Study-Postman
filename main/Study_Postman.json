@@ -292,7 +292,7 @@
 					"response": []
 				},
 				{
-					"name": "doRegister Copy",
+					"name": "CreateUser",
 					"id": "7897e405-49d4-44dd-a055-c4b086d164b3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -331,7 +331,7 @@
 	],
 	"variable": [
 		{
-			"id": "2ec6f9da-9725-4d46-b610-52c84b62cc23",
+			"id": "5f552910-5e63-4f35-8eee-74d99504ba3b",
 			"key": "url",
 			"value": "",
 			"type": "string"
