@@ -408,13 +408,34 @@
 				},
 				{
 					"name": "MagicSearchName",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "155ed54b-6207-481f-b6c4-b6b76eaec60d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "91722e3c-9e5c-4d22-8eb9-ae67ab54963a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"query\":\"Голышкин\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 					},
 					"response": []
@@ -482,7 +503,7 @@
 	],
 	"variable": [
 		{
-			"id": "a815da50-d12a-4cf8-bdf3-2770e1f8a30b",
+			"id": "75bd5f22-d754-4be2-a8bb-b78f4c77dece",
 			"key": "url",
 			"value": "",
 			"type": "string"
