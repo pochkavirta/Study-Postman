@@ -441,7 +441,7 @@
 					"response": []
 				},
 				{
-					"name": "MagicSearchName Copy",
+					"name": "MagicSearchName1",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -524,7 +524,7 @@
 	],
 	"variable": [
 		{
-			"id": "c93fd388-4d86-4563-a764-e4593d4410b8",
+			"id": "2aa7d034-0b10-4184-974e-ae0eb4c3089c",
 			"key": "url",
 			"value": "",
 			"type": "string"
