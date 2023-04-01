@@ -268,7 +268,7 @@
 			"name": "Confluence",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "doRegister",
 					"id": "85506c26-64fb-428c-8e08-e8a0976a131f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -307,7 +307,7 @@
 	],
 	"variable": [
 		{
-			"id": "2c01cd9d-b374-4fe4-9736-9bed7ec7a09d",
+			"id": "dd4cf032-817a-49db-885b-aaad88414528",
 			"key": "url",
 			"value": "",
 			"type": "string"
