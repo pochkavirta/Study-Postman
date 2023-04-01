@@ -413,8 +413,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 					},
 					"response": []
 				}
@@ -446,7 +447,7 @@
 	],
 	"variable": [
 		{
-			"id": "07a5956f-8f03-4e90-b1c7-8a9ff09097e9",
+			"id": "b4633a23-3dee-418c-a449-0cc93cc42952",
 			"key": "url",
 			"value": "",
 			"type": "string"
