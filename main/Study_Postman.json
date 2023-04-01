@@ -316,7 +316,7 @@
 					"response": []
 				},
 				{
-					"name": "CreateUser Copy",
+					"name": "AddAvatar",
 					"id": "7d597d56-1105-46b0-841b-3be5f67bc4ad",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -355,7 +355,7 @@
 	],
 	"variable": [
 		{
-			"id": "005c9fcc-188a-4411-9a31-6561a8f4a207",
+			"id": "1f84b50c-fbcd-4cad-9134-4f3e227b0f02",
 			"key": "url",
 			"value": "",
 			"type": "string"
