@@ -441,6 +441,40 @@
 					"response": []
 				},
 				{
+					"name": "MagicSearchName Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "155ed54b-6207-481f-b6c4-b6b76eaec60d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "1ab65e1c-e58d-4475-8a0b-06e8d1a00890",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"query\":\"Голышкин\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+					},
+					"response": []
+				},
+				{
 					"name": "MagicSearchCompany",
 					"id": "8916ef36-b2ea-4fa6-a078-6aa38a5833e8",
 					"protocolProfileBehavior": {
@@ -451,7 +485,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\"query\":\"Манго\"\r\n}",
+							"raw": "{\r\n\"query\":\"Манго\",\r\n\"partyType\":\"COMPANY\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -490,7 +524,7 @@
 	],
 	"variable": [
 		{
-			"id": "26e362c1-9a37-4105-b8b9-3f31c7a93869",
+			"id": "c93fd388-4d86-4563-a764-e4593d4410b8",
 			"key": "url",
 			"value": "",
 			"type": "string"
