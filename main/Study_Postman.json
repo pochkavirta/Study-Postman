@@ -326,6 +326,30 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "DeleteAvatar",
+					"id": "1abcdb51-2602-4f11-9932-98a748048bfd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "AddAvatar Copy",
+					"id": "8916ef36-b2ea-4fa6-a078-6aa38a5833e8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
@@ -355,7 +379,7 @@
 	],
 	"variable": [
 		{
-			"id": "1f84b50c-fbcd-4cad-9134-4f3e227b0f02",
+			"id": "f16f942d-2e28-4d61-a70a-2717b09129c9",
 			"key": "url",
 			"value": "",
 			"type": "string"
