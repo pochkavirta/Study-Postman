@@ -439,8 +439,17 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"query\":\"Манго\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 					},
 					"response": []
@@ -473,7 +482,7 @@
 	],
 	"variable": [
 		{
-			"id": "08391535-85ee-4b6c-b74c-bca867d6fe7e",
+			"id": "15d644a2-f18e-4d03-8b06-538db48dec54",
 			"key": "url",
 			"value": "",
 			"type": "string"
