@@ -407,7 +407,7 @@
 					"response": []
 				},
 				{
-					"name": "MagicSearch Copy",
+					"name": "MagicSearchFamily",
 					"id": "91722e3c-9e5c-4d22-8eb9-ae67ab54963a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -482,7 +482,7 @@
 	],
 	"variable": [
 		{
-			"id": "15d644a2-f18e-4d03-8b06-538db48dec54",
+			"id": "beafb507-7a34-45d1-9bf0-e117a938c9fb",
 			"key": "url",
 			"value": "",
 			"type": "string"
