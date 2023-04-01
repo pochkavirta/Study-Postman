@@ -291,8 +291,13 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"company_name\": \"Манго\",\r\n  \"company_type\": \"ООО\",\r\n  \"company_users\": [\"test123@mail.ru\", \"test1234@mail.ru\"],\r\n  \"email_owner\": \"test123@mail.ru\"\r\n}"
+						},
+						"url": "http://users.bugred.ru/tasks/rest/createcompany"
 					},
 					"response": []
 				},
@@ -384,7 +389,7 @@
 	],
 	"variable": [
 		{
-			"id": "ec15d397-abd6-46af-b995-32fca665ade7",
+			"id": "a106e704-c557-45b8-bf02-2ad182d9eba2",
 			"key": "url",
 			"value": "",
 			"type": "string"
