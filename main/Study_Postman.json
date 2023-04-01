@@ -322,7 +322,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"pochkavirta@mail.ru\",\r\n  \"name\": \"pochkavirta\",\r\n  \"tasks\": [10],\r\n  \"companies\": [1,50],\r\n  \"hobby\":\"Фильмы и игры\",\r\n  \"adres\":\"Москва\",\r\n  \"name1\":\"Алексей\",\r\n  \"surname1\":\"Голышкин\",\r\n  \"fathername1\":\"Максимович\",\r\n  \"cat\":\"Кузя\",\r\n  \"dog\":\"Кузя1\",\r\n  \"parrot\":\"Попугай\",\r\n  \"cavy\":\"Морская свинка\",\r\n  \"hamster\":\"Хомяк\",\r\n  \"squirrel\":\"Белка\",\r\n  \"phone\":\"+79995552244\",\r\n  \"inn\":\"123456789012\",\r\n  \"gender\":\"m\",\r\n  \"birthday\":\"11.01.1990\",\r\n  \"date_start\":\"01.04.2023\"\r\n}"
+							"raw": "{\r\n  \"email\": \"pochkavirta@mail.ru\",\r\n  \"name\": \"pochkavirta\",\r\n  \"tasks\": [10],\r\n  \"companies\": [1,50],\r\n  \"hobby\":\"Фильмы и игры\",\r\n  \"adres\":\"Москва\",\r\n  \"name1\":\"Алексей\",\r\n  \"surname1\":\"Голышкин\",\r\n  \"fathername1\":\"Максимович\",\r\n  \"cat\":\"Кузя\",\r\n  \"dog\":\"Кузя1\",\r\n  \"parrot\":\"Попугай\",\r\n  \"cavy\":\"Морская свинка\",\r\n  \"hamster\":\"Хомяк\",\r\n  \"squirrel\":\"Белка\",\r\n  \"phone\":\"+79995552244\",\r\n  \"inn\":\"123456789012\",\r\n  \"gender\":\"m\",\r\n  \"birthday\":\"11.01.1990\",\r\n  \"date_start\":\"01.04.2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": "http://users.bugred.ru/tasks/rest/createuser"
 					},
@@ -404,7 +409,7 @@
 	],
 	"variable": [
 		{
-			"id": "ae435667-b460-454f-ba45-3b9e1ed093fd",
+			"id": "2704332c-4fb9-432c-9534-f50d1ed44387",
 			"key": "url",
 			"value": "",
 			"type": "string"
