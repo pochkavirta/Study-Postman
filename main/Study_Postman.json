@@ -302,6 +302,30 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "CreateUserWithTasks",
+					"id": "a334a66a-c6a8-4fae-8d07-51b0622d694a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser Copy",
+					"id": "7d597d56-1105-46b0-841b-3be5f67bc4ad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
@@ -331,7 +355,7 @@
 	],
 	"variable": [
 		{
-			"id": "5f552910-5e63-4f35-8eee-74d99504ba3b",
+			"id": "005c9fcc-188a-4411-9a31-6561a8f4a207",
 			"key": "url",
 			"value": "",
 			"type": "string"
