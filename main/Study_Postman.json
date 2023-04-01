@@ -390,8 +390,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"url": "http://users.bugred.ru/tasks/rest/deleteavatar"
 					},
 					"response": []
 				},
@@ -435,7 +436,7 @@
 	],
 	"variable": [
 		{
-			"id": "9c321221-936c-4226-a125-45a3c80173b5",
+			"id": "b3707957-da68-4db9-b052-926286a76f9d",
 			"key": "url",
 			"value": "",
 			"type": "string"
