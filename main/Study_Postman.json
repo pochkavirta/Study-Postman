@@ -274,8 +274,13 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test123@mail.ru\",\r\n    \"name\": \"Алексей\",\r\n    \"password\": \"test123\"\r\n}"
+						},
+						"url": "http://users.bugred.ru/tasks/rest/doregister"
 					},
 					"response": []
 				},
@@ -379,7 +384,7 @@
 	],
 	"variable": [
 		{
-			"id": "08573197-3229-42af-91ce-2e18c72bf6c4",
+			"id": "ec15d397-abd6-46af-b995-32fca665ade7",
 			"key": "url",
 			"value": "",
 			"type": "string"
