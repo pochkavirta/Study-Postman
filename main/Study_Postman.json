@@ -441,19 +441,6 @@
 					"response": []
 				},
 				{
-					"name": "MagicSearch Copy 2",
-					"id": "59efdf42-0546-4f3b-b155-16fb8b0e98c4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
-					},
-					"response": []
-				},
-				{
 					"name": "MagicSearchCompany",
 					"id": "8916ef36-b2ea-4fa6-a078-6aa38a5833e8",
 					"protocolProfileBehavior": {
@@ -503,7 +490,7 @@
 	],
 	"variable": [
 		{
-			"id": "75bd5f22-d754-4be2-a8bb-b78f4c77dece",
+			"id": "26e362c1-9a37-4105-b8b9-3f31c7a93869",
 			"key": "url",
 			"value": "",
 			"type": "string"
