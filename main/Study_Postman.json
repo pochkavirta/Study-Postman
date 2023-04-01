@@ -392,6 +392,16 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "pochkavirta@mail.com",
+									"type": "text"
+								}
+							]
+						},
 						"url": "http://users.bugred.ru/tasks/rest/deleteavatar"
 					},
 					"response": []
@@ -436,7 +446,7 @@
 	],
 	"variable": [
 		{
-			"id": "b3707957-da68-4db9-b052-926286a76f9d",
+			"id": "07a5956f-8f03-4e90-b1c7-8a9ff09097e9",
 			"key": "url",
 			"value": "",
 			"type": "string"
