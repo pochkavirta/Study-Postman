@@ -463,7 +463,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\"query\":\"Голышкин\"\r\n}",
+							"raw": "{\r\n\"query\":\"Голышкин\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"USER\",\r\n\"maxCount\":\"30\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -524,7 +524,7 @@
 	],
 	"variable": [
 		{
-			"id": "97e5932f-796f-4e6a-a469-361247d82905",
+			"id": "92055ddc-5b61-4d89-93dd-a77bb9f21b1c",
 			"key": "url",
 			"value": "",
 			"type": "string"
