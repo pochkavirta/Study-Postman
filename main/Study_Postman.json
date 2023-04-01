@@ -265,7 +265,7 @@
 			"id": "263de2b6-cd5d-485b-adf6-9403371795cc"
 		},
 		{
-			"name": "New Folder",
+			"name": "Confluence",
 			"item": [],
 			"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
 		}
@@ -294,7 +294,7 @@
 	],
 	"variable": [
 		{
-			"id": "b0666382-863b-4a69-9051-d7bf2d2d5fc7",
+			"id": "c537a821-47d7-46bb-a88e-63d306fb2973",
 			"key": "url",
 			"value": "",
 			"type": "string"
