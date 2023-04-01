@@ -278,6 +278,30 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "CreateCompany",
+					"id": "452bc48b-0d92-4c7f-ab02-03de8a34d82f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "doRegister Copy",
+					"id": "7897e405-49d4-44dd-a055-c4b086d164b3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
@@ -307,7 +331,7 @@
 	],
 	"variable": [
 		{
-			"id": "dd4cf032-817a-49db-885b-aaad88414528",
+			"id": "2ec6f9da-9725-4d46-b610-52c84b62cc23",
 			"key": "url",
 			"value": "",
 			"type": "string"
