@@ -265,16 +265,9 @@
 			"id": "263de2b6-cd5d-485b-adf6-9403371795cc"
 		},
 		{
-			"name": "New Request",
-			"id": "3e6728cb-5cd0-4cdd-ba35-62b2d356facf",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
+			"name": "New Folder",
+			"item": [],
+			"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
 		}
 	],
 	"event": [
@@ -301,7 +294,7 @@
 	],
 	"variable": [
 		{
-			"id": "18a7b17c-d056-4c96-afb8-55dfa9af0697",
+			"id": "b0666382-863b-4a69-9051-d7bf2d2d5fc7",
 			"key": "url",
 			"value": "",
 			"type": "string"
