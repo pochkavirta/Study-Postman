@@ -340,7 +340,7 @@
 					"response": []
 				},
 				{
-					"name": "AddAvatar Copy",
+					"name": "MagicSearch",
 					"id": "8916ef36-b2ea-4fa6-a078-6aa38a5833e8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -379,7 +379,7 @@
 	],
 	"variable": [
 		{
-			"id": "f16f942d-2e28-4d61-a70a-2717b09129c9",
+			"id": "08573197-3229-42af-91ce-2e18c72bf6c4",
 			"key": "url",
 			"value": "",
 			"type": "string"
