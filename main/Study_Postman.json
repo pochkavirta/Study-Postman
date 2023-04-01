@@ -407,7 +407,33 @@
 					"response": []
 				},
 				{
-					"name": "MagicSearch",
+					"name": "MagicSearch Copy",
+					"id": "91722e3c-9e5c-4d22-8eb9-ae67ab54963a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+					},
+					"response": []
+				},
+				{
+					"name": "MagicSearch Copy 2",
+					"id": "59efdf42-0546-4f3b-b155-16fb8b0e98c4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+					},
+					"response": []
+				},
+				{
+					"name": "MagicSearchCompany",
 					"id": "8916ef36-b2ea-4fa6-a078-6aa38a5833e8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -447,7 +473,7 @@
 	],
 	"variable": [
 		{
-			"id": "b4633a23-3dee-418c-a449-0cc93cc42952",
+			"id": "08391535-85ee-4b6c-b74c-bca867d6fe7e",
 			"key": "url",
 			"value": "",
 			"type": "string"
