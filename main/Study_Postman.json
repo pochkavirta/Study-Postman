@@ -300,7 +300,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"company_name\": \"Манго\",\r\n  \"company_type\": \"ООО\",\r\n  \"company_users\": [\"test123@mail.ru\", \"test1234@mail.ru\"],\r\n  \"email_owner\": \"test123@mail.ru\"\r\n}"
+							"raw": "{\r\n  \"company_name\": \"Манго\",\r\n  \"company_type\": \"ООО\",\r\n  \"company_users\": [\"test123@mail.ru\", \"test1234@mail.ru\"],\r\n  \"email_owner\": \"test123@mail.ru\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": "http://users.bugred.ru/tasks/rest/createcompany"
 					},
@@ -399,7 +404,7 @@
 	],
 	"variable": [
 		{
-			"id": "f3cce68a-f337-43f2-82f1-04d3a2cd1a19",
+			"id": "ae435667-b460-454f-ba45-3b9e1ed093fd",
 			"key": "url",
 			"value": "",
 			"type": "string"
