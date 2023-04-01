@@ -266,7 +266,20 @@
 		},
 		{
 			"name": "Confluence",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "85506c26-64fb-428c-8e08-e8a0976a131f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
 		}
 	],
@@ -294,7 +307,7 @@
 	],
 	"variable": [
 		{
-			"id": "c537a821-47d7-46bb-a88e-63d306fb2973",
+			"id": "2c01cd9d-b374-4fe4-9736-9bed7ec7a09d",
 			"key": "url",
 			"value": "",
 			"type": "string"
