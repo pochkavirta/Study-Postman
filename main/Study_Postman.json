@@ -362,8 +362,24 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "pochkavirta@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/C:/Users/golys/OneDrive/Рабочий стол/CHtobyi-CHto-byi.jpg"
+								}
+							]
+						},
+						"url": "http://users.bugred.ru/tasks/rest/addavatar"
 					},
 					"response": []
 				},
@@ -419,7 +435,7 @@
 	],
 	"variable": [
 		{
-			"id": "eb1fbed5-660a-47ee-bcf2-a68d1dae2fef",
+			"id": "9c321221-936c-4226-a125-45a3c80173b5",
 			"key": "url",
 			"value": "",
 			"type": "string"
