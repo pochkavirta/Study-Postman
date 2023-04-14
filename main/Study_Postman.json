@@ -1022,46 +1022,6 @@
 								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 							},
 							"response": []
-						},
-						{
-							"name": "230 — никого не нашли по запросу, пустой ответ Copy 5",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
-										"exec": [
-											"pm.test(\"Не нашло пользователя\", function () {\r",
-											"    pm.response.to.have.status(230);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Сломанный тест\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "0f45c45b-17d2-4da8-96af-7084c24ae7b6",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n\"query\":\"Голышкин1\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
-							},
-							"response": []
 						}
 					],
 					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
@@ -1094,7 +1054,7 @@
 	],
 	"variable": [
 		{
-			"id": "f9e3fb6d-9719-49fb-8bd2-e5ceea3563cc",
+			"id": "6dd1bca2-9ed6-4c52-a973-41c8d8d4ffc8",
 			"key": "url",
 			"value": "",
 			"type": "string"
