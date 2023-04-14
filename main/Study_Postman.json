@@ -579,6 +579,18 @@
 						"url": "http://users.bugred.ru/tasks/rest/doregister"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "06436aa5-961e-463f-b87f-6d1a57dbae49",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
@@ -608,7 +620,7 @@
 	],
 	"variable": [
 		{
-			"id": "0ded5f80-0451-412f-9534-fedf5a37e258",
+			"id": "7edaa068-2946-427c-b4a4-c265f096641d",
 			"key": "url",
 			"value": "",
 			"type": "string"
