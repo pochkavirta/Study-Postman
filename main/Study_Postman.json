@@ -791,8 +791,8 @@
 									"script": {
 										"id": "773234ec-ad6e-430a-a42f-a0bc81486114",
 										"exec": [
-											"pm.test(\"Нашло больше 1 компании\", function () {\r",
-											"    pm.response.to.have.status(234);\r",
+											"pm.test(\"Нашли пользователей и компании\", function () {\r",
+											"    pm.response.to.have.status(235);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"Сломанный тест\", function () {\r",
@@ -812,7 +812,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"query\":\"Манго\",\r\n\"partyType\":\"COMPANY\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"raw": "{\r\n\"query\":\"Unbranded Granite Table\",\r\n\"partyType\":\"ALL\",\r\n\"fullSimilarity\":\"False\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -854,7 +854,7 @@
 	],
 	"variable": [
 		{
-			"id": "8b7388c0-af40-4e7f-9279-15df7e92bf44",
+			"id": "e40681ce-d79f-4f7e-8fab-8580f5f0e8be",
 			"key": "url",
 			"value": "",
 			"type": "string"
