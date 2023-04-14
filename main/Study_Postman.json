@@ -506,7 +506,7 @@
 			"id": "ff484292-4ee4-48f7-b0c2-6e99252a18d6"
 		},
 		{
-			"name": "New Folder",
+			"name": "Automation",
 			"item": [],
 			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
 		}
@@ -535,7 +535,7 @@
 	],
 	"variable": [
 		{
-			"id": "dd6d80c1-178b-49e4-9224-865eaad16c50",
+			"id": "989bb379-7151-41ea-a928-e726b83fbabb",
 			"key": "url",
 			"value": "",
 			"type": "string"
