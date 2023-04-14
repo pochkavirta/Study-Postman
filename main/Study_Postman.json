@@ -507,7 +507,20 @@
 		},
 		{
 			"name": "Automation",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "58c86004-9ae3-4cb4-ac66-85e45bf6f9ad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
 		}
 	],
@@ -535,7 +548,7 @@
 	],
 	"variable": [
 		{
-			"id": "989bb379-7151-41ea-a928-e726b83fbabb",
+			"id": "37f3bc95-9388-4d63-a980-8d0bf355b3ff",
 			"key": "url",
 			"value": "",
 			"type": "string"
