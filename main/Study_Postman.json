@@ -904,7 +904,7 @@
 							"response": []
 						},
 						{
-							"name": "230 — никого не нашли по запросу, пустой ответ Copy 2",
+							"name": "457 — неправильно задан partyType",
 							"event": [
 								{
 									"listen": "test",
@@ -1094,7 +1094,7 @@
 	],
 	"variable": [
 		{
-			"id": "c9de720b-6a76-4647-a53a-b47996481866",
+			"id": "be90049c-e3cd-41ab-a268-dc45c710d319",
 			"key": "url",
 			"value": "",
 			"type": "string"
