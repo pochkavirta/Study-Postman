@@ -862,6 +862,206 @@
 								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 							},
 							"response": []
+						},
+						{
+							"name": "456 — длина запроса выше 1000 символов",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
+										"exec": [
+											"pm.test(\"Не нашло пользователя\", function () {\r",
+											"    pm.response.to.have.status(230);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "9b4feb2b-df90-480b-a1cb-234a8c49d16f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин1\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
+						},
+						{
+							"name": "230 — никого не нашли по запросу, пустой ответ Copy 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
+										"exec": [
+											"pm.test(\"Не нашло пользователя\", function () {\r",
+											"    pm.response.to.have.status(230);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "489bec55-2382-40ca-8ab8-dc0a63a0bcd6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин1\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
+						},
+						{
+							"name": "230 — никого не нашли по запросу, пустой ответ Copy 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
+										"exec": [
+											"pm.test(\"Не нашло пользователя\", function () {\r",
+											"    pm.response.to.have.status(230);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "92a658a2-4027-4795-a8a0-b1bed1db5b0b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин1\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
+						},
+						{
+							"name": "230 — никого не нашли по запросу, пустой ответ Copy 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
+										"exec": [
+											"pm.test(\"Не нашло пользователя\", function () {\r",
+											"    pm.response.to.have.status(230);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "6a74f0e3-f8dc-4163-b9b2-fa559a64f30e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин1\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
+						},
+						{
+							"name": "230 — никого не нашли по запросу, пустой ответ Copy 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
+										"exec": [
+											"pm.test(\"Не нашло пользователя\", function () {\r",
+											"    pm.response.to.have.status(230);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "0f45c45b-17d2-4da8-96af-7084c24ae7b6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин1\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
 						}
 					],
 					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
@@ -894,7 +1094,7 @@
 	],
 	"variable": [
 		{
-			"id": "f7c436f8-85b4-4652-9143-b0b17d57fdf2",
+			"id": "c9de720b-6a76-4647-a53a-b47996481866",
 			"key": "url",
 			"value": "",
 			"type": "string"
