@@ -1197,7 +1197,7 @@
 									"script": {
 										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
 										"exec": [
-											"console.log(\"ДО запроса\");"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1337,7 +1337,7 @@
 	],
 	"variable": [
 		{
-			"id": "d38dbb8e-c2f5-4976-868b-a5aa7f22f2bb",
+			"id": "a5258a1d-89c2-4675-9aea-0ded1ccb6ed0",
 			"key": "url",
 			"value": "",
 			"type": "string"
