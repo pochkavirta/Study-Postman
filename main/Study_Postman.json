@@ -705,6 +705,24 @@
 						},
 						{
 							"name": "233 — найдена 1 компания",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "773234ec-ad6e-430a-a42f-a0bc81486114",
+										"exec": [
+											"pm.test(\"Нашло 1 компанию\", function () {\r",
+											"    pm.response.to.have.status(233);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "f7b6d7fa-8106-40be-92c9-e5ca2efa0c61",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -756,7 +774,7 @@
 	],
 	"variable": [
 		{
-			"id": "0d41aff4-0a0c-4c91-bc4d-2b53f8a7432d",
+			"id": "386e00ec-5ef9-4d24-9b51-9233b6ca4643",
 			"key": "url",
 			"value": "",
 			"type": "string"
