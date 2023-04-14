@@ -6,503 +6,509 @@
 	},
 	"item": [
 		{
-			"name": "CSV + JSON",
-			"item": [
-				{
-					"name": "Register",
-					"id": "e73faf9d-8859-4efa-839f-bb6892e64ac4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"{{email}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://reqres.in/api/register/"
-					},
-					"response": []
-				}
-			],
-			"id": "5a2f4ea5-b5db-452a-ba02-6b42a530ea23"
-		},
-		{
-			"name": "Test Collection 1",
-			"item": [
-				{
-					"name": "List Users",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "a8be0ad4-110b-42b6-a992-a0d7385d4099",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Verify than page equals 2\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.page).to.eql(2);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "da9b5b29-ea3d-4998-8d3f-a7d520fda103",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://reqres.in/api/users?page=2",
-							"protocol": "https",
-							"host": [
-								"reqres",
-								"in"
-							],
-							"path": [
-								"api",
-								"users"
-							],
-							"query": [
-								{
-									"key": "page",
-									"value": "2"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Registration",
-					"id": "1796b5fa-52f5-4d35-b9c6-8986b1291942",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://reqres.in/api/register/"
-					},
-					"response": []
-				},
-				{
-					"name": "Single User",
-					"id": "1c891cf3-4f5a-424b-8938-447908632fce",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{url}}api/users/2"
-					},
-					"response": []
-				}
-			],
-			"id": "771e5636-4e9b-4f9a-b2e9-ee7914ed48e9"
-		},
-		{
-			"name": "SOAP",
-			"item": [
-				{
-					"name": "Untitled Request",
-					"id": "d24e639d-6482-4f75-b4f8-655b9a44db94",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "text/xml",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CapitalCity xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>RU</sCountryISOCode>\r\n        </CapitalCity>\r\n    </Body>\r\n</Envelope>",
-							"options": {
-								"raw": {
-									"language": "xml"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
-							"protocol": "http",
-							"host": [
-								"webservices",
-								"oorsprong",
-								"org"
-							],
-							"path": [
-								"websamples.countryinfo",
-								"CountryInfoService.wso"
-							],
-							"query": [
-								{
-									"key": "WSDL",
-									"value": null
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"id": "f4c5ba5b-52db-4970-b034-23cb4a2a2cc0"
-		},
-		{
-			"name": "Users",
-			"item": [
-				{
-					"name": "http://users.bugred.ru/user/login/index.html",
-					"id": "cbbd51b2-62d9-4591-9268-505288ed938c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "host",
-								"value": "users.bugred.ru"
-							},
-							{
-								"key": "proxy-connection",
-								"value": "keep-alive"
-							},
-							{
-								"key": "content-length",
-								"value": "36"
-							},
-							{
-								"key": "cache-control",
-								"value": "max-age=0"
-							},
-							{
-								"key": "origin",
-								"value": "http://users.bugred.ru"
-							},
-							{
-								"key": "dnt",
-								"value": "1"
-							},
-							{
-								"key": "upgrade-insecure-requests",
-								"value": "1"
-							},
-							{
-								"key": "content-type",
-								"value": "application/x-www-form-urlencoded"
-							},
-							{
-								"key": "user-agent",
-								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.5.708 Yowser/2.5 Safari/537.36"
-							},
-							{
-								"key": "accept",
-								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-							},
-							{
-								"key": "referer",
-								"value": "http://users.bugred.ru/user/login/index.html"
-							},
-							{
-								"key": "accept-encoding",
-								"value": "gzip, deflate"
-							},
-							{
-								"key": "accept-language",
-								"value": "ru,en;q=0.9"
-							},
-							{
-								"key": "cookie",
-								"value": "PHPSESSID=20472e437f8ada7b2101e60ccc04f9c6"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "login",
-									"value": "test59359@mail.ru"
-								},
-								{
-									"key": "password",
-									"value": "1"
-								}
-							]
-						},
-						"url": "http://users.bugred.ru/user/login/index.html"
-					},
-					"response": []
-				}
-			],
-			"id": "263de2b6-cd5d-485b-adf6-9403371795cc"
-		},
-		{
-			"name": "Confluence",
-			"item": [
-				{
-					"name": "doRegister",
-					"id": "85506c26-64fb-428c-8e08-e8a0976a131f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"test1234@mail.ru\",\r\n    \"name\": \"Алексей1\",\r\n    \"password\": \"test1234\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://users.bugred.ru/tasks/rest/doregister"
-					},
-					"response": []
-				},
-				{
-					"name": "CreateCompany",
-					"id": "452bc48b-0d92-4c7f-ab02-03de8a34d82f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"company_name\": \"Манго\",\r\n  \"company_type\": \"ООО\",\r\n  \"company_users\": [\"test123@mail.ru\", \"test1234@mail.ru\"],\r\n  \"email_owner\": \"test123@mail.ru\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://users.bugred.ru/tasks/rest/createcompany"
-					},
-					"response": []
-				},
-				{
-					"name": "CreateUser",
-					"id": "7897e405-49d4-44dd-a055-c4b086d164b3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"pochkavirta@mail.ru\",\r\n  \"name\": \"pochkavirta\",\r\n  \"tasks\": [10],\r\n  \"companies\": [1,50],\r\n  \"hobby\":\"Фильмы и игры\",\r\n  \"adres\":\"Москва\",\r\n  \"name1\":\"Алексей\",\r\n  \"surname1\":\"Голышкин\",\r\n  \"fathername1\":\"Максимович\",\r\n  \"cat\":\"Кузя\",\r\n  \"dog\":\"Кузя1\",\r\n  \"parrot\":\"Попугай\",\r\n  \"cavy\":\"Морская свинка\",\r\n  \"hamster\":\"Хомяк\",\r\n  \"squirrel\":\"Белка\",\r\n  \"phone\":\"+79995552244\",\r\n  \"inn\":\"123456789012\",\r\n  \"gender\":\"m\",\r\n  \"birthday\":\"11.01.1990\",\r\n  \"date_start\":\"01.04.2023\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://users.bugred.ru/tasks/rest/createuser"
-					},
-					"response": []
-				},
-				{
-					"name": "CreateUserWithTasks",
-					"id": "a334a66a-c6a8-4fae-8d07-51b0622d694a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n \"email\": \"pochkavirta@mail.com\",\r\n \"name\": \"pochkavirta1\",\r\n \"tasks\": [{\r\n   \"title\": \"Задача по тестированию\",\r\n   \"description\": \"Протестировать первую задачу\"\r\n  },\r\n  {\r\n   \"title\": \"Задача по тестированию\",\r\n   \"description\": \"Протестировать вторую задачу\"\r\n  }\r\n ],\r\n \"companies\": [1, 50],\r\n \"hobby\":\"Фильмы и игры\",\r\n  \"adres\":\"Москва\",\r\n  \"name1\":\"Алексей\",\r\n  \"surname1\":\"Голышкин\",\r\n  \"fathername1\":\"Максимович\",\r\n  \"cat\":\"Кузя\",\r\n  \"dog\":\"Кузя1\",\r\n  \"parrot\":\"Попугай\",\r\n  \"cavy\":\"Морская свинка\",\r\n  \"hamster\":\"Хомяк\",\r\n  \"squirrel\":\"Белка\",\r\n  \"phone\":\"+79995552244\",\r\n  \"inn\":\"123456789012\",\r\n  \"gender\":\"m\",\r\n  \"birthday\":\"11.01.1990\",\r\n  \"date_start\":\"01.04.2023\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://users.bugred.ru/tasks/rest/createuserwithtasks"
-					},
-					"response": []
-				},
-				{
-					"name": "AddAvatar",
-					"id": "7d597d56-1105-46b0-841b-3be5f67bc4ad",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "email",
-									"value": "pochkavirta@mail.com",
-									"type": "text"
-								},
-								{
-									"key": "avatar",
-									"type": "file",
-									"src": "/C:/Users/golys/OneDrive/Рабочий стол/CHtobyi-CHto-byi.jpg"
-								}
-							]
-						},
-						"url": "http://users.bugred.ru/tasks/rest/addavatar"
-					},
-					"response": []
-				},
-				{
-					"name": "DeleteAvatar",
-					"id": "1abcdb51-2602-4f11-9932-98a748048bfd",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "email",
-									"value": "pochkavirta@mail.com",
-									"type": "text"
-								}
-							]
-						},
-						"url": "http://users.bugred.ru/tasks/rest/deleteavatar"
-					},
-					"response": []
-				},
-				{
-					"name": "MagicSearchName",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "155ed54b-6207-481f-b6c4-b6b76eaec60d",
-								"exec": [
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "91722e3c-9e5c-4d22-8eb9-ae67ab54963a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"query\":\"Голышкин\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
-					},
-					"response": []
-				},
-				{
-					"name": "MagicSearchName1",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "155ed54b-6207-481f-b6c4-b6b76eaec60d",
-								"exec": [
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "1ab65e1c-e58d-4475-8a0b-06e8d1a00890",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"query\":\"Голышкин\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"USER\",\r\n\"maxCount\":\"30\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
-					},
-					"response": []
-				},
-				{
-					"name": "MagicSearchCompany",
-					"id": "8916ef36-b2ea-4fa6-a078-6aa38a5833e8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"query\":\"Манго\",\r\n\"partyType\":\"COMPANY\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://users.bugred.ru/tasks/rest/magicsearch"
-					},
-					"response": []
-				}
-			],
-			"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
-		},
-		{
 			"name": "Manual",
-			"item": [],
+			"item": [
+				{
+					"name": "CSV + JSON",
+					"item": [
+						{
+							"name": "Register",
+							"id": "e73faf9d-8859-4efa-839f-bb6892e64ac4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"{{email}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://reqres.in/api/register/"
+							},
+							"response": []
+						}
+					],
+					"id": "5a2f4ea5-b5db-452a-ba02-6b42a530ea23"
+				},
+				{
+					"name": "Test Collection 1",
+					"item": [
+						{
+							"name": "List Users",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a8be0ad4-110b-42b6-a992-a0d7385d4099",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Verify than page equals 2\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    pm.expect(jsonData.page).to.eql(2);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "da9b5b29-ea3d-4998-8d3f-a7d520fda103",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://reqres.in/api/users?page=2",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registration",
+							"id": "1796b5fa-52f5-4d35-b9c6-8986b1291942",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://reqres.in/api/register/"
+							},
+							"response": []
+						},
+						{
+							"name": "Single User",
+							"id": "1c891cf3-4f5a-424b-8938-447908632fce",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}api/users/2"
+							},
+							"response": []
+						}
+					],
+					"id": "771e5636-4e9b-4f9a-b2e9-ee7914ed48e9"
+				},
+				{
+					"name": "SOAP",
+					"item": [
+						{
+							"name": "Untitled Request",
+							"id": "d24e639d-6482-4f75-b4f8-655b9a44db94",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CapitalCity xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>RU</sCountryISOCode>\r\n        </CapitalCity>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "f4c5ba5b-52db-4970-b034-23cb4a2a2cc0"
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "http://users.bugred.ru/user/login/index.html",
+							"id": "cbbd51b2-62d9-4591-9268-505288ed938c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "host",
+										"value": "users.bugred.ru"
+									},
+									{
+										"key": "proxy-connection",
+										"value": "keep-alive"
+									},
+									{
+										"key": "content-length",
+										"value": "36"
+									},
+									{
+										"key": "cache-control",
+										"value": "max-age=0"
+									},
+									{
+										"key": "origin",
+										"value": "http://users.bugred.ru"
+									},
+									{
+										"key": "dnt",
+										"value": "1"
+									},
+									{
+										"key": "upgrade-insecure-requests",
+										"value": "1"
+									},
+									{
+										"key": "content-type",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "user-agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.5.708 Yowser/2.5 Safari/537.36"
+									},
+									{
+										"key": "accept",
+										"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+									},
+									{
+										"key": "referer",
+										"value": "http://users.bugred.ru/user/login/index.html"
+									},
+									{
+										"key": "accept-encoding",
+										"value": "gzip, deflate"
+									},
+									{
+										"key": "accept-language",
+										"value": "ru,en;q=0.9"
+									},
+									{
+										"key": "cookie",
+										"value": "PHPSESSID=20472e437f8ada7b2101e60ccc04f9c6"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "login",
+											"value": "test59359@mail.ru"
+										},
+										{
+											"key": "password",
+											"value": "1"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/user/login/index.html"
+							},
+							"response": []
+						}
+					],
+					"id": "263de2b6-cd5d-485b-adf6-9403371795cc"
+				},
+				{
+					"name": "Confluence",
+					"item": [
+						{
+							"name": "doRegister",
+							"id": "85506c26-64fb-428c-8e08-e8a0976a131f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test1234@mail.ru\",\r\n    \"name\": \"Алексей1\",\r\n    \"password\": \"test1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/doregister"
+							},
+							"response": []
+						},
+						{
+							"name": "CreateCompany",
+							"id": "452bc48b-0d92-4c7f-ab02-03de8a34d82f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"company_name\": \"Манго\",\r\n  \"company_type\": \"ООО\",\r\n  \"company_users\": [\"test123@mail.ru\", \"test1234@mail.ru\"],\r\n  \"email_owner\": \"test123@mail.ru\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/createcompany"
+							},
+							"response": []
+						},
+						{
+							"name": "CreateUser",
+							"id": "7897e405-49d4-44dd-a055-c4b086d164b3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"pochkavirta@mail.ru\",\r\n  \"name\": \"pochkavirta\",\r\n  \"tasks\": [10],\r\n  \"companies\": [1,50],\r\n  \"hobby\":\"Фильмы и игры\",\r\n  \"adres\":\"Москва\",\r\n  \"name1\":\"Алексей\",\r\n  \"surname1\":\"Голышкин\",\r\n  \"fathername1\":\"Максимович\",\r\n  \"cat\":\"Кузя\",\r\n  \"dog\":\"Кузя1\",\r\n  \"parrot\":\"Попугай\",\r\n  \"cavy\":\"Морская свинка\",\r\n  \"hamster\":\"Хомяк\",\r\n  \"squirrel\":\"Белка\",\r\n  \"phone\":\"+79995552244\",\r\n  \"inn\":\"123456789012\",\r\n  \"gender\":\"m\",\r\n  \"birthday\":\"11.01.1990\",\r\n  \"date_start\":\"01.04.2023\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/createuser"
+							},
+							"response": []
+						},
+						{
+							"name": "CreateUserWithTasks",
+							"id": "a334a66a-c6a8-4fae-8d07-51b0622d694a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"email\": \"pochkavirta@mail.com\",\r\n \"name\": \"pochkavirta1\",\r\n \"tasks\": [{\r\n   \"title\": \"Задача по тестированию\",\r\n   \"description\": \"Протестировать первую задачу\"\r\n  },\r\n  {\r\n   \"title\": \"Задача по тестированию\",\r\n   \"description\": \"Протестировать вторую задачу\"\r\n  }\r\n ],\r\n \"companies\": [1, 50],\r\n \"hobby\":\"Фильмы и игры\",\r\n  \"adres\":\"Москва\",\r\n  \"name1\":\"Алексей\",\r\n  \"surname1\":\"Голышкин\",\r\n  \"fathername1\":\"Максимович\",\r\n  \"cat\":\"Кузя\",\r\n  \"dog\":\"Кузя1\",\r\n  \"parrot\":\"Попугай\",\r\n  \"cavy\":\"Морская свинка\",\r\n  \"hamster\":\"Хомяк\",\r\n  \"squirrel\":\"Белка\",\r\n  \"phone\":\"+79995552244\",\r\n  \"inn\":\"123456789012\",\r\n  \"gender\":\"m\",\r\n  \"birthday\":\"11.01.1990\",\r\n  \"date_start\":\"01.04.2023\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/createuserwithtasks"
+							},
+							"response": []
+						},
+						{
+							"name": "AddAvatar",
+							"id": "7d597d56-1105-46b0-841b-3be5f67bc4ad",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "pochkavirta@mail.com",
+											"type": "text"
+										},
+										{
+											"key": "avatar",
+											"type": "file",
+											"src": "/C:/Users/golys/OneDrive/Рабочий стол/CHtobyi-CHto-byi.jpg"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/addavatar"
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteAvatar",
+							"id": "1abcdb51-2602-4f11-9932-98a748048bfd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "pochkavirta@mail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/deleteavatar"
+							},
+							"response": []
+						},
+						{
+							"name": "MagicSearchName",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "155ed54b-6207-481f-b6c4-b6b76eaec60d",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "91722e3c-9e5c-4d22-8eb9-ae67ab54963a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
+						},
+						{
+							"name": "MagicSearchName1",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "155ed54b-6207-481f-b6c4-b6b76eaec60d",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "1ab65e1c-e58d-4475-8a0b-06e8d1a00890",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"USER\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
+						},
+						{
+							"name": "MagicSearchCompany",
+							"id": "8916ef36-b2ea-4fa6-a078-6aa38a5833e8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Манго\",\r\n\"partyType\":\"COMPANY\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
+						}
+					],
+					"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
+				}
+			],
 			"id": "ff484292-4ee4-48f7-b0c2-6e99252a18d6"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
 		}
 	],
 	"event": [
@@ -529,7 +535,7 @@
 	],
 	"variable": [
 		{
-			"id": "3743e202-3366-483a-a610-39da89f8fb52",
+			"id": "dd6d80c1-178b-49e4-9224-865eaad16c50",
 			"key": "url",
 			"value": "",
 			"type": "string"
