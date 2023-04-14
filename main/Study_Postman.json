@@ -591,12 +591,12 @@
 									"script": {
 										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
 										"exec": [
-											"pm.test(\"Status code is 230\", function () {\r",
-											"    pm.response.to.have.status(230);\r",
+											"pm.test(\"Нашло пользователя\", function () {\r",
+											"    pm.response.to.have.status(231);\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
+											"pm.test(\"Не нашло пользователя\", function () {\r",
+											"    pm.response.to.have.status(230);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -654,7 +654,7 @@
 	],
 	"variable": [
 		{
-			"id": "0c141501-e137-4beb-b37d-b3bf940e1b17",
+			"id": "33e10523-a7fe-429a-80fa-578c9bea6bff",
 			"key": "url",
 			"value": "",
 			"type": "string"
