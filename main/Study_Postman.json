@@ -510,6 +510,28 @@
 			"item": [
 				{
 					"name": "Регистрация пользователя",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"/* Здесь было очень много текста,\r",
+									"который поясняет, что идет далее в тесте\r",
+									"чтобы в самом тесте сделать короткое название */\r",
+									"pm.test(\"'Status code is 200' \\\r",
+									"часть 2\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "58c86004-9ae3-4cb4-ac66-85e45bf6f9ad",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -569,7 +591,7 @@
 	],
 	"variable": [
 		{
-			"id": "f3b68cf1-1e7e-427f-afe2-f435b6191837",
+			"id": "908f3d06-29c1-4db2-b937-980a1bbd6bfa",
 			"key": "url",
 			"value": "",
 			"type": "string"
