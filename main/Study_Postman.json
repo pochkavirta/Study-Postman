@@ -596,7 +596,7 @@
 											"});\r",
 											"\r",
 											"pm.test(\"Сломанный тест\", function () {\r",
-											"    pm.response.to.have.status(231);\r",
+											"    pm.response.to.have.status(200);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -734,7 +734,7 @@
 	],
 	"variable": [
 		{
-			"id": "24ae00ef-d774-48fd-aa03-b621dacd7812",
+			"id": "22ea7913-44a4-49a4-b96b-154489224e53",
 			"key": "url",
 			"value": "",
 			"type": "string"
