@@ -751,8 +751,8 @@
 									"script": {
 										"id": "773234ec-ad6e-430a-a42f-a0bc81486114",
 										"exec": [
-											"pm.test(\"Нашло 1 компанию\", function () {\r",
-											"    pm.response.to.have.status(233);\r",
+											"pm.test(\"Нашло больше 1 компании\", function () {\r",
+											"    pm.response.to.have.status(234);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"Сломанный тест\", function () {\r",
@@ -814,7 +814,7 @@
 	],
 	"variable": [
 		{
-			"id": "9a9e4976-61dc-4931-977c-c77a3dc194ae",
+			"id": "19aef073-59a6-4339-b538-b1a95be3835e",
 			"key": "url",
 			"value": "",
 			"type": "string"
