@@ -704,7 +704,7 @@
 							"response": []
 						},
 						{
-							"name": "MagicSearchCompany Copy",
+							"name": "233 — найдена 1 компания",
 							"id": "f7b6d7fa-8106-40be-92c9-e5ca2efa0c61",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -756,7 +756,7 @@
 	],
 	"variable": [
 		{
-			"id": "5c3fbb64-18cc-41d6-862b-81a229cb501f",
+			"id": "0d41aff4-0a0c-4c91-bc4d-2b53f8a7432d",
 			"key": "url",
 			"value": "",
 			"type": "string"
