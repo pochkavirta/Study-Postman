@@ -782,6 +782,46 @@
 								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 							},
 							"response": []
+						},
+						{
+							"name": "235 — найдены как юзеры, так и компании",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "773234ec-ad6e-430a-a42f-a0bc81486114",
+										"exec": [
+											"pm.test(\"Нашло больше 1 компании\", function () {\r",
+											"    pm.response.to.have.status(234);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "3ce29e24-c44b-4bdc-810d-4f91fd29086c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Манго\",\r\n\"partyType\":\"COMPANY\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
 						}
 					],
 					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
@@ -814,7 +854,7 @@
 	],
 	"variable": [
 		{
-			"id": "19aef073-59a6-4339-b538-b1a95be3835e",
+			"id": "8b7388c0-af40-4e7f-9279-15df7e92bf44",
 			"key": "url",
 			"value": "",
 			"type": "string"
