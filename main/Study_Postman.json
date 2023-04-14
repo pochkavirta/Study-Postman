@@ -584,7 +584,7 @@
 							"response": []
 						},
 						{
-							"name": "MagicSearch - никого не нашли",
+							"name": "Никого не нашли по запросу, пустой ответ",
 							"id": "06436aa5-961e-463f-b87f-6d1a57dbae49",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -636,7 +636,7 @@
 	],
 	"variable": [
 		{
-			"id": "b84edae6-9805-45a0-b6a0-9c33f451ff25",
+			"id": "63674ada-fcc0-46e9-9db6-97202d9261a6",
 			"key": "url",
 			"value": "",
 			"type": "string"
