@@ -595,7 +595,7 @@
 											"    pm.response.to.have.status(230);\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Нашло пользователя\", function () {\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
 											"    pm.response.to.have.status(231);\r",
 											"});"
 										],
@@ -694,7 +694,7 @@
 	],
 	"variable": [
 		{
-			"id": "2f7c145c-7857-4551-9977-5e1c8afdf609",
+			"id": "95057abb-2bc2-461f-a56f-dbec4bab5afe",
 			"key": "url",
 			"value": "",
 			"type": "string"
