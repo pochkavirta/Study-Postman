@@ -1030,14 +1030,74 @@
 					"name": "Lesson 2",
 					"item": [
 						{
-							"name": "New Request",
-							"id": "fee9b9a5-2085-4fa4-b9e9-d9d0763ae0f8",
+							"name": "Регистрация пользователя Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"/* Здесь было очень много текста,\r",
+											"который поясняет, что идет далее в тесте\r",
+											"чтобы в самом тесте сделать короткое название */\r",
+											"pm.test(\"'Status code is 200' \\\r",
+											"часть 2\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"console.log(pm.response);\r",
+											"console.log(pm.response.code);\r",
+											"\r",
+											"console.log(pm.request);\r",
+											"\r",
+											"console.log(\"ПОСЛЕ запроса\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											"console.log(\"ДО запроса\");"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "16ed2c23-d465-4d3a-b654-adb7f5a54981",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/doregister"
 							},
 							"response": []
 						}
@@ -1072,7 +1132,7 @@
 	],
 	"variable": [
 		{
-			"id": "fddb082f-ad58-4d02-9349-437c0c046670",
+			"id": "2a19c1ca-c4a2-4747-a9fb-b1c8d86594cc",
 			"key": "url",
 			"value": "",
 			"type": "string"
