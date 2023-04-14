@@ -509,6 +509,11 @@
 			"name": "Automation",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
+				},
+				{
 					"name": "Регистрация пользователя",
 					"event": [
 						{
@@ -620,7 +625,7 @@
 	],
 	"variable": [
 		{
-			"id": "7edaa068-2946-427c-b4a4-c265f096641d",
+			"id": "ec0a9165-dcb2-4e10-bdcb-87c0f2183f7f",
 			"key": "url",
 			"value": "",
 			"type": "string"
