@@ -584,7 +584,25 @@
 							"response": []
 						},
 						{
-							"name": "Никого не нашли по запросу, пустой ответ",
+							"name": "Найден 1 юзер",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
+										"exec": [
+											"pm.test(\"Status code is 230\", function () {\r",
+											"    pm.response.to.have.status(230);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "06436aa5-961e-463f-b87f-6d1a57dbae49",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -636,7 +654,7 @@
 	],
 	"variable": [
 		{
-			"id": "63674ada-fcc0-46e9-9db6-97202d9261a6",
+			"id": "ac423c88-dbdc-4469-90a7-76ba456fc1b6",
 			"key": "url",
 			"value": "",
 			"type": "string"
