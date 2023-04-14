@@ -509,7 +509,7 @@
 			"name": "Automation",
 			"item": [
 				{
-					"name": "New Folder",
+					"name": "Lesson 1",
 					"item": [],
 					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
 				},
@@ -625,7 +625,7 @@
 	],
 	"variable": [
 		{
-			"id": "ec0a9165-dcb2-4e10-bdcb-87c0f2183f7f",
+			"id": "ef02a0fa-4889-42c6-935d-c7a6c0b79e87",
 			"key": "url",
 			"value": "",
 			"type": "string"
