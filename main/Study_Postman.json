@@ -515,8 +515,29 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test_demo_1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Демо 1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://users.bugred.ru/tasks/rest/doregister"
 					},
 					"response": []
 				}
@@ -548,7 +569,7 @@
 	],
 	"variable": [
 		{
-			"id": "ff6e40dc-adf3-4555-9d9f-203bb9248b0e",
+			"id": "f3b68cf1-1e7e-427f-afe2-f435b6191837",
 			"key": "url",
 			"value": "",
 			"type": "string"
