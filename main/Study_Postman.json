@@ -1027,7 +1027,7 @@
 					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
 				},
 				{
-					"name": "New Folder",
+					"name": "Lesson 2",
 					"item": [],
 					"id": "5a126cdb-366b-4d32-84b2-8c6667fe70a7"
 				}
@@ -1059,7 +1059,7 @@
 	],
 	"variable": [
 		{
-			"id": "1fc833fe-712d-49b1-a835-9e221fbd3f0e",
+			"id": "2f1c418d-bd4b-449b-9039-520944d63bf3",
 			"key": "url",
 			"value": "",
 			"type": "string"
