@@ -662,6 +662,46 @@
 								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 							},
 							"response": []
+						},
+						{
+							"name": "найдено больше 1 юзера (но без компаний)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
+										"exec": [
+											"pm.test(\"Нашло пользователя\", function () {\r",
+											"    pm.response.to.have.status(231);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(230);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "de0641d2-c6c9-4e50-ae1e-bb8e32cdfe6a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
 						}
 					],
 					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
@@ -694,7 +734,7 @@
 	],
 	"variable": [
 		{
-			"id": "73e90691-c73c-4ba0-9c86-0072f4180a6f",
+			"id": "7b5cee42-0735-4961-8485-a51000c8d76f",
 			"key": "url",
 			"value": "",
 			"type": "string"
