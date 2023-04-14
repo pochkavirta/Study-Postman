@@ -984,7 +984,7 @@
 							"response": []
 						},
 						{
-							"name": "230 — никого не нашли по запросу, пустой ответ Copy 4",
+							"name": "459 — неправильно задан параметр include",
 							"event": [
 								{
 									"listen": "test",
@@ -1094,7 +1094,7 @@
 	],
 	"variable": [
 		{
-			"id": "3a7ebb18-908e-459f-95f5-6f637b05867c",
+			"id": "f9e3fb6d-9719-49fb-8bd2-e5ceea3563cc",
 			"key": "url",
 			"value": "",
 			"type": "string"
