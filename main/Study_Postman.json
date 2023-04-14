@@ -561,7 +561,81 @@
 						},
 						"url": "http://users.bugred.ru/tasks/rest/doregister"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "128c0b9f-211a-4a8b-be6a-849c61d68819",
+							"name": "Регистрация пользователя",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/doregister"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.10.0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 14 Apr 2023 02:33:30 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/5.6.14"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"type\": \"error\",\n    \"message\": \" email test_demo_1@gmail.com уже есть в базе\"\n}"
+						}
+					]
 				}
 			],
 			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
@@ -591,7 +665,7 @@
 	],
 	"variable": [
 		{
-			"id": "908f3d06-29c1-4db2-b937-980a1bbd6bfa",
+			"id": "39fe84b1-f88b-4371-975f-404fde48989c",
 			"key": "url",
 			"value": "",
 			"type": "string"
