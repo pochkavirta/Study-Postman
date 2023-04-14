@@ -510,92 +510,103 @@
 			"item": [
 				{
 					"name": "Lesson 1",
-					"item": [],
-					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
-				},
-				{
-					"name": "Регистрация пользователя",
-					"event": [
+					"item": [
 						{
-							"listen": "test",
-							"script": {
-								"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"/* Здесь было очень много текста,\r",
-									"который поясняет, что идет далее в тесте\r",
-									"чтобы в самом тесте сделать короткое название */\r",
-									"pm.test(\"'Status code is 200' \\\r",
-									"часть 2\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"console.log(pm.response);\r",
-									"console.log(pm.response.code);\r",
-									"\r",
-									"console.log(pm.request);\r",
-									"\r",
-									"console.log(\"ПОСЛЕ запроса\");"
-								],
-								"type": "text/javascript"
-							}
+							"name": "Регистрация пользователя",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"/* Здесь было очень много текста,\r",
+											"который поясняет, что идет далее в тесте\r",
+											"чтобы в самом тесте сделать короткое название */\r",
+											"pm.test(\"'Status code is 200' \\\r",
+											"часть 2\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"console.log(pm.response);\r",
+											"console.log(pm.response.code);\r",
+											"\r",
+											"console.log(pm.request);\r",
+											"\r",
+											"console.log(\"ПОСЛЕ запроса\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											"console.log(\"ДО запроса\");"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "58c86004-9ae3-4cb4-ac66-85e45bf6f9ad",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/doregister"
+							},
+							"response": []
 						},
 						{
-							"listen": "prerequest",
-							"script": {
-								"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
-								"exec": [
-									"console.log(\"ДО запроса\");"
-								],
-								"type": "text/javascript"
-							}
+							"name": "MagicSearch",
+							"id": "06436aa5-961e-463f-b87f-6d1a57dbae49",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Голышкин\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
 						}
 					],
-					"id": "58c86004-9ae3-4cb4-ac66-85e45bf6f9ad",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "email",
-									"value": "test_demo_1@gmail.com",
-									"type": "text"
-								},
-								{
-									"key": "name",
-									"value": "Демо 1",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "1",
-									"type": "text"
-								}
-							]
-						},
-						"url": "http://users.bugred.ru/tasks/rest/doregister"
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "06436aa5-961e-463f-b87f-6d1a57dbae49",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
+					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
 				}
 			],
 			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
@@ -625,7 +636,7 @@
 	],
 	"variable": [
 		{
-			"id": "ef02a0fa-4889-42c6-935d-c7a6c0b79e87",
+			"id": "03f7039c-c164-43df-bcfa-e81cb9942dea",
 			"key": "url",
 			"value": "",
 			"type": "string"
