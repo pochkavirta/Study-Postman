@@ -822,6 +822,46 @@
 								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 							},
 							"response": []
+						},
+						{
+							"name": "455 — не указан параметр query в запросе",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "773234ec-ad6e-430a-a42f-a0bc81486114",
+										"exec": [
+											"pm.test(\"Нашли пользователей и компании\", function () {\r",
+											"    pm.response.to.have.status(235);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Сломанный тест\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "0392a9bd-344a-4c5b-bbe3-0e636a8b19d1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\":\"Unbranded Granite Table\",\r\n\"partyType\":\"ALL\",\r\n\"fullSimilarity\":\"False\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+							},
+							"response": []
 						}
 					],
 					"id": "ec9e8d05-1577-4fb7-bcb7-374bf337fece"
@@ -854,7 +894,7 @@
 	],
 	"variable": [
 		{
-			"id": "e40681ce-d79f-4f7e-8fab-8580f5f0e8be",
+			"id": "88bb381b-c8b7-419e-9244-b02f8bb8fe70",
 			"key": "url",
 			"value": "",
 			"type": "string"
