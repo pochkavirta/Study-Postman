@@ -526,7 +526,24 @@
 									"pm.test(\"'Status code is 200' \\\r",
 									"часть 2\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									"console.log(pm.response);\r",
+									"console.log(pm.response.code);\r",
+									"\r",
+									"console.log(pm.request);\r",
+									"\r",
+									"console.log(\"ПОСЛЕ запроса\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+								"exec": [
+									"console.log(\"ДО запроса\");"
 								],
 								"type": "text/javascript"
 							}
@@ -591,7 +608,7 @@
 	],
 	"variable": [
 		{
-			"id": "f0653f77-090b-4bb6-b4cd-2b95f8e94350",
+			"id": "0ded5f80-0451-412f-9534-fedf5a37e258",
 			"key": "url",
 			"value": "",
 			"type": "string"
