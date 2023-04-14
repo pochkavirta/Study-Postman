@@ -951,8 +951,8 @@
 									"script": {
 										"id": "b1a8ef91-4d05-460a-863a-c116645471ba",
 										"exec": [
-											"pm.test(\"Не нашло пользователя\", function () {\r",
-											"    pm.response.to.have.status(230);\r",
+											"pm.test(\"Неверно указан taskStatus\", function () {\r",
+											"    pm.response.to.have.status(458);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"Сломанный тест\", function () {\r",
@@ -972,7 +972,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"query\":\"Голышкин1\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
+									"raw": "{\r\n\"query\":\"Голышкин1\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"True\",\r\n\"taskStatus\":\"ALL1\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1054,7 +1054,7 @@
 	],
 	"variable": [
 		{
-			"id": "facf6b60-a28c-45a4-9ebc-f2fa36aa3a54",
+			"id": "168158bb-8e1e-4867-a58e-1bf8bcca0bcd",
 			"key": "url",
 			"value": "",
 			"type": "string"
