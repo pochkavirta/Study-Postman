@@ -509,7 +509,7 @@
 			"name": "Automation",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Регистрация пользователя",
 					"id": "58c86004-9ae3-4cb4-ac66-85e45bf6f9ad",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -548,7 +548,7 @@
 	],
 	"variable": [
 		{
-			"id": "37f3bc95-9388-4d63-a980-8d0bf355b3ff",
+			"id": "ff6e40dc-adf3-4555-9d9f-203bb9248b0e",
 			"key": "url",
 			"value": "",
 			"type": "string"
