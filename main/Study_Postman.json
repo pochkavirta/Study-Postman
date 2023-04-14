@@ -498,6 +498,11 @@
 				}
 			],
 			"id": "5055173d-652d-48de-99e7-0d4d337e97bd"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "ff484292-4ee4-48f7-b0c2-6e99252a18d6"
 		}
 	],
 	"event": [
@@ -524,7 +529,7 @@
 	],
 	"variable": [
 		{
-			"id": "92055ddc-5b61-4d89-93dd-a77bb9f21b1c",
+			"id": "dd182665-693f-4082-8789-08e3d88ef3b7",
 			"key": "url",
 			"value": "",
 			"type": "string"
