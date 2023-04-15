@@ -1330,7 +1330,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Add comment",
 							"id": "46d450f9-57b7-4cc6-aa3c-902c57e47c8f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1372,7 +1372,7 @@
 	],
 	"variable": [
 		{
-			"id": "ec8fe8b8-49e0-48ce-84de-efed009826ae",
+			"id": "4e90180c-8246-403f-8f01-71048257c865",
 			"key": "url",
 			"value": "",
 			"type": "string"
