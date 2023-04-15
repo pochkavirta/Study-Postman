@@ -1328,35 +1328,6 @@
 								"url": "http://users.bugred.ru/tasks/rest/doregister"
 							},
 							"response": []
-						},
-						{
-							"name": "Add comment",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "eaf68615-d6de-4c87-905c-6f3acfb7029b",
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "46d450f9-57b7-4cc6-aa3c-902c57e47c8f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": []
-								},
-								"url": "https://pochkavirta.atlassian.net/rest/api/3/issue/POCH-5/comment"
-							},
-							"response": []
 						}
 					],
 					"id": "5a126cdb-366b-4d32-84b2-8c6667fe70a7"
@@ -1389,7 +1360,7 @@
 	],
 	"variable": [
 		{
-			"id": "a6f4e88d-8275-4372-abd8-009c453482fb",
+			"id": "08a65437-0c8e-43b3-a17e-9221d4af5c46",
 			"key": "url",
 			"value": "",
 			"type": "string"
