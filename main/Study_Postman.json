@@ -1923,6 +1923,24 @@
 						},
 						{
 							"name": "Reqres.in: найти «Charles»",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5f2f5d7b-8aa1-4b8b-8e6d-fc6a78f53fc9",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"total = jsonData.total;\r",
+											"console.log(total);\r",
+											"\r",
+											"charles = jsonData.data[4].first_name;\r",
+											"console.log(charles);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "34a31bed-45b1-4faa-ac38-b994b81963df",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1930,8 +1948,12 @@
 							"request": {
 								"method": "GET",
 								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
 								"url": {
-									"raw": "https://reqres.in/api/users?page=2",
+									"raw": "https://reqres.in/api/users?page=1",
 									"protocol": "https",
 									"host": [
 										"reqres",
@@ -1944,7 +1966,7 @@
 									"query": [
 										{
 											"key": "page",
-											"value": "2"
+											"value": "1"
 										}
 									]
 								}
@@ -2037,7 +2059,7 @@
 	],
 	"variable": [
 		{
-			"id": "16ad8117-d5d6-471e-9660-dd320d212760",
+			"id": "77fa13fb-5d63-4ee4-9508-7b66073d3336",
 			"key": "url",
 			"value": "",
 			"type": "string"
