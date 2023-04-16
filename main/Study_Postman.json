@@ -1343,7 +1343,7 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											"pm.test(\"Your test name\", function () {\r",
+											"pm.test(\"Проверка ошибки\", function () {\r",
 											"    var jsonData = pm.response.json();\r",
 											"    console.log(pm.response);\r",
 											"    console.log(jsonData);\r",
@@ -1482,7 +1482,7 @@
 	],
 	"variable": [
 		{
-			"id": "c76e7b1a-fd69-469c-9913-9b46ac708c62",
+			"id": "ac9062c7-acec-43a6-ad37-d1440b26198a",
 			"key": "url",
 			"value": "",
 			"type": "string"
