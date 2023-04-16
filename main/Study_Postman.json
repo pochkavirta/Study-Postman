@@ -1745,7 +1745,7 @@
 							"response": []
 						},
 						{
-							"name": "Подсказки: XML в ответе Copy",
+							"name": "Подсказки: XML в ответе",
 							"event": [
 								{
 									"listen": "test",
@@ -1934,7 +1934,7 @@
 	],
 	"variable": [
 		{
-			"id": "e6c1a962-65e1-4eed-8f4e-cd34ecb0f940",
+			"id": "866edf15-1e4f-4e26-a339-c191a3489a4c",
 			"key": "url",
 			"value": "",
 			"type": "string"
