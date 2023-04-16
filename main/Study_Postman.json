@@ -1597,8 +1597,25 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"auth": {
+									"type": "apikey",
+									"apikey": {
+										"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
+										"key": "Authorization"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\": \"Виктор Иван\",\r\n    \"count\": 7\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
 							},
 							"response": []
 						}
@@ -1688,7 +1705,7 @@
 	],
 	"variable": [
 		{
-			"id": "faaba112-c46f-4ff1-9449-eadda3215101",
+			"id": "c7470481-2c57-47f0-b5e0-7ebc8715f424",
 			"key": "url",
 			"value": "",
 			"type": "string"
