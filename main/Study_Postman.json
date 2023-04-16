@@ -1541,13 +1541,52 @@
 						},
 						{
 							"name": "getuserfull",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8e654fec-3dcb-41f6-a569-0a4a06e054ce",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"console.log(jsonData);\r",
+											"\r",
+											"console.log(jsonData.email);\r",
+											"console.log(jsonData[\"name\"]);\r",
+											"console.log(jsonData['password']);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "2b4eee27-ce46-4798-b23f-e5af5cac3e96",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
 						}
@@ -1637,7 +1676,7 @@
 	],
 	"variable": [
 		{
-			"id": "b7b45bfa-5865-4282-ab88-db0ac9692f6a",
+			"id": "086d7055-c6c9-49c2-975c-4945565f1ec6",
 			"key": "url",
 			"value": "",
 			"type": "string"
