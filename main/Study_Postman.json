@@ -1443,9 +1443,11 @@
 										"exec": [
 											"pm.test(\"Проверка ошибки\", function () {\r",
 											"    var jsonData = pm.response.json();\r",
+											"\r",
 											"    console.log(pm.response);\r",
 											"    console.log(jsonData);\r",
 											"    console.log(pm.response.json());\r",
+											"    \r",
 											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
 											"});"
 										],
@@ -1947,7 +1949,7 @@
 	],
 	"variable": [
 		{
-			"id": "aa90e9fc-21d8-453d-b457-eae2af7c1d03",
+			"id": "a742b6a7-8b8a-4338-a479-9de97b554930",
 			"key": "url",
 			"value": "",
 			"type": "string"
