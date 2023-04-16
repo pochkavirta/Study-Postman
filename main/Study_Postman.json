@@ -1540,7 +1540,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "getuserfull",
 							"id": "2b4eee27-ce46-4798-b23f-e5af5cac3e96",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1637,7 +1637,7 @@
 	],
 	"variable": [
 		{
-			"id": "770541be-3cf3-44d3-b274-bc785bbb5678",
+			"id": "b7b45bfa-5865-4282-ab88-db0ac9692f6a",
 			"key": "url",
 			"value": "",
 			"type": "string"
