@@ -1334,80 +1334,7 @@
 				},
 				{
 					"name": "Lesson 3",
-					"item": [
-						{
-							"name": "Регистрация пользователя",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
-										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"/* Здесь было очень много текста,\r",
-											"который поясняет, что идет далее в тесте\r",
-											"чтобы в самом тесте сделать короткое название */\r",
-											"pm.test(\"'Status code is 200' \\\r",
-											"часть 2\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"console.log(pm.response);\r",
-											"console.log(pm.response.code);\r",
-											"\r",
-											"console.log(pm.request);\r",
-											"\r",
-											"console.log(\"ПОСЛЕ запроса\");"
-										],
-										"type": "text/javascript"
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
-										"exec": [
-											"console.log(\"ДО запроса\");"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "828a8851-4897-4393-a174-86215f9d1aa6",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "email",
-											"value": "test_demo_1@gmail.com",
-											"type": "text"
-										},
-										{
-											"key": "name",
-											"value": "Демо 1",
-											"type": "text"
-										},
-										{
-											"key": "password",
-											"value": "1",
-											"type": "text"
-										}
-									]
-								},
-								"url": "http://users.bugred.ru/tasks/rest/doregister"
-							},
-							"response": []
-						}
-					],
+					"item": [],
 					"id": "627ce5b0-b45a-4bb3-a83a-5a2b17263123"
 				},
 				{
@@ -1435,6 +1362,61 @@
 						}
 					],
 					"id": "509e014f-c445-4765-b3e0-0b6d23166de1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test_demo_1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Демо 1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://users.bugred.ru/tasks/rest/doregister"
+					},
+					"response": []
+				},
+				{
+					"name": "doregister Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "051fb7cf-44c8-4e0e-a3cc-abcc68247cc6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1493,7 +1475,7 @@
 	],
 	"variable": [
 		{
-			"id": "5d03380b-a343-4e4c-86f5-78766be5e8c3",
+			"id": "7a565758-19c6-41b1-8dc3-7c3c92401cc3",
 			"key": "url",
 			"value": "",
 			"type": "string"
