@@ -1697,6 +1697,7 @@
 										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
 										"exec": [
 											"var jsonData = pm.response.json();\r",
+											"console.log(jsonData);\r",
 											"\r",
 											"anna = jsonData.suggestions[0].value;\r",
 											"console.log(anna);\r",
@@ -1934,7 +1935,7 @@
 	],
 	"variable": [
 		{
-			"id": "866edf15-1e4f-4e26-a339-c191a3489a4c",
+			"id": "ce1d2651-2083-4245-93a4-772acd48aeab",
 			"key": "url",
 			"value": "",
 			"type": "string"
