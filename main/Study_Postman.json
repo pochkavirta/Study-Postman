@@ -1339,6 +1339,14 @@
 										"exec": [
 											"pm.test(\"Статус Created\", function () {\r",
 											"    pm.response.to.have.status(\"Created\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Заголовок есть\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Заголовок application/json;charset=UTF-8\", () => {\r",
+											"  pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json;charset=UTF-8');\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1353,7 +1361,7 @@
 								"auth": {
 									"type": "basic",
 									"basic": {
-										"password": "ATATT3xFfGF0CC6mHpw2pral42EqjpAzcmeRhOW9NV8v_SmwCNUfWFbDtksvZBNpZJsHUOEYpB0fhPGBX757BFWZih5XbN_QHaVXT5d4ZdhHTatSThCsCsiJ6eAOHRJaP_kSw_14HRGzJhzoJSWok-1cwBFj4zFP4BdE5JwUaO85mPzq8UymZl4=67AFF113",
+										"password": "ATATT3xFfGF06b6VvUUnvah4qpvtnYkwZ6TG5Klkwy47w56f0_QKXfUUIKsYEKyuaK1f8ZgSrKxsiUUWBitTHqSmUncHBPHrdBvt1U8CQA8GHTWRWPtMcjvx1OMjkYwLWc5W3Q_kqKjnBVtNU-3x4rYUBI7Up_FTHTgEhMLpsZIZrQ9Hg5sHbsI=BCA0BEB1",
 										"username": "pochkavirta@gmail.com"
 									}
 								},
@@ -1775,7 +1783,7 @@
 	],
 	"variable": [
 		{
-			"id": "3bd6a313-e217-41ee-bb5c-5dd9486b4f32",
+			"id": "7b1791d6-eca1-4b08-9958-bb9e0f22f010",
 			"key": "url",
 			"value": "",
 			"type": "string"
