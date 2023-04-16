@@ -1427,7 +1427,7 @@
 										}
 									}
 								},
-								"url": "https://pochkavirta.atlassian.net/rest/api/3/issue/POCH-2/comment"
+								"url": "http://users.bugred.ru/tasks/rest/magicsearch"
 							},
 							"response": []
 						}
@@ -1834,7 +1834,7 @@
 	],
 	"variable": [
 		{
-			"id": "b2a3db29-d584-4496-8100-cfa0f7a9468b",
+			"id": "ac6c7cad-9348-41ee-87b5-34100967c6d2",
 			"key": "url",
 			"value": "",
 			"type": "string"
