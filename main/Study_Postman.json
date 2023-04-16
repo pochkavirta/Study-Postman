@@ -1337,15 +1337,15 @@
 									"script": {
 										"id": "d5d72d7a-a64a-4c4b-9bde-fdd5d99ecb91",
 										"exec": [
-											"pm.test(\"Статус Created\", function () {\r",
+											"pm.test(\"Статус: Created\", function () {\r",
 											"    pm.response.to.have.status(\"Created\");\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Заголовок есть\", function () {\r",
+											"pm.test(\"Content-Type: есть\", function () {\r",
 											"    pm.response.to.have.header(\"Content-Type\");\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Заголовок application/json;charset=UTF-8\", () => {\r",
+											"pm.test(\"Ответ Content-Type: application/json;charset=UTF-8\", () => {\r",
 											"  pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json;charset=UTF-8');\r",
 											"});"
 										],
@@ -1830,7 +1830,7 @@
 	],
 	"variable": [
 		{
-			"id": "561e5e5c-3bff-4ede-ba2e-73c7dff5fc3b",
+			"id": "5f2b5c83-f285-4a29-98ef-6858a5882439",
 			"key": "url",
 			"value": "",
 			"type": "string"
