@@ -1930,7 +1930,7 @@
 					"id": "627ce5b0-b45a-4bb3-a83a-5a2b17263123"
 				},
 				{
-					"name": "doregister",
+					"name": "doRegister",
 					"event": [
 						{
 							"listen": "test",
@@ -2012,7 +2012,7 @@
 	],
 	"variable": [
 		{
-			"id": "8e385f84-ba5f-47f6-aecb-333aefa2133c",
+			"id": "6cf7029a-2abc-42d9-a32e-0c09a9bf02fe",
 			"key": "url",
 			"value": "",
 			"type": "string"
