@@ -1922,7 +1922,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Reqres.in: найти «Charles»",
 							"id": "34a31bed-45b1-4faa-ac38-b994b81963df",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2037,7 +2037,7 @@
 	],
 	"variable": [
 		{
-			"id": "58a0b6a7-ecda-439c-8ab2-18c8535dd4d7",
+			"id": "16ad8117-d5d6-471e-9660-dd320d212760",
 			"key": "url",
 			"value": "",
 			"type": "string"
