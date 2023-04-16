@@ -1825,7 +1825,11 @@
 										"exec": [
 											"var jsonData = pm.response.json();\r",
 											"\r",
-											"console.log(jsonData);\r",
+											"console.log(pm.response);\r",
+											"//console.log(pm.response.headers[2].value);\r",
+											"console.log(Object.keys(pm.response));\r",
+											"console.log(Object.keys(pm.response.headers));\r",
+											"console.log(pm.response.headers.members[2].value);\r",
 											"\r",
 											"pm.test(\"Проверка ошибки\", function () {    \r",
 											"    pm.expect(pm.response.json().type).to.eql(\"error\");\r",
@@ -2010,7 +2014,7 @@
 	],
 	"variable": [
 		{
-			"id": "95e213ad-0d02-4e0c-8694-0cb980b8a0df",
+			"id": "fa8dbba0-60b3-4717-b6ad-0ca04bd9795a",
 			"key": "url",
 			"value": "",
 			"type": "string"
