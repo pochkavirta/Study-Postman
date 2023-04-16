@@ -1972,6 +1972,57 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Jira: достаем поля",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d5d72d7a-a64a-4c4b-9bde-fdd5d99ecb91",
+										"exec": [
+											"pm.test(\"Статус: Created\", function () {\r",
+											"    pm.response.to.have.status(\"Created\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Content-Type: есть\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Ответ Content-Type: application/json;charset=UTF-8\", () => {\r",
+											"  pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json;charset=UTF-8');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "f7484bfc-d3e3-4b1d-9d75-216ffc46d993",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"password": "ATATT3xFfGF0V14aGvtOT5vTnbN9NJFQqPvbOcxGpKUDZc2zIkES8vmYhkrVghNpDgSjNmKzbfvOPM8xciApP0b42_z2dqYruAqBo1SYZ9UJIUJ4K6gXcg255LpXw0VbZqPGIrEMJpbe4s2HOBoeYk6ZlhqqgBzetDoAvdAktgaTNzGGYzw_wuk=A2B237C1",
+										"username": "pochkavirta@gmail.com"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"body\": {\r\n    \"content\": [\r\n      {\r\n        \"content\": [\r\n          {\r\n            \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.\",\r\n            \"type\": \"text\"\r\n          }\r\n        ],\r\n        \"type\": \"paragraph\"\r\n      }\r\n    ],\r\n    \"type\": \"doc\",\r\n    \"version\": 1\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://pochkavirta.atlassian.net/rest/api/3/issue/POCH-2/comment"
+							},
+							"response": []
 						}
 					],
 					"id": "627ce5b0-b45a-4bb3-a83a-5a2b17263123"
@@ -2059,7 +2110,7 @@
 	],
 	"variable": [
 		{
-			"id": "77fa13fb-5d63-4ee4-9508-7b66073d3336",
+			"id": "ea4be338-c316-4a12-8d2b-a9fe0fe48b76",
 			"key": "url",
 			"value": "",
 			"type": "string"
