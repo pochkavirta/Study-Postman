@@ -1337,7 +1337,9 @@
 									"script": {
 										"id": "d5d72d7a-a64a-4c4b-9bde-fdd5d99ecb91",
 										"exec": [
-											""
+											"pm.test(\"Статус Created\", function () {\r",
+											"    pm.response.to.have.status(\"Created\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1773,7 +1775,7 @@
 	],
 	"variable": [
 		{
-			"id": "17af0133-d19a-47b7-bc46-dc9014bba7d5",
+			"id": "a71dd78d-6514-4234-86ed-256299c7a2ad",
 			"key": "url",
 			"value": "",
 			"type": "string"
