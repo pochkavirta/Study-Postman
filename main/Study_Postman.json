@@ -1592,6 +1592,24 @@
 						},
 						{
 							"name": "Подсказки: JSON в ответе",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"anna = jsonData;\r",
+											"\r",
+											"pm.test(\"Your test name\", function () {\r",
+											"    pm.expect(jsonData.value).to.eql(100);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "3a7fcaa6-e017-429d-ac1f-697212966784",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1608,7 +1626,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"query\": \"Виктор Иван\",\r\n    \"count\": 7\r\n}",
+									"raw": "{\r\n    \"query\": \"Ан\",\r\n    \"gender\": \"FEMALE\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1705,7 +1723,7 @@
 	],
 	"variable": [
 		{
-			"id": "c10853b5-a4e1-4bf9-ac6b-a45099f3a1f0",
+			"id": "d9f3288f-e8f9-44a9-952a-428732d07f24",
 			"key": "url",
 			"value": "",
 			"type": "string"
