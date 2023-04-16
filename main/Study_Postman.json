@@ -1929,7 +1929,25 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "https://reqres.in/api/users?page=2",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -2019,7 +2037,7 @@
 	],
 	"variable": [
 		{
-			"id": "3d46a4c1-1c35-4404-b414-e670dab3e483",
+			"id": "58a0b6a7-ecda-439c-8ab2-18c8535dd4d7",
 			"key": "url",
 			"value": "",
 			"type": "string"
