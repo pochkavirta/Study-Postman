@@ -1983,8 +1983,20 @@
 										"exec": [
 											"var jsonData = pm.response.json();\r",
 											"\r",
-											"total = jsonData.total;\r",
-											"console.log(total);"
+											"test1 = jsonData.fields.project.name;\r",
+											"console.log(test1);\r",
+											"\r",
+											"test = jsonData.id;\r",
+											"console.log(test);\r",
+											"\r",
+											"test2 = jsonData.key;\r",
+											"console.log(test2);\r",
+											"\r",
+											"test3 = jsonData.fields.creator.emailAddress;\r",
+											"console.log(test3);\r",
+											"\r",
+											"test4 = jsonData.fields.creator.displayName;\r",
+											"console.log(test4);"
 										],
 										"type": "text/javascript"
 									}
@@ -2103,7 +2115,7 @@
 	],
 	"variable": [
 		{
-			"id": "988e9e80-fc9f-4b5a-86e8-5054bec165c5",
+			"id": "5b36ca38-ee65-4d28-bd24-d8963c002bea",
 			"key": "url",
 			"value": "",
 			"type": "string"
