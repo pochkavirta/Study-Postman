@@ -1745,6 +1745,62 @@
 							"response": []
 						},
 						{
+							"name": "Подсказки: XML в ответе Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"anna = jsonData.suggestions[0].value;\r",
+											"console.log(anna);\r",
+											"\r",
+											"anna_gender = jsonData.suggestions[0].data.gender;\r",
+											"anna_gender_1 = jsonData[\"suggestions\"][0][\"data\"][\"gender\"];\r",
+											"anna_gender_2 = jsonData['suggestions'][0]['data']['gender'];\r",
+											"\r",
+											"console.log(anna_gender);\r",
+											"console.log(anna_gender_1);\r",
+											"console.log(anna_gender_2);\r",
+											"\r",
+											"pm.test(\"Анна первая, пыщ-пыщ!\", function () {\r",
+											"    pm.expect(anna).to.eql(\"Анна\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "5ef429b2-b974-4188-b474-90a9ca77faa1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": {
+										"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
+										"key": "Authorization"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\": \"Ан\",\r\n    \"gender\": \"FEMALE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+							},
+							"response": []
+						},
+						{
 							"name": "Подсказки: найди Малахова!",
 							"event": [
 								{
@@ -1878,7 +1934,7 @@
 	],
 	"variable": [
 		{
-			"id": "d8976986-abd4-4c75-9898-5dccde9ad40b",
+			"id": "e6c1a962-65e1-4eed-8f4e-cd34ecb0f940",
 			"key": "url",
 			"value": "",
 			"type": "string"
