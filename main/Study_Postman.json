@@ -1336,8 +1336,9 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": "https://your-domain.atlassian.net/rest/api/3/issue/{issueIdOrKey}/comment"
 							},
 							"response": []
 						}
@@ -1744,7 +1745,7 @@
 	],
 	"variable": [
 		{
-			"id": "2dbd05eb-685c-454a-9b1e-1966bf4651e0",
+			"id": "5ac462b0-4512-44b1-8187-9a2389426d31",
 			"key": "url",
 			"value": "",
 			"type": "string"
