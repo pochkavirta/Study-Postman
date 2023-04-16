@@ -1353,8 +1353,8 @@
 								"auth": {
 									"type": "basic",
 									"basic": {
-										"username": "pochkavirta@gmail.com",
-										"password": "ATATT3xFfGF04Ngw4rwUXG8QgBanGEeTMvHhrMwLLpDNsCPSgyd0JHhTnmta2rduozl6XxP0RigDf06zWYVW6rx-K4QHDDGSd_rsMyvAfEpiUUSTBwfJF5wPIyMYBGvZMkj4heRQNzBZ9QT4HaJa5x7bnBcIVMmOZLPSQVl5gvBnX3Qr3y7eCLw=9E6F8BA3"
+										"password": "ATATT3xFfGF0CC6mHpw2pral42EqjpAzcmeRhOW9NV8v_SmwCNUfWFbDtksvZBNpZJsHUOEYpB0fhPGBX757BFWZih5XbN_QHaVXT5d4ZdhHTatSThCsCsiJ6eAOHRJaP_kSw_14HRGzJhzoJSWok-1cwBFj4zFP4BdE5JwUaO85mPzq8UymZl4=67AFF113",
+										"username": "pochkavirta@gmail.com"
 									}
 								},
 								"method": "POST",
@@ -1775,7 +1775,7 @@
 	],
 	"variable": [
 		{
-			"id": "a71dd78d-6514-4234-86ed-256299c7a2ad",
+			"id": "3bd6a313-e217-41ee-bb5c-5dd9486b4f32",
 			"key": "url",
 			"value": "",
 			"type": "string"
