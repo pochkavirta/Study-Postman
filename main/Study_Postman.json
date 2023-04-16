@@ -1983,20 +1983,18 @@
 										"exec": [
 											"var jsonData = pm.response.json();\r",
 											"\r",
-											"test1 = jsonData.fields.project.name;\r",
-											"console.log(test1);\r",
-											"\r",
-											"test = jsonData.id;\r",
-											"console.log(test);\r",
-											"\r",
-											"test2 = jsonData.key;\r",
-											"console.log(test2);\r",
-											"\r",
-											"test3 = jsonData.fields.creator.emailAddress;\r",
-											"console.log(test3);\r",
-											"\r",
-											"test4 = jsonData.fields.creator.displayName;\r",
-											"console.log(test4);"
+											"projectIssue = jsonData.fields.project.name;\r",
+											"console.log(projectIssue);\r",
+											"urlIssue = jsonData.self;\r",
+											"console.log(urlIssue);\r",
+											"numberIssue = jsonData.id;\r",
+											"console.log(numberIssue);\r",
+											"keyIssue = jsonData.key;\r",
+											"console.log(keyIssue);\r",
+											"nameAuthorIssue = jsonData.fields.creator.displayName;\r",
+											"console.log(nameAuthorIssue);\r",
+											"emailAuthorIssue = jsonData.fields.creator.emailAddress;\r",
+											"console.log(emailAuthorIssue);"
 										],
 										"type": "text/javascript"
 									}
@@ -2010,7 +2008,7 @@
 								"auth": {
 									"type": "basic",
 									"basic": {
-										"password": "ATATT3xFfGF0cwdDsqbk6kvwzFwjZ_fIu34m_DdKLx4Bq8bvzNvlmxoETdSFvynNJK2w0E0CB3IV1IbdEnutvqkUeRo5enQYKbAL0w9a4jB1jWHCWJMStoyLtC8zuy505IGJSWr3TWgur0GITW9r3mPg7qc6tqJzIyVQL4tIH5d60USqfft883I=5BBA029A",
+										"password": "ATATT3xFfGF0B5iJ8LWXtRHbuz6kBlnRR98wo78IGHIfgf6YmAerLtxesiP2tTqzDe74ljqDMuHnQRBjBxmbhUMPVdpU99cD4i_mWzqACvziyShxgPhiaQXLmZ0w7cNTiXwLzNGajE9Y7GtiYSh8EzL0lH1mvZai4wLG9TqlWKVHH33JuBUxJz0=7D80DEB9",
 										"username": "pochkavirta@gmail.com"
 									}
 								},
@@ -2115,7 +2113,7 @@
 	],
 	"variable": [
 		{
-			"id": "5b36ca38-ee65-4d28-bd24-d8963c002bea",
+			"id": "89566c23-1af7-4ce2-8fa1-251cb29fd738",
 			"key": "url",
 			"value": "",
 			"type": "string"
