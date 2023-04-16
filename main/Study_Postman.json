@@ -1985,14 +1985,19 @@
 											"\r",
 											"projectIssue = jsonData.fields.project.name;\r",
 											"console.log(projectIssue);\r",
+											"\r",
 											"urlIssue = jsonData.self;\r",
 											"console.log(urlIssue);\r",
+											"\r",
 											"numberIssue = jsonData.id;\r",
 											"console.log(numberIssue);\r",
+											"\r",
 											"keyIssue = jsonData.key;\r",
 											"console.log(keyIssue);\r",
+											"\r",
 											"nameAuthorIssue = jsonData.fields.creator.displayName;\r",
 											"console.log(nameAuthorIssue);\r",
+											"\r",
 											"emailAuthorIssue = jsonData.fields.creator.emailAddress;\r",
 											"console.log(emailAuthorIssue);"
 										],
@@ -2113,7 +2118,7 @@
 	],
 	"variable": [
 		{
-			"id": "89566c23-1af7-4ce2-8fa1-251cb29fd738",
+			"id": "cc4dc5a7-9e0a-4f26-a4fb-c7945aa625e9",
 			"key": "url",
 			"value": "",
 			"type": "string"
