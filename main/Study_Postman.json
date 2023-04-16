@@ -1388,7 +1388,13 @@
 									"script": {
 										"id": "d5d72d7a-a64a-4c4b-9bde-fdd5d99ecb91",
 										"exec": [
-											""
+											"pm.test(\"Статус 231\", function () {\r",
+											"    pm.response.to.have.status(231);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Статус ОК\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1410,7 +1416,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "",
+									"raw": "{\r\n\"query\":\"Лунатиков\",\r\n\"partyType\":\"USER\",\r\n\"fullSimilarity\":\"False\",\r\n\"taskStatus\":\"ALL\",\r\n\"include\":\"ALL\",\r\n\"maxCount\":\"30\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1824,7 +1830,7 @@
 	],
 	"variable": [
 		{
-			"id": "346eca8a-6cbf-421a-8b6c-df01f868b30b",
+			"id": "561e5e5c-3bff-4ede-ba2e-73c7dff5fc3b",
 			"key": "url",
 			"value": "",
 			"type": "string"
