@@ -1343,7 +1343,13 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											""
+											"pm.test(\"Your test name\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    console.log(pm.response);\r",
+											"    console.log(jsonData);\r",
+											"    console.log(pm.response.json());\r",
+											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1476,7 +1482,7 @@
 	],
 	"variable": [
 		{
-			"id": "5f1131b3-139c-46c1-9bf5-c349f4a8eb29",
+			"id": "c76e7b1a-fd69-469c-9913-9b46ac708c62",
 			"key": "url",
 			"value": "",
 			"type": "string"
