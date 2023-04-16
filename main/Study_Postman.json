@@ -1591,7 +1591,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Подсказки: JSON в ответе",
 							"id": "3a7fcaa6-e017-429d-ac1f-697212966784",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1705,7 +1705,7 @@
 	],
 	"variable": [
 		{
-			"id": "c7470481-2c57-47f0-b5e0-7ebc8715f424",
+			"id": "c10853b5-a4e1-4bf9-ac6b-a45099f3a1f0",
 			"key": "url",
 			"value": "",
 			"type": "string"
