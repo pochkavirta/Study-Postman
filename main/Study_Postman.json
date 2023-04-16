@@ -1762,10 +1762,12 @@
 											"anna_gender = jsonData.SuggestResponse.suggestions[0].data.gender;\r",
 											"anna_gender_1 = jsonData[\"SuggestResponse\"][\"suggestions\"][0][\"data\"][\"gender\"];\r",
 											"anna_gender_2 = jsonData['SuggestResponse']['suggestions'][0]['data']['gender'];\r",
+											"anna_gender_3 = jsonData['SuggestResponse'].suggestions[0][\"data\"]['gender'];\r",
 											"\r",
 											"console.log(anna_gender);\r",
 											"console.log(anna_gender_1);\r",
 											"console.log(anna_gender_2);\r",
+											"console.log(anna_gender_3);\r",
 											"\r",
 											"pm.test(\"Анна первая, пыщ-пыщ!\", function () {\r",
 											"    pm.expect(anna).to.eql(\"Анна\");\r",
@@ -1945,7 +1947,7 @@
 	],
 	"variable": [
 		{
-			"id": "83f8bc81-389f-4fa4-a85d-d87abf10f5dc",
+			"id": "57e9e6ed-8892-4d03-816e-c70466b4c5aa",
 			"key": "url",
 			"value": "",
 			"type": "string"
