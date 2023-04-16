@@ -1640,57 +1640,6 @@
 							"response": []
 						},
 						{
-							"name": "getuserfull",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "8e654fec-3dcb-41f6-a569-0a4a06e054ce",
-										"exec": [
-											"var jsonData = pm.response.json();\r",
-											"\r",
-											"console.log(jsonData);\r",
-											"\r",
-											"console.log(jsonData.email);\r",
-											"console.log(jsonData[\"name\"]);\r",
-											"console.log(jsonData['password']);"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "2b4eee27-ce46-4798-b23f-e5af5cac3e96",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "email",
-											"value": "test_demo_1@gmail.com",
-											"type": "text"
-										},
-										{
-											"key": "name",
-											"value": "Демо 1",
-											"type": "text"
-										},
-										{
-											"key": "password",
-											"value": "1",
-											"type": "text"
-										}
-									]
-								},
-								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
-							},
-							"response": []
-						},
-						{
 							"name": "Подсказки: JSON в ответе",
 							"event": [
 								{
@@ -1744,6 +1693,57 @@
 									}
 								},
 								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+							},
+							"response": []
+						},
+						{
+							"name": "getuserfull",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8e654fec-3dcb-41f6-a569-0a4a06e054ce",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"console.log(jsonData);\r",
+											"\r",
+											"console.log(jsonData.email);\r",
+											"console.log(jsonData[\"name\"]);\r",
+											"console.log(jsonData['password']);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "2b4eee27-ce46-4798-b23f-e5af5cac3e96",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
 						},
@@ -1812,6 +1812,69 @@
 									}
 								},
 								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+							},
+							"response": []
+						},
+						{
+							"name": "Object.keys doRegister",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"pm.test(\"Проверка ошибки\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"\r",
+											"    console.log(pm.response);\r",
+											"    console.log(jsonData);\r",
+											"    console.log(pm.response.json());\r",
+											"    \r",
+											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "65aa5cbe-72d3-4380-827b-8336c3136bda",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/doregister"
 							},
 							"response": []
 						},
@@ -1949,7 +2012,7 @@
 	],
 	"variable": [
 		{
-			"id": "a742b6a7-8b8a-4338-a479-9de97b554930",
+			"id": "8e385f84-ba5f-47f6-aecb-333aefa2133c",
 			"key": "url",
 			"value": "",
 			"type": "string"
