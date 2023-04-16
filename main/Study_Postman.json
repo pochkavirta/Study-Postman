@@ -1404,10 +1404,23 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											"pm.test(\"Your test name\", function () {\r",
+											"pm.test(\"var\", function () {\r",
 											"    var jsonData = pm.response.json();\r",
+											"    console.log(jsonData);\r",
 											"    pm.expect(jsonData.value).to.eql(100);\r",
-											"});"
+											"});\r",
+											"\r",
+											"pm.test(\"let\", function () {\r",
+											"    let jsonData = pm.response.json();\r",
+											"    pm.expect(jsonData.value).to.eql(100);\r",
+											"    console.log(jsonData);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Your test name\", function () {\r",
+											"    jsonData = pm.response.json();\r",
+											"    pm.expect(jsonData.value).to.eql(100);\r",
+											"});\r",
+											"console.log(jsonData);"
 										],
 										"type": "text/javascript"
 									}
@@ -1540,7 +1553,7 @@
 	],
 	"variable": [
 		{
-			"id": "f60a3010-67cc-4392-b077-9910d6de02a2",
+			"id": "8f08d17d-444c-4f60-86b2-ba7b39c4c43d",
 			"key": "url",
 			"value": "",
 			"type": "string"
