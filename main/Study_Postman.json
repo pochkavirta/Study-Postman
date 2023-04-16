@@ -1823,14 +1823,12 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											"pm.test(\"Проверка ошибки\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
+											"var jsonData = pm.response.json();\r",
 											"\r",
-											"    console.log(pm.response);\r",
-											"    console.log(jsonData);\r",
-											"    console.log(pm.response.json());\r",
-											"    \r",
-											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
+											"console.log(jsonData);\r",
+											"\r",
+											"pm.test(\"Проверка ошибки\", function () {    \r",
+											"    pm.expect(pm.response.json().type).to.eql(\"error\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -2012,7 +2010,7 @@
 	],
 	"variable": [
 		{
-			"id": "6cf7029a-2abc-42d9-a32e-0c09a9bf02fe",
+			"id": "95e213ad-0d02-4e0c-8694-0cb980b8a0df",
 			"key": "url",
 			"value": "",
 			"type": "string"
