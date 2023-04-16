@@ -1753,14 +1753,15 @@
 									"script": {
 										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
 										"exec": [
-											"var jsonData = pm.response.json();\r",
+											"var jsonData = xml2Json(responseBody);\r",
+											"console.log(jsonData);\r",
 											"\r",
-											"anna = jsonData.suggestions[0].value;\r",
+											"anna = jsonData.SuggestResponse.suggestions[0].value;\r",
 											"console.log(anna);\r",
 											"\r",
-											"anna_gender = jsonData.suggestions[0].data.gender;\r",
-											"anna_gender_1 = jsonData[\"suggestions\"][0][\"data\"][\"gender\"];\r",
-											"anna_gender_2 = jsonData['suggestions'][0]['data']['gender'];\r",
+											"anna_gender = jsonData.SuggestResponse.suggestions[0].data.gender;\r",
+											"anna_gender_1 = jsonData[\"SuggestResponse\"][\"suggestions\"][0][\"data\"][\"gender\"];\r",
+											"anna_gender_2 = jsonData['SuggestResponse']['suggestions'][0]['data']['gender'];\r",
 											"\r",
 											"console.log(anna_gender);\r",
 											"console.log(anna_gender_1);\r",
@@ -1776,7 +1777,10 @@
 							],
 							"id": "5ef429b2-b974-4188-b474-90a9ca77faa1",
 							"protocolProfileBehavior": {
-								"disableBodyPruning": true
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
 							},
 							"request": {
 								"auth": {
@@ -1787,7 +1791,13 @@
 									}
 								},
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\r\n    \"query\": \"Ан\",\r\n    \"gender\": \"FEMALE\"\r\n}",
@@ -1935,7 +1945,7 @@
 	],
 	"variable": [
 		{
-			"id": "ce1d2651-2083-4245-93a4-772acd48aeab",
+			"id": "83f8bc81-389f-4fa4-a85d-d87abf10f5dc",
 			"key": "url",
 			"value": "",
 			"type": "string"
