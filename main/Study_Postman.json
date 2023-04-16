@@ -1754,19 +1754,11 @@
 										"exec": [
 											"var jsonData = pm.response.json();\r",
 											"\r",
-											"anna = jsonData.suggestions[0].value;\r",
-											"console.log(anna);\r",
+											"malahov = jsonData.suggestions[2].data.surname;\r",
+											"console.log(malahov);\r",
 											"\r",
-											"anna_gender = jsonData.suggestions[0].data.gender;\r",
-											"anna_gender_1 = jsonData[\"suggestions\"][0][\"data\"][\"gender\"];\r",
-											"anna_gender_2 = jsonData['suggestions'][0]['data']['gender'];\r",
-											"\r",
-											"console.log(anna_gender);\r",
-											"console.log(anna_gender_1);\r",
-											"console.log(anna_gender_2);\r",
-											"\r",
-											"pm.test(\"Анна первая, пыщ-пыщ!\", function () {\r",
-											"    pm.expect(anna).to.eql(\"Анна\");\r",
+											"pm.test(\"Малахов фамилия\", function () {\r",
+											"    pm.expect(malahov).to.eql(\"Малахов\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1789,7 +1781,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"query\": \"Ан\",\r\n    \"gender\": \"FEMALE\"\r\n}",
+									"raw": "{\r\n\"query\": \"Андрей Мал\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1886,7 +1878,7 @@
 	],
 	"variable": [
 		{
-			"id": "26ae9861-cb1d-4307-9e77-088cbac5521a",
+			"id": "d8976986-abd4-4c75-9898-5dccde9ad40b",
 			"key": "url",
 			"value": "",
 			"type": "string"
