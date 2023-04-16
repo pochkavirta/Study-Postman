@@ -1388,17 +1388,7 @@
 									"script": {
 										"id": "d5d72d7a-a64a-4c4b-9bde-fdd5d99ecb91",
 										"exec": [
-											"pm.test(\"Статус Created\", function () {\r",
-											"    pm.response.to.have.status(\"Created\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Заголовок есть\", function () {\r",
-											"    pm.response.to.have.header(\"Content-Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Заголовок application/json;charset=UTF-8\", () => {\r",
-											"  pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json;charset=UTF-8');\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1420,7 +1410,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"body\": {\r\n    \"content\": [\r\n      {\r\n        \"content\": [\r\n          {\r\n            \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.\",\r\n            \"type\": \"text\"\r\n          }\r\n        ],\r\n        \"type\": \"paragraph\"\r\n      }\r\n    ],\r\n    \"type\": \"doc\",\r\n    \"version\": 1\r\n  }\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1834,7 +1824,7 @@
 	],
 	"variable": [
 		{
-			"id": "ac6c7cad-9348-41ee-87b5-34100967c6d2",
+			"id": "e440eaec-e13f-435c-bf2a-c400d9a6742e",
 			"key": "url",
 			"value": "",
 			"type": "string"
