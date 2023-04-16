@@ -1331,14 +1331,42 @@
 						},
 						{
 							"name": "JIRA: тестируем статус код после создания комментария",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d5d72d7a-a64a-4c4b-9bde-fdd5d99ecb91",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "a84d7d67-bb0c-4919-8c55-cf85f7693729",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"username": "pochkavirta@gmail.com",
+										"password": "ATATT3xFfGF04Ngw4rwUXG8QgBanGEeTMvHhrMwLLpDNsCPSgyd0JHhTnmta2rduozl6XxP0RigDf06zWYVW6rx-K4QHDDGSd_rsMyvAfEpiUUSTBwfJF5wPIyMYBGvZMkj4heRQNzBZ9QT4HaJa5x7bnBcIVMmOZLPSQVl5gvBnX3Qr3y7eCLw=9E6F8BA3"
+									}
+								},
 								"method": "POST",
 								"header": [],
-								"url": "https://your-domain.atlassian.net/rest/api/3/issue/{issueIdOrKey}/comment"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"body\": {\r\n    \"content\": [\r\n      {\r\n        \"content\": [\r\n          {\r\n            \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.\",\r\n            \"type\": \"text\"\r\n          }\r\n        ],\r\n        \"type\": \"paragraph\"\r\n      }\r\n    ],\r\n    \"type\": \"doc\",\r\n    \"version\": 1\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://pochkavirta.atlassian.net/rest/api/3/issue/POCH-2/comment"
 							},
 							"response": []
 						}
@@ -1745,7 +1773,7 @@
 	],
 	"variable": [
 		{
-			"id": "5ac462b0-4512-44b1-8187-9a2389426d31",
+			"id": "17af0133-d19a-47b7-bc46-dc9014bba7d5",
 			"key": "url",
 			"value": "",
 			"type": "string"
