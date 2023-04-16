@@ -1379,6 +1379,57 @@
 								"url": "https://pochkavirta.atlassian.net/rest/api/3/issue/POCH-2/comment"
 							},
 							"response": []
+						},
+						{
+							"name": "MagicSearch: проверяем наличие генерального в базе",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d5d72d7a-a64a-4c4b-9bde-fdd5d99ecb91",
+										"exec": [
+											"pm.test(\"Статус Created\", function () {\r",
+											"    pm.response.to.have.status(\"Created\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Заголовок есть\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Заголовок application/json;charset=UTF-8\", () => {\r",
+											"  pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json;charset=UTF-8');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "2fd7c4cc-caaa-424b-9178-280d284830c4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"password": "ATATT3xFfGF06b6VvUUnvah4qpvtnYkwZ6TG5Klkwy47w56f0_QKXfUUIKsYEKyuaK1f8ZgSrKxsiUUWBitTHqSmUncHBPHrdBvt1U8CQA8GHTWRWPtMcjvx1OMjkYwLWc5W3Q_kqKjnBVtNU-3x4rYUBI7Up_FTHTgEhMLpsZIZrQ9Hg5sHbsI=BCA0BEB1",
+										"username": "pochkavirta@gmail.com"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"body\": {\r\n    \"content\": [\r\n      {\r\n        \"content\": [\r\n          {\r\n            \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper.\",\r\n            \"type\": \"text\"\r\n          }\r\n        ],\r\n        \"type\": \"paragraph\"\r\n      }\r\n    ],\r\n    \"type\": \"doc\",\r\n    \"version\": 1\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://pochkavirta.atlassian.net/rest/api/3/issue/POCH-2/comment"
+							},
+							"response": []
 						}
 					],
 					"id": "5a126cdb-366b-4d32-84b2-8c6667fe70a7"
@@ -1783,7 +1834,7 @@
 	],
 	"variable": [
 		{
-			"id": "512ef3d5-d61f-45c0-a067-f22f6e1cb2e4",
+			"id": "b4c4a033-bdbb-479a-9598-a59a4d69b1da",
 			"key": "url",
 			"value": "",
 			"type": "string"
