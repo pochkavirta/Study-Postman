@@ -1404,23 +1404,30 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
+											"const jsonData1 = pm.response.json();\r",
+											"\r",
+											"pm.test(\"const\", function () {\r",
+											"    console.log(jsonData1);\r",
+											"    pm.expect(jsonData1.type).to.eql(\"error\");\r",
+											"});\r",
+											"\r",
 											"pm.test(\"var\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    console.log(jsonData);\r",
-											"    pm.expect(jsonData.value).to.eql(100);\r",
+											"    var jsonData2 = pm.response.json();\r",
+											"    console.log(jsonData2);\r",
+											"    pm.expect(jsonData2.type).to.eql(\"error\");\r",
 											"});\r",
 											"\r",
 											"pm.test(\"let\", function () {\r",
-											"    let jsonData = pm.response.json();\r",
-											"    pm.expect(jsonData.value).to.eql(100);\r",
-											"    console.log(jsonData);\r",
+											"    let jsonData3 = pm.response.json();\r",
+											"    pm.expect(jsonData3.type).to.eql(\"error\");\r",
+											"    console.log(jsonData3);\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Your test name\", function () {\r",
-											"    jsonData = pm.response.json();\r",
-											"    pm.expect(jsonData.value).to.eql(100);\r",
+											"pm.test(\"noName\", function () {\r",
+											"    jsonData4 = pm.response.json();\r",
+											"    pm.expect(jsonData4.type).to.eql(\"error\");\r",
 											"});\r",
-											"console.log(jsonData);"
+											"console.log(jsonData4);"
 										],
 										"type": "text/javascript"
 									}
@@ -1553,7 +1560,7 @@
 	],
 	"variable": [
 		{
-			"id": "8f08d17d-444c-4f60-86b2-ba7b39c4c43d",
+			"id": "37f1b2b9-18f1-4aa9-93fd-94d86ade73bd",
 			"key": "url",
 			"value": "",
 			"type": "string"
