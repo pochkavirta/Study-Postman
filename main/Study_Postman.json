@@ -1589,6 +1589,18 @@
 								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "3a7fcaa6-e017-429d-ac1f-697212966784",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "627ce5b0-b45a-4bb3-a83a-5a2b17263123"
@@ -1676,7 +1688,7 @@
 	],
 	"variable": [
 		{
-			"id": "086d7055-c6c9-49c2-975c-4945565f1ec6",
+			"id": "faaba112-c46f-4ff1-9449-eadda3215101",
 			"key": "url",
 			"value": "",
 			"type": "string"
