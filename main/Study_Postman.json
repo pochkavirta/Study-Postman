@@ -1330,7 +1330,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "JIRA: тестируем статус код после создания комментария",
 							"id": "a84d7d67-bb0c-4919-8c55-cf85f7693729",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1744,7 +1744,7 @@
 	],
 	"variable": [
 		{
-			"id": "a236179c-d536-4f57-b1b0-fb63d19095a4",
+			"id": "2dbd05eb-685c-454a-9b1e-1966bf4651e0",
 			"key": "url",
 			"value": "",
 			"type": "string"
