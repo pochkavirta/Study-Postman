@@ -1482,7 +1482,10 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											""
+											"pm.test(\"Your test name\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    pm.expect(jsonData.value).to.eql(100);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1615,7 +1618,7 @@
 	],
 	"variable": [
 		{
-			"id": "25181016-16c5-4043-a322-23b5ef015501",
+			"id": "d618daee-7864-4b8a-9949-25f761a25a77",
 			"key": "url",
 			"value": "",
 			"type": "string"
