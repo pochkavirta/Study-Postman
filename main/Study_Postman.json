@@ -1603,6 +1603,14 @@
 											"anna = jsonData.suggestions[0].value;\r",
 											"console.log(anna);\r",
 											"\r",
+											"anna_gender = jsonData.suggestions[0].data.gender;\r",
+											"anna_gender_1 = jsonData[\"suggestions\"][0][\"data\"][\"gender\"];\r",
+											"anna_gender_2 = jsonData['suggestions'][0]['data']['gender'];\r",
+											"\r",
+											"console.log(anna_gender);\r",
+											"console.log(anna_gender_1);\r",
+											"console.log(anna_gender_2);\r",
+											"\r",
 											"pm.test(\"Анна первая, пыщ-пыщ!\", function () {\r",
 											"    pm.expect(anna).to.eql(\"Анна\");\r",
 											"});"
@@ -1724,7 +1732,7 @@
 	],
 	"variable": [
 		{
-			"id": "69c60726-640f-4917-a09f-e5f6779b0de2",
+			"id": "bc307160-9e1f-4876-8b2a-abf592c33a84",
 			"key": "url",
 			"value": "",
 			"type": "string"
