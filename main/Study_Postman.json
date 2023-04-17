@@ -3264,6 +3264,12 @@
 											"                \"source\": null,\r",
 											"                \"qc\": \"0\"\r",
 											"            });\r",
+											"});\r",
+											"\r",
+											"// keys\r",
+											"\r",
+											"pm.test(\"keys для массива\", function () {\r",
+											"    pm.expect(jsonData.suggestions).to.have.all.keys(0, 1, 2, 3, 4);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -3508,7 +3514,7 @@
 	],
 	"variable": [
 		{
-			"id": "9b28a2a4-08ee-43e1-a700-ff1837a1f42b",
+			"id": "0687c20d-4586-44ee-8fdb-c5dd8e054220",
 			"key": "url",
 			"value": "",
 			"type": "string"
