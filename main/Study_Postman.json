@@ -2989,6 +2989,20 @@
 											"                \"source\": null,\r",
 											"                \"qc\": \"0\"\r",
 											"            });\r",
+											"});\r",
+											"\r",
+											"// .nested\r",
+											"\r",
+											"pm.test(\"nested.include\", function () {\r",
+											"    pm.expect(jsonData).to.nested.include({'suggestions[0].data.gender': 'FEMALE'});\r",
+											"});\r",
+											"\r",
+											"pm.test(\"простой include\", function () {\r",
+											"    pm.expect(jsonData.suggestions[0].data.gender).to.nested.include('FEM');\r",
+											"});\r",
+											"\r",
+											"pm.test(\"deep.nested.include\", function () {\r",
+											"    pm.expect(jsonData).to.deep.nested.include({'suggestions[0].data.gender': 'FEMALE'});\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -3241,7 +3255,7 @@
 	],
 	"variable": [
 		{
-			"id": "0386edfd-7f5d-4db5-8328-6e33da6b6b63",
+			"id": "3cbdca2d-7b5e-45d6-be45-f54b3a7d00b2",
 			"key": "url",
 			"value": "",
 			"type": "string"
