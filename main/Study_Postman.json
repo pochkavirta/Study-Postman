@@ -2123,53 +2123,7 @@
 								"header": [],
 								"url": "http://httpbin.org/deny"
 							},
-							"response": [
-								{
-									"id": "929b7f40-af55-4490-a542-07f2931169b4",
-									"name": "Text рисунок",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "http://httpbin.org/deny"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "plain",
-									"header": [
-										{
-											"key": "Date",
-											"value": "Mon, 17 Apr 2023 08:17:55 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "text/plain"
-										},
-										{
-											"key": "Content-Length",
-											"value": "239"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Server",
-											"value": "gunicorn/19.9.0"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Access-Control-Allow-Credentials",
-											"value": "true"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "\n          .-''''''-.\n        .' _      _ '.\n       /   O      O   \\\n      :                :\n      |                |\n      :       __       :\n       \\  .-\"`  `\"-.  /\n        '.          .'\n          '-......-'\n     YOU SHOULDN'T BE HERE\n"
-								}
-							]
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -2257,7 +2211,7 @@
 	],
 	"variable": [
 		{
-			"id": "69a5bbb9-ffcb-47a7-bd3c-a9e542aa06a8",
+			"id": "7873463e-9420-46ba-9d41-846221a986a6",
 			"key": "url",
 			"value": "",
 			"type": "string"
