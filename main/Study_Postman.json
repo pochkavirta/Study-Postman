@@ -2200,9 +2200,20 @@
 											"});\r",
 											"\r",
 											"// Если не читать описание, а сразу пыщ пыщ, будем думать, что второй аргумент - это сама строка\r",
-											"\r",
 											"pm.test(\"Body - конкретная строка\", function () {\r",
-											"    pm.expect(pm.response.text()).to.be.a(\"string\", \"User-agent: *\\nDisallow: /deny\\n\");\r",
+											"    pm.expect(pm.response.text()).to.be.a(\"string\", \"СТРАШНОЕ СООБЩЕНИЕ ОБ ОШИБКЕ\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body - конкретная строка 2\", function () {\r",
+											"    pm.expect(pm.response.text()).to.be.a(\"object\", \"nooo why fail??\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body через to.be.true\", function () {\r",
+											"    pm.expect(pm.response.text() == \"User-agent: *\\nDisallow: /deny\\n\").to.be.true;\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body через to.have.lengthOf.above(20)\", function () {\r",
+											"    pm.expect(pm.response.text()).to.have.lengthOf.above(20);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -2306,7 +2317,7 @@
 	],
 	"variable": [
 		{
-			"id": "92ed2cfc-71a4-4a42-af73-f8a7ad486cc7",
+			"id": "d95224c6-ed8a-4030-b334-520af3fb19d5",
 			"key": "url",
 			"value": "",
 			"type": "string"
