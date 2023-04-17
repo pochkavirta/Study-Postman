@@ -2768,6 +2768,61 @@
 								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
+						},
+						{
+							"name": "JSON doRegister include",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "73a477be-2dc7-4165-9fb2-9c13033db4fe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/doregister"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -2826,6 +2881,61 @@
 						"url": "http://users.bugred.ru/tasks/rest/doregister"
 					},
 					"response": []
+				},
+				{
+					"name": "doRegister Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "33ea6bb0-f321-4eb6-a89e-d7238e481b90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test_demo_1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Демо 1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://users.bugred.ru/tasks/rest/doregister"
+					},
+					"response": []
 				}
 			],
 			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
@@ -2855,7 +2965,7 @@
 	],
 	"variable": [
 		{
-			"id": "42bca143-7ab6-4006-88b6-4cc9a50a8c15",
+			"id": "b82a4b0a-24f6-462d-9ea2-b0f1a8f3c521",
 			"key": "url",
 			"value": "",
 			"type": "string"
