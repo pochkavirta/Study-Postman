@@ -2176,7 +2176,7 @@
 							"response": []
 						},
 						{
-							"name": "Text рисунок Copy",
+							"name": "Text Chai.js",
 							"event": [
 								{
 									"listen": "test",
@@ -2299,7 +2299,7 @@
 	],
 	"variable": [
 		{
-			"id": "ad6b9fd8-0dd0-48d4-a00d-372f5aea026e",
+			"id": "50e96c94-700e-40ce-b5b4-7f6e6ca40246",
 			"key": "url",
 			"value": "",
 			"type": "string"
