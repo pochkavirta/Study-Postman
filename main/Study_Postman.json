@@ -2404,7 +2404,7 @@
 							"response": []
 						},
 						{
-							"name": "JSON doRegister snippets Copy",
+							"name": "JSON getuserfull snippets",
 							"event": [
 								{
 									"listen": "test",
@@ -2559,7 +2559,7 @@
 	],
 	"variable": [
 		{
-			"id": "acb4b686-6d27-491a-9b19-fa276b9ec47d",
+			"id": "4fed2c02-4d85-4e3a-9577-971502fb927f",
 			"key": "url",
 			"value": "",
 			"type": "string"
