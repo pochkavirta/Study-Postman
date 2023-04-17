@@ -2108,6 +2108,56 @@
 											"          '-......-'\\n\\\r",
 											"     YOU SHOULDN'T BE HERE\\n\\\r",
 											"\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"1 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\".-''''''-.\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"2 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\".' _      _ '.\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"3 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"/   O      O   \\\\\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"4 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\":                :\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"5 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"|                |\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"6 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\":       __       :\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"7 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"\\\\  .-\\\"`  `\\\"-.  /\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"8 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"'.          .'\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"9 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"'-......-'\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"10 cтрока\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"YOU SHOULDN'T BE HERE\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Первые 2 строки\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\".-''''''-.\").and.include(\".' _      _ '.\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"// получится только с большим пробелом после переноса строки, эти символы тоже учитываются\r",
+											"pm.test(\"Первые 2 строки (одной строкой)\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\".-''''''-.\\n        .' _      _ '.\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -2115,6 +2165,44 @@
 								}
 							],
 							"id": "2ae1e5ac-e637-481c-adde-8e7bdd41dbb3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://httpbin.org/deny"
+							},
+							"response": []
+						},
+						{
+							"name": "Text рисунок Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fa46d1d0-872d-4ab1-8d3a-4b557ceefd13",
+										"exec": [
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"\\n\\\r",
+											"          .-''''''-.\\n\\\r",
+											"        .' _      _ '.\\n\\\r",
+											"       /   O      O   \\\\\\n\\\r",
+											"      :                :\\n\\\r",
+											"      |                |\\n\\\r",
+											"      :       __       :\\n\\\r",
+											"       \\\\  .-\\\"`  `\\\"-.  /\\n\\\r",
+											"        '.          .'\\n\\\r",
+											"          '-......-'\\n\\\r",
+											"     YOU SHOULDN'T BE HERE\\n\\\r",
+											"\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "7c5ce7a1-8a8c-4f8c-97a1-b22e27448355",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2211,7 +2299,7 @@
 	],
 	"variable": [
 		{
-			"id": "7873463e-9420-46ba-9d41-846221a986a6",
+			"id": "ad6b9fd8-0dd0-48d4-a00d-372f5aea026e",
 			"key": "url",
 			"value": "",
 			"type": "string"
