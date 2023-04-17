@@ -2266,6 +2266,71 @@
 								"url": "http://httpbin.org/robots.txt"
 							},
 							"response": []
+						},
+						{
+							"name": "Text Chai.js Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fa46d1d0-872d-4ab1-8d3a-4b557ceefd13",
+										"exec": [
+											"const assert = require('assert');\r",
+											"\r",
+											"pm.test(\"Тест через assert.ok\", function () {\r",
+											"    assert.ok(pm.response.code === 200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert\", function () {\r",
+											"    assert(pm.response.code === 200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert.deepEqual\", function () {\r",
+											"    assert.deepEqual(pm.response.code, 200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert.deepStrictEqual\", function () {\r",
+											"    assert.deepStrictEqual(pm.response.code, 200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert.deepEqual приведение типов\", function () {\r",
+											"    assert.deepEqual(pm.response.code, \"200\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert.deepStrictEqual приведение типов\", function () {\r",
+											"    assert.deepStrictEqual(pm.response.code, \"200\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert.equal\", function () {\r",
+											"    assert.equal(pm.response.code, 200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert.strictEqual\", function () {\r",
+											"    assert.strictEqual(pm.response.code, 200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert.equal приведение типов\", function () {\r",
+											"    assert.equal(pm.response.code, \"200\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert.strictEqual приведение типов\", function () {\r",
+											"    assert.strictEqual(pm.response.code, \"200\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "25e682da-6beb-4285-b89b-0075de8666f2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://httpbin.org/robots.txt"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -2353,7 +2418,7 @@
 	],
 	"variable": [
 		{
-			"id": "c98641a0-f216-483f-8054-a59645a7b88c",
+			"id": "b9a610eb-a8be-4218-905a-cc204bf3e08c",
 			"key": "url",
 			"value": "",
 			"type": "string"
