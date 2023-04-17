@@ -2040,13 +2040,29 @@
 					"item": [
 						{
 							"name": "Text простой",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fa46d1d0-872d-4ab1-8d3a-4b557ceefd13",
+										"exec": [
+											"// SNIPPETS\r",
+											"pm.test(\"Body is correct\", function () {\r",
+											"    pm.response.to.have.body(\"response_body_string\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "02f93a36-d8b1-4066-957a-7c2154862624",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "http://httpbin.org/robots.txt"
 							},
 							"response": []
 						}
@@ -2136,7 +2152,7 @@
 	],
 	"variable": [
 		{
-			"id": "0800a580-675a-4bd1-a788-f7d34b7b8101",
+			"id": "bc61ebe7-77f5-4fcc-bc62-8bd634851dfd",
 			"key": "url",
 			"value": "",
 			"type": "string"
