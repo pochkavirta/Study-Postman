@@ -2355,6 +2355,12 @@
 											"    pm.expect(jsonData.message).to.eql(\" email test_demo_1@gmail.com уже есть в базе\");\r",
 											"});\r",
 											"\r",
+											"pm.test(\"Body is correct\", function () {\r",
+											"    pm.response.to.have.body({\r",
+											"    \"type\": \"error\",\r",
+											"    \"message\": \" email test_demo_1@gmail.com уже есть в базе\"});\r",
+											"});\r",
+											"\r",
 											"console.log(pm.response.json());\r",
 											"console.log(jsonData.message);"
 										],
@@ -2556,7 +2562,7 @@
 	],
 	"variable": [
 		{
-			"id": "75aa45fb-2e9c-4e2d-9ebf-7020f97870ee",
+			"id": "fe1c0f31-a779-4892-9f12-3f1dbf455c7b",
 			"key": "url",
 			"value": "",
 			"type": "string"
