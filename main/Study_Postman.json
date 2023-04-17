@@ -3132,6 +3132,10 @@
 											"    pm.expect(jsonData).to.have.property(\"message\");\r",
 											"});\r",
 											"\r",
+											"pm.test(\"have.property есть свойство message через a\", function () {\r",
+											"    pm.expect(jsonData).to.have.a.property(\"message\");\r",
+											"});\r",
+											"\r",
 											"pm.test(\"Проверяем все свойства в одном тесте\", function () {\r",
 											"    pm.expect(jsonData).to.have.property(\"message\");\r",
 											"    pm.expect(jsonData).to.have.property(\"type\");\r",
@@ -3498,7 +3502,7 @@
 	],
 	"variable": [
 		{
-			"id": "729ea6d9-92fe-4bc6-bb44-6bc89d77ac86",
+			"id": "955ecb0d-1bd0-4029-aca5-c608fa74a830",
 			"key": "url",
 			"value": "",
 			"type": "string"
