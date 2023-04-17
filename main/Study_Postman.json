@@ -2411,22 +2411,7 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											"var jsonData = pm.response.json();\r",
-											"\r",
-											"pm.test(\"Проверяем тип\", function () {\r",
-											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Проверяем сообщение об ошибке\", function () {\r",
-											"    pm.expect(jsonData.message).to.eql(\" email test_demo_1@gmail.com уже есть в базе\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Проверяем тип и ообщение об ошибке\", function () {\r",
-											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
-											"    pm.expect(jsonData.message).to.eql(\" email test_demo_1@gmail.com уже есть в базе\");\r",
-											"});\r",
-											"\r",
-											"console.log(pm.response.json());"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2450,26 +2435,15 @@
 								"method": "POST",
 								"header": [],
 								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "email",
-											"value": "test_demo_1@gmail.com",
-											"type": "text"
-										},
-										{
-											"key": "name",
-											"value": "Демо 1",
-											"type": "text"
-										},
-										{
-											"key": "password",
-											"value": "1",
-											"type": "text"
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
 										}
-									]
+									}
 								},
-								"url": "http://users.bugred.ru/tasks/rest/doregister"
+								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
 						}
@@ -2559,7 +2533,7 @@
 	],
 	"variable": [
 		{
-			"id": "4fed2c02-4d85-4e3a-9577-971502fb927f",
+			"id": "61b1359d-7132-4a2d-96c5-d67e8ec2fa7b",
 			"key": "url",
 			"value": "",
 			"type": "string"
