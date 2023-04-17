@@ -2888,6 +2888,54 @@
 								"url": "http://users.bugred.ru/tasks/rest/doregister"
 							},
 							"response": []
+						},
+						{
+							"name": "JSON подсказки include",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"malahov = jsonData.suggestions[2].data.surname;\r",
+											"console.log(malahov);\r",
+											"\r",
+											"pm.test(\"Малахов фамилия\", function () {\r",
+											"    pm.expect(malahov).to.eql(\"Малахов\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "08828ee5-746b-4ddf-8228-f2ad7409b552",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": {
+										"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
+										"key": "Authorization"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\": \"Андрей Мал\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -3030,7 +3078,7 @@
 	],
 	"variable": [
 		{
-			"id": "e8782b1d-4cd5-4eae-b6e9-08dddcd0d6fb",
+			"id": "54c48259-4d28-4c5d-9fd3-c49d524d95ad",
 			"key": "url",
 			"value": "",
 			"type": "string"
