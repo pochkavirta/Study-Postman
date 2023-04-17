@@ -2631,6 +2631,73 @@
 								"url": "http://users.bugred.ru/tasks/rest/doregister"
 							},
 							"response": []
+						},
+						{
+							"name": "JSON getuserfull equal",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"// Можно ли получить значение любого уровня вложенности?\r",
+											"pm.test(\"Проверяем id и name компании\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.eql(15);\r",
+											"    pm.expect(jsonData.companys[2].name).to.eql(\"Алкоголики и тунеядцы\");\r",
+											"});\r",
+											"\r",
+											"// Учимся различать строку и число\r",
+											"pm.test(\"Число = число\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.eql(15);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Число = строка\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.eql(\"15\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Строка = строка\", function () {\r",
+											"    pm.expect(jsonData.companys[2].name).to.eql(\"Алкоголики и тунеядцы\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Строка = число\", function () {\r",
+											"    pm.expect(jsonData.companys[2].name).to.eql(Алкоголики);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "b5257506-3f70-4a7e-b0d9-931e73673469",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -2718,7 +2785,7 @@
 	],
 	"variable": [
 		{
-			"id": "f4c9ff39-59e5-40f3-acd7-e2a8e5cb213d",
+			"id": "c4259e28-a44e-436b-81d4-ac103539b821",
 			"key": "url",
 			"value": "",
 			"type": "string"
