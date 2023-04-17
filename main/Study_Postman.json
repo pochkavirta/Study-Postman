@@ -2355,7 +2355,8 @@
 											"    pm.expect(jsonData.message).to.eql(\" email test_demo_1@gmail.com уже есть в базе\");\r",
 											"});\r",
 											"\r",
-											"console.log(pm.response.json());"
+											"console.log(pm.response.json());\r",
+											"console.log(jsonData.message);"
 										],
 										"type": "text/javascript"
 									}
@@ -2372,6 +2373,76 @@
 								}
 							],
 							"id": "1e9b8ae0-585e-462b-85f7-a5e9647588d2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/doregister"
+							},
+							"response": []
+						},
+						{
+							"name": "JSON doRegister snippets Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.test(\"Проверяем тип\", function () {\r",
+											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Проверяем сообщение об ошибке\", function () {\r",
+											"    pm.expect(jsonData.message).to.eql(\" email test_demo_1@gmail.com уже есть в базе\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Проверяем тип и ообщение об ошибке\", function () {\r",
+											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
+											"    pm.expect(jsonData.message).to.eql(\" email test_demo_1@gmail.com уже есть в базе\");\r",
+											"});\r",
+											"\r",
+											"console.log(pm.response.json());"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "c255f8d8-6fa9-4249-8ff6-3348fca33138",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2488,7 +2559,7 @@
 	],
 	"variable": [
 		{
-			"id": "7556ef27-2993-4a87-9e94-8ce87bdfc384",
+			"id": "acb4b686-6d27-491a-9b19-fa276b9ec47d",
 			"key": "url",
 			"value": "",
 			"type": "string"
