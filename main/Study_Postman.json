@@ -3021,6 +3021,143 @@
 								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
 							},
 							"response": []
+						},
+						{
+							"name": "JSON getuserfull include",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"// Точное или неточное равенство?\r",
+											"pm.test(\"to.equal число = число\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.equal(15);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.equal число = строка\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.equal(\"15\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.equal число = число\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.deep.equal(15);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.equal число = строка\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.deep.equal(\"15\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.eql число = число\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.eql(15);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.eql число = строка\", function () {\r",
+											"    pm.expect(jsonData.companys[2].id_company).to.eql(\"15\");\r",
+											"});\r",
+											"\r",
+											"// Исследуем deep\r",
+											"\r",
+											"pm.test(\"to.equal массив\", function () {\r",
+											"    pm.expect(jsonData.tasks).to.equal([\r",
+											"        {\r",
+											"            \"name\": \"Новая\",\r",
+											"            \"id_task\": 32\r",
+											"        }\r",
+											"    ]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.equal массив\", function () {\r",
+											"    pm.expect(jsonData.tasks).to.deep.equal([\r",
+											"        {\r",
+											"            \"name\": \"Новая\",\r",
+											"            \"id_task\": 32\r",
+											"        }\r",
+											"    ]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.eql массив\", function () {\r",
+											"    pm.expect(jsonData.tasks).to.eql([\r",
+											"        {\r",
+											"            \"name\": \"Новая\",\r",
+											"            \"id_task\": 32\r",
+											"        }\r",
+											"    ]);\r",
+											"});\r",
+											"\r",
+											"// Сравним строку и число через Chai.js\r",
+											"\r",
+											"pm.test(\"to.be.true\", function () {\r",
+											"    pm.expect(jsonData.companys[0].id_company == \"44\").to.be.true;\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.be.ok\", function () {\r",
+											"    pm.expect(jsonData.companys[0].id_company == \"44\").to.be.ok;\r",
+											"});\r",
+											"\r",
+											"// Сравним строку и число через Node.js\r",
+											"\r",
+											"// Импорт библиотеки\r",
+											"const assert = require('assert');\r",
+											"\r",
+											"pm.test(\"Тест через assert.ok\", function () {\r",
+											"    assert.ok(jsonData.companys[0].id_company == \"44\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест через assert\", function () {\r",
+											"    assert(jsonData.companys[0].id_company == \"44\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест node.js через deepEqual число = число\", function () {\r",
+											"    assert.deepEqual(jsonData.companys[0].id_company, 44);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест node.js через deepEqual число = строка\", function () {\r",
+											"    assert.deepEqual(jsonData.companys[0].id_company, \"44\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест node.js через deepStrictEqual число = число\", function () {\r",
+											"    assert.deepStrictEqual(jsonData.companys[0].id_company, 44);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест node.js через deepStrictEqual число = строка\", function () {\r",
+											"    assert.deepStrictEqual(jsonData.companys[0].id_company, \"44\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "ecdde9c6-a2ff-4412-a037-98f6cf7b9299",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -3163,7 +3300,7 @@
 	],
 	"variable": [
 		{
-			"id": "ce768545-e3e0-4296-99c6-3ed252f5028a",
+			"id": "10a1fc25-3bfd-4eb5-8480-b557f56ed747",
 			"key": "url",
 			"value": "",
 			"type": "string"
