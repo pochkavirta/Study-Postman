@@ -2361,8 +2361,16 @@
 											"    \"message\": \" email test_demo_1@gmail.com уже есть в базе\"});\r",
 											"});\r",
 											"\r",
+											"pm.test(\"Body type matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"error\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body message matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\" email test_demo_1@gmail.com \\\\u0443\\\\u0436\\\\u0435 \\\\u0435\\\\u0441\\\\u0442\\\\u044c \\\\u0432 \\\\u0431\\\\u0430\\\\u0437\\\\u0435\");\r",
+											"});\r",
+											"\r",
 											"console.log(pm.response.json());\r",
-											"console.log(jsonData.message);"
+											"console.log(pm.response.text());"
 										],
 										"type": "text/javascript"
 									}
@@ -2562,7 +2570,7 @@
 	],
 	"variable": [
 		{
-			"id": "fe1c0f31-a779-4892-9f12-3f1dbf455c7b",
+			"id": "c28902b1-9cdf-4e5d-b0f1-a1a75dd68dd6",
 			"key": "url",
 			"value": "",
 			"type": "string"
