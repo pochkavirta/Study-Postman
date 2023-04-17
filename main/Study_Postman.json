@@ -2183,19 +2183,26 @@
 									"script": {
 										"id": "fa46d1d0-872d-4ab1-8d3a-4b557ceefd13",
 										"exec": [
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"\\n\\\r",
-											"          .-''''''-.\\n\\\r",
-											"        .' _      _ '.\\n\\\r",
-											"       /   O      O   \\\\\\n\\\r",
-											"      :                :\\n\\\r",
-											"      |                |\\n\\\r",
-											"      :       __       :\\n\\\r",
-											"       \\\\  .-\\\"`  `\\\"-.  /\\n\\\r",
-											"        '.          .'\\n\\\r",
-											"          '-......-'\\n\\\r",
-											"     YOU SHOULDN'T BE HERE\\n\\\r",
-											"\");\r",
+											"pm.test(\"Body matches через to.equal\", function () {\r",
+											"    pm.expect(pm.response.text()).to.equal(\"User-agent: *\\nDisallow: /deny\\n\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches через to.deep.equal\", function () {\r",
+											"    pm.expect(pm.response.text()).to.deep.equal(\"User-agent: *\\nDisallow: /deny\\n\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body - строка\", function () {\r",
+											"    pm.expect(pm.response.text()).to.be.a(\"string\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body - object\", function () {\r",
+											"    pm.expect(pm.response.text()).to.be.an(\"object\");\r",
+											"});\r",
+											"\r",
+											"// Если не читать описание, а сразу пыщ пыщ, будем думать, что второй аргумент - это сама строка\r",
+											"\r",
+											"pm.test(\"Body - конкретная строка\", function () {\r",
+											"    pm.expect(pm.response.text()).to.be.an(\"string_you_want_to_search\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -2209,7 +2216,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://httpbin.org/deny"
+								"url": "http://httpbin.org/robots.txt"
 							},
 							"response": []
 						}
@@ -2299,7 +2306,7 @@
 	],
 	"variable": [
 		{
-			"id": "50e96c94-700e-40ce-b5b4-7f6e6ca40246",
+			"id": "45fc00f3-fe6a-40aa-b9f5-269a36678fb4",
 			"key": "url",
 			"value": "",
 			"type": "string"
