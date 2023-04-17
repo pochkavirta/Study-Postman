@@ -3235,7 +3235,7 @@
 							"response": []
 						},
 						{
-							"name": "JSON подсказки include Copy",
+							"name": "JSON подсказки property",
 							"event": [
 								{
 									"listen": "test",
@@ -3600,7 +3600,7 @@
 	],
 	"variable": [
 		{
-			"id": "dd1974bc-20f4-4a76-943d-db4543c91c38",
+			"id": "be05e256-10bf-44d3-953a-5ef8b9296723",
 			"key": "url",
 			"value": "",
 			"type": "string"
