@@ -2039,7 +2039,7 @@
 					"name": "Lesson 4",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Text простой",
 							"id": "02f93a36-d8b1-4066-957a-7c2154862624",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2136,7 +2136,7 @@
 	],
 	"variable": [
 		{
-			"id": "f32aa1c4-2b01-4a5f-82ea-f6dd056b84bb",
+			"id": "0800a580-675a-4bd1-a788-f7d34b7b8101",
 			"key": "url",
 			"value": "",
 			"type": "string"
