@@ -3113,6 +3113,351 @@
 								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
+						},
+						{
+							"name": "JSON doRegister property",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"// Распарсили JSON\r",
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"// Ищем внутри простого элемента\r",
+											"\r",
+											"pm.test(\"Тест на type через include\", function () {\r",
+											"    pm.expect(jsonData.type).to.include(\"error\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"include для части слова\", function () {\r",
+											"    pm.expect(jsonData.type).to.include(\"err\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"include для части фразы\", function () {\r",
+											"    pm.expect(jsonData.message).to.include(\"уже есть в базе\");\r",
+											"});\r",
+											"\r",
+											"// deep\r",
+											"\r",
+											"pm.test(\"Тест на type через to.deep.include\", function () {\r",
+											"    pm.expect(jsonData.type).to.deep.include(\"error\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.include для части слова\", function () {\r",
+											"    pm.expect(jsonData.type).to.deep.include(\"err\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.include для части фразы\", function () {\r",
+											"    pm.expect(jsonData.message).to.deep.include(\"уже есть в базе\");\r",
+											"});\r",
+											"\r",
+											"// Ищем внутри объекта\r",
+											"\r",
+											"pm.test(\"to.include - ищем по всему объекту\", function () {\r",
+											"    pm.expect(jsonData).to.include(\"err\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.include - ищем по всему объекту\", function () {\r",
+											"    pm.expect(jsonData).to.deep.include(\"err\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.include весь объект\", function () {\r",
+											"    pm.expect(jsonData).to.include({\r",
+											"    \"type\": \"error\",\r",
+											"    \"message\": \" email test_demo_1@gmail.com уже есть в базе\"\r",
+											"});\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.include весь объект\", function () {\r",
+											"    pm.expect(jsonData).to.deep.include({\r",
+											"    \"type\": \"error\",\r",
+											"    \"message\": \" email test_demo_1@gmail.com уже есть в базе\"\r",
+											"});\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.include не на весь объект, а на часть\", function () {\r",
+											"    pm.expect(jsonData).to.include({\r",
+											"    \"type\": \"error\",\r",
+											"});\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.include не на весь объект, а на часть\", function () {\r",
+											"    pm.expect(jsonData).to.deep.include({\r",
+											"    \"type\": \"error\",\r",
+											"});\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "9c82d984-ad38-4b85-acec-73e08b9c6c78",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test_demo_1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Демо 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://users.bugred.ru/tasks/rest/doregister"
+							},
+							"response": []
+						},
+						{
+							"name": "JSON подсказки include Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
+										"exec": [
+											"// Распарсили JSON\r",
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"console.log(jsonData);\r",
+											"\r",
+											"pm.test(\"Подсказка по Анне - include\", function () {\r",
+											"    pm.expect(jsonData.suggestions).to.include({\r",
+											"            \"value\": \"Анна\",\r",
+											"            \"unrestricted_value\": \"Анна\",\r",
+											"            \"data\": {\r",
+											"                \"surname\": null,\r",
+											"                \"name\": \"Анна\",\r",
+											"                \"patronymic\": null,\r",
+											"                \"gender\": \"FEMALE\",\r",
+											"                \"source\": null,\r",
+											"                \"qc\": \"0\"\r",
+											"                }\r",
+											"            });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Подсказка по Анне - deep.include\", function () {\r",
+											"    pm.expect(jsonData.suggestions).to.deep.include({\r",
+											"            \"value\": \"Анна\",\r",
+											"            \"unrestricted_value\": \"Анна\",\r",
+											"            \"data\": {\r",
+											"                \"surname\": null,\r",
+											"                \"name\": \"Анна\",\r",
+											"                \"patronymic\": null,\r",
+											"                \"gender\": \"FEMALE\",\r",
+											"                \"source\": null,\r",
+											"                \"qc\": \"0\"\r",
+											"                }\r",
+											"            });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"deep.include - не первый элемент массива\", function () {\r",
+											"    pm.expect(jsonData.suggestions).to.deep.include({\r",
+											"            \"value\": \"Антонина\",\r",
+											"            \"unrestricted_value\": \"Антонина\",\r",
+											"            \"data\": {\r",
+											"                \"surname\": null,\r",
+											"                \"name\": \"Антонина\",\r",
+											"                \"patronymic\": null,\r",
+											"                \"gender\": \"FEMALE\",\r",
+											"                \"source\": null,\r",
+											"                \"qc\": \"0\"\r",
+											"            }\r",
+											"        });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"include дочерний объект 2 уровня\", function () {\r",
+											"    pm.expect(jsonData.suggestions).to.include({\r",
+											"                \"surname\": null,\r",
+											"                \"name\": \"Антонина\",\r",
+											"                \"patronymic\": null,\r",
+											"                \"gender\": \"FEMALE\",\r",
+											"                \"source\": null,\r",
+											"                \"qc\": \"0\"\r",
+											"            });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"deep.include дочерний объект 2 уровня\", function () {\r",
+											"    pm.expect(jsonData.suggestions).to.deep.include({\r",
+											"                \"surname\": null,\r",
+											"                \"name\": \"Антонина\",\r",
+											"                \"patronymic\": null,\r",
+											"                \"gender\": \"FEMALE\",\r",
+											"                \"source\": null,\r",
+											"                \"qc\": \"0\"\r",
+											"            });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"include дочерний объект 2 уровня, указав номер массива\", function () {\r",
+											"    pm.expect(jsonData.suggestions[2].data).to.include({\r",
+											"                \"surname\": null,\r",
+											"                \"name\": \"Антонина\",\r",
+											"                \"patronymic\": null,\r",
+											"                \"gender\": \"FEMALE\",\r",
+											"                \"source\": null,\r",
+											"                \"qc\": \"0\"\r",
+											"            });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"deep.include дочерний объект 2 уровня, указав номер массива\", function () {\r",
+											"    pm.expect(jsonData.suggestions[2].data).to.deep.include({\r",
+											"                \"surname\": null,\r",
+											"                \"name\": \"Антонина\",\r",
+											"                \"patronymic\": null,\r",
+											"                \"gender\": \"FEMALE\",\r",
+											"                \"source\": null,\r",
+											"                \"qc\": \"0\"\r",
+											"            });\r",
+											"});\r",
+											"\r",
+											"// .nested\r",
+											"\r",
+											"pm.test(\"nested.include\", function () {\r",
+											"    pm.expect(jsonData).to.nested.include({'suggestions[0].data.gender': 'FEMALE'});\r",
+											"});\r",
+											"\r",
+											"pm.test(\"простой include\", function () {\r",
+											"    pm.expect(jsonData.suggestions[0].data.gender).to.nested.include('FEM');\r",
+											"});\r",
+											"\r",
+											"pm.test(\"deep.nested.include\", function () {\r",
+											"    pm.expect(jsonData).to.deep.nested.include({'suggestions[0].data.gender': 'FEMALE'});\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "1fd70159-9e94-4d45-9843-c734320fe563",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": {
+										"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
+										"key": "Authorization"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\": \"Ан\",\r\n\"gender\": \"FEMALE\",\r\n\"count\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+							},
+							"response": []
+						},
+						{
+							"name": "JSON getuserfull include Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"// сработает только deep\r",
+											"\r",
+											"pm.test(\"to.includes дочерний объект - одна компания\", function () {\r",
+											"    pm.expect(jsonData.companys).to.includes({\r",
+											"            \"name\": \"Алкоголики и тунеядцы\",\r",
+											"            \"id_company\": 15\r",
+											"        });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.includes дочерний объект - одна компания\", function () {\r",
+											"    pm.expect(jsonData.companys).to.deep.includes({\r",
+											"            \"name\": \"Алкоголики и тунеядцы\",\r",
+											"            \"id_company\": 15\r",
+											"        });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.includes дочерний объект - одна компания (ключи без кавычек)\", function () {\r",
+											"    pm.expect(jsonData.companys).to.deep.includes({\r",
+											"            name: \"Алкоголики и тунеядцы\",\r",
+											"            id_company: 15\r",
+											"        });\r",
+											"});\r",
+											"\r",
+											"// Ищем ключи в объекте\r",
+											"\r",
+											"pm.test(\"to.includes ключей в объекте\", function () {\r",
+											"    pm.expect(jsonData).to.includes({\r",
+											"        \"hobby\": \"\",\r",
+											"        \"name1\": \"Тестовый, ясен пень\",\r",
+											"        \"surname1\": \"Иванов\",\r",
+											"        \"fathername1\": \"Петров\",\r",
+											"        });\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "2f198e2e-432c-42b0-a431-6f0ae961d278",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -3255,7 +3600,7 @@
 	],
 	"variable": [
 		{
-			"id": "3cbdca2d-7b5e-45d6-be45-f54b3a7d00b2",
+			"id": "dd1974bc-20f4-4a76-943d-db4543c91c38",
 			"key": "url",
 			"value": "",
 			"type": "string"
