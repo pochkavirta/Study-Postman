@@ -3382,7 +3382,7 @@
 							"response": []
 						},
 						{
-							"name": "JSON getuserfull include Copy",
+							"name": "JSON getuserfull property",
 							"event": [
 								{
 									"listen": "test",
@@ -3600,7 +3600,7 @@
 	],
 	"variable": [
 		{
-			"id": "be05e256-10bf-44d3-953a-5ef8b9296723",
+			"id": "83925f7c-dd29-4723-a52f-5447addabfd1",
 			"key": "url",
 			"value": "",
 			"type": "string"
