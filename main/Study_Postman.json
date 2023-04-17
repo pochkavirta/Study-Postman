@@ -3145,6 +3145,12 @@
 											"\r",
 											"pm.test(\"Есть свойство message + проверяем его значение\", function () {\r",
 											"    pm.expect(jsonData).to.have.property(\"message\", \" email test_demo_1@gmail.com уже есть в базе\");\r",
+											"});\r",
+											"\r",
+											"// keys\r",
+											"\r",
+											"pm.test(\"Есть оба свойства\", function () {\r",
+											"    pm.expect(jsonData).to.have.all.keys(\"type\", \"message\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -3502,7 +3508,7 @@
 	],
 	"variable": [
 		{
-			"id": "955ecb0d-1bd0-4029-aca5-c608fa74a830",
+			"id": "9b28a2a4-08ee-43e1-a700-ff1837a1f42b",
 			"key": "url",
 			"value": "",
 			"type": "string"
