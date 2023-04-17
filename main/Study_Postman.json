@@ -2037,7 +2037,20 @@
 				},
 				{
 					"name": "Lesson 4",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "02f93a36-d8b1-4066-957a-7c2154862624",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
 				},
 				{
@@ -2123,7 +2136,7 @@
 	],
 	"variable": [
 		{
-			"id": "81c508c7-4104-425b-a6ec-db4c20971ec8",
+			"id": "f32aa1c4-2b01-4a5f-82ea-f6dd056b84bb",
 			"key": "url",
 			"value": "",
 			"type": "string"
