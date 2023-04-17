@@ -2036,6 +2036,11 @@
 					"id": "627ce5b0-b45a-4bb3-a83a-5a2b17263123"
 				},
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
+				},
+				{
 					"name": "doRegister",
 					"event": [
 						{
@@ -2118,7 +2123,7 @@
 	],
 	"variable": [
 		{
-			"id": "cc4dc5a7-9e0a-4f26-a4fb-c7945aa625e9",
+			"id": "590e8f20-9352-41f3-9bd2-5ed549a1fbf7",
 			"key": "url",
 			"value": "",
 			"type": "string"
