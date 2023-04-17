@@ -2095,26 +2095,19 @@
 									"script": {
 										"id": "fa46d1d0-872d-4ab1-8d3a-4b557ceefd13",
 										"exec": [
-											"// SNIPPETS\r",
-											"pm.test(\"User-agent: *\\nDisallow: /deny\\n\", function () {\r",
-											"    pm.response.to.have.body(\"User-agent: *\\nDisallow: /deny\\n\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Вхождение части строки: Disallow: /deny\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Disallow: /deny\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Проверяем строку целиком: User-agent: *\\nDisallow: /deny\\n\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"User-agent: *\\nDisallow: /deny\\n\");\r",
-											"});\r",
-											"\r",
-											"console.log(pm.responce);\r",
-											"console.log(pm.response.text());\r",
-											"\r",
-											"// https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/\r",
-											"\r",
-											"pm.test(\"Проверяем, что тело в принципе есть\", function () {\r",
-											"    pm.response.to.have.body();\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"\\n\\\r",
+											"          .-''''''-.\\n\\\r",
+											"        .' _      _ '.\\n\\\r",
+											"       /   O      O   \\\\\\n\\\r",
+											"      :                :\\n\\\r",
+											"      |                |\\n\\\r",
+											"      :       __       :\\n\\\r",
+											"       \\\\  .-\\\"`  `\\\"-.  /\\n\\\r",
+											"        '.          .'\\n\\\r",
+											"          '-......-'\\n\\\r",
+											"     YOU SHOULDN'T BE HERE\\n\\\r",
+											"\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -2128,7 +2121,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://httpbin.org/robots.txt"
+								"url": "http://httpbin.org/deny"
 							},
 							"response": [
 								{
@@ -2264,7 +2257,7 @@
 	],
 	"variable": [
 		{
-			"id": "41754066-d8c5-4796-a525-549b8a5a339e",
+			"id": "69a5bbb9-ffcb-47a7-bd3c-a9e542aa06a8",
 			"key": "url",
 			"value": "",
 			"type": "string"
