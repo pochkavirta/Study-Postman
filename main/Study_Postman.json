@@ -2202,7 +2202,7 @@
 											"// Если не читать описание, а сразу пыщ пыщ, будем думать, что второй аргумент - это сама строка\r",
 											"\r",
 											"pm.test(\"Body - конкретная строка\", function () {\r",
-											"    pm.expect(pm.response.text()).to.be.an(\"string_you_want_to_search\");\r",
+											"    pm.expect(pm.response.text()).to.be.a(\"string\", \"User-agent: *\\nDisallow: /deny\\n\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -2306,7 +2306,7 @@
 	],
 	"variable": [
 		{
-			"id": "45fc00f3-fe6a-40aa-b9f5-269a36678fb4",
+			"id": "92ed2cfc-71a4-4a42-af73-f8a7ad486cc7",
 			"key": "url",
 			"value": "",
 			"type": "string"
