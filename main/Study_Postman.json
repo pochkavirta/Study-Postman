@@ -2064,7 +2064,13 @@
 											"});\r",
 											"\r",
 											"console.log(pm.responce);\r",
-											"console.log(pm.response.text());"
+											"console.log(pm.response.text());\r",
+											"\r",
+											"// https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/\r",
+											"\r",
+											"pm.test(\"Проверяем, что тело в принципе есть\", function () {\r",
+											"    pm.response.to.have.body();\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2167,7 +2173,7 @@
 	],
 	"variable": [
 		{
-			"id": "6531aaec-22f3-4168-a66f-650d862aad89",
+			"id": "031b9188-240d-4ad3-aca2-e0b987962ad4",
 			"key": "url",
 			"value": "",
 			"type": "string"
