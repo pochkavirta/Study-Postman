@@ -3151,6 +3151,14 @@
 											"\r",
 											"pm.test(\"Есть оба свойства\", function () {\r",
 											"    pm.expect(jsonData).to.have.all.keys(\"type\", \"message\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Есть одно свойства\", function () {\r",
+											"    pm.expect(jsonData).to.have.any.keys(\"type\", \"msfse\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Есть одно свойства\", function () {\r",
+											"    pm.expect(jsonData).to.have.any.keys(\"tyfsdpe\", \"message\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -3514,7 +3522,7 @@
 	],
 	"variable": [
 		{
-			"id": "0687c20d-4586-44ee-8fdb-c5dd8e054220",
+			"id": "34e59d5e-e3c0-478e-934b-a169c2090190",
 			"key": "url",
 			"value": "",
 			"type": "string"
