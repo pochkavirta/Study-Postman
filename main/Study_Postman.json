@@ -2196,7 +2196,7 @@
 											"});\r",
 											"\r",
 											"pm.test(\"Body - object\", function () {\r",
-											"    pm.expect(pm.response.text()).to.be.a(\"object\");\r",
+											"    pm.expect(pm.response.text()).to.be.an(\"object\");\r",
 											"});\r",
 											"\r",
 											"// Если не читать описание, а сразу пыщ пыщ, будем думать, что второй аргумент - это сама строка\r",
@@ -2317,7 +2317,7 @@
 	],
 	"variable": [
 		{
-			"id": "b7166366-bcca-4b34-b323-cfee18032ebe",
+			"id": "28822351-1898-4ee5-acf0-223c2e7f7c01",
 			"key": "url",
 			"value": "",
 			"type": "string"
