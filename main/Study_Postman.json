@@ -2245,7 +2245,7 @@
 											"});\r",
 											"\r",
 											"pm.test(\"Body через to.match\", function () {\r",
-											"    pm.expect(pm.response.text()).to.match(\"User-agent: *\");\r",
+											"    pm.expect(pm.response.text()).to.match(/^User-agent: .*/);\r",
 											"});\r",
 											"\r",
 											"pm.test(\"Body через to.have.string\", function () {\r",
@@ -2353,7 +2353,7 @@
 	],
 	"variable": [
 		{
-			"id": "71f47182-d099-4763-84ce-c1e223f67d95",
+			"id": "60bda8b1-f7fb-4f39-9f49-d969e48c9569",
 			"key": "url",
 			"value": "",
 			"type": "string"
