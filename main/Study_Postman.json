@@ -2086,6 +2086,51 @@
 								"url": "http://httpbin.org/robots.txt"
 							},
 							"response": []
+						},
+						{
+							"name": "Text рисунок",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fa46d1d0-872d-4ab1-8d3a-4b557ceefd13",
+										"exec": [
+											"// SNIPPETS\r",
+											"pm.test(\"User-agent: *\\nDisallow: /deny\\n\", function () {\r",
+											"    pm.response.to.have.body(\"User-agent: *\\nDisallow: /deny\\n\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Вхождение части строки: Disallow: /deny\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Disallow: /deny\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Проверяем строку целиком: User-agent: *\\nDisallow: /deny\\n\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"User-agent: *\\nDisallow: /deny\\n\");\r",
+											"});\r",
+											"\r",
+											"console.log(pm.responce);\r",
+											"console.log(pm.response.text());\r",
+											"\r",
+											"// https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/\r",
+											"\r",
+											"pm.test(\"Проверяем, что тело в принципе есть\", function () {\r",
+											"    pm.response.to.have.body();\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "2ae1e5ac-e637-481c-adde-8e7bdd41dbb3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://httpbin.org/robots.txt"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -2173,7 +2218,7 @@
 	],
 	"variable": [
 		{
-			"id": "031b9188-240d-4ad3-aca2-e0b987962ad4",
+			"id": "869277c5-2bbd-4704-aad5-715ecaadf187",
 			"key": "url",
 			"value": "",
 			"type": "string"
