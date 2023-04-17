@@ -2340,9 +2340,9 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											"pm.test(\"Your test name\", function () {\r",
+											"pm.test(\"Your for type\", function () {\r",
 											"    var jsonData = pm.response.json();\r",
-											"    pm.expect(jsonData.value).to.eql(100);\r",
+											"    pm.expect(jsonData.type).to.eql(\"error\");\r",
 											"});\r",
 											"\r",
 											"console.log(pm.response);\r",
@@ -2479,7 +2479,7 @@
 	],
 	"variable": [
 		{
-			"id": "8fb9d05e-0bca-456a-af87-07aa7d040afd",
+			"id": "dd7ae871-fc45-4db2-8f1c-67560226c2a0",
 			"key": "url",
 			"value": "",
 			"type": "string"
