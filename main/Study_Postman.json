@@ -2111,6 +2111,7 @@
 												"exec": [
 													"var jsonData = pm.response.json();",
 													"",
+													"// не было deep",
 													"pm.test(\"Работает в алкоголиках и тунеяндцах\", function () {",
 													"    pm.expect(jsonData.results[0].companies).to.deep.include({",
 													"                    \"name\": \"Алкоголики и тунеядцы\",",
@@ -3945,7 +3946,7 @@
 	],
 	"variable": [
 		{
-			"id": "38802182-4a58-40a8-88c8-b1713826ddfe",
+			"id": "19ece612-f761-406a-bb76-fd27e872dd4c",
 			"key": "url",
 			"value": "",
 			"type": "string"
