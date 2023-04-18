@@ -3934,7 +3934,25 @@
 											"pm.test(\"id_task - это число\", function () {\r",
 											"    pm.expect(jsonData.tasks[0].id_task).to.be.a(\"number\");\r",
 											"});\r",
-											""
+											"\r",
+											"pm.test(\"Цепочка проверок\", function () {\r",
+											"    pm.expect(jsonData.tasks).to.be.a(\"array\").that.deep.includes({\r",
+											"            \"name\": \"Новая\",\r",
+											"            \"id_task\": 32\r",
+											"        });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Тест из документации\", function () {\r",
+											"    pm.expect({a: 1}).to.have.property('a').that.is.a('number');\r",
+											"});\r",
+											"\r",
+											"pm.test(\"ключ - id_task; значение - число\", function () {\r",
+											"    pm.expect(jsonData.tasks[0]).to.have.property('id_task').that.is.a('number');\r",
+											"});\r",
+											"\r",
+											"pm.test(\"ключ - id_task; значение - число\", function () {\r",
+											"    pm.expect(jsonData.tasks[0]).to.have.property('name').that.is.a('string');\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -4141,7 +4159,7 @@
 	],
 	"variable": [
 		{
-			"id": "f433f859-d587-4517-a201-48434a2b794c",
+			"id": "6d0a81ce-267c-4c0c-b0db-a658ffb8e77b",
 			"key": "url",
 			"value": "",
 			"type": "string"
