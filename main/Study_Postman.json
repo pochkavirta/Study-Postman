@@ -3810,6 +3810,11 @@
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
 				},
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "c12ccbed-d99b-4de1-8021-e48f4b963459"
+				},
+				{
 					"name": "doRegister",
 					"event": [
 						{
@@ -3947,7 +3952,7 @@
 	],
 	"variable": [
 		{
-			"id": "6c8bdb3f-dabe-4098-aa51-2a63c91d7df4",
+			"id": "4df49080-835f-4d25-9d15-cc042b1b19bf",
 			"key": "url",
 			"value": "",
 			"type": "string"
