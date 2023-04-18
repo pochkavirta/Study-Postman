@@ -2056,10 +2056,12 @@
 													"var jsonData = pm.response.json();",
 													"",
 													"pm.test(\"Блок why_block показывает, по чему искали\", function () {",
-													"    pm.expect(jsonData.results[0].why_block).to.deep.eql({",
+													"    pm.expect(jsonData.results[0].why_block).to.deep.eql([",
+													"                {",
 													"                    \"field\": \"name\",",
 													"                    \"value\": \"Ромашка\"",
-													"                });",
+													"                }",
+													"            ]);",
 													"});",
 													"",
 													""
@@ -3942,7 +3944,7 @@
 	],
 	"variable": [
 		{
-			"id": "dff58658-bcbb-43b9-a96f-8c44d48495eb",
+			"id": "fa7824bf-060a-424b-bba9-845604faf316",
 			"key": "url",
 			"value": "",
 			"type": "string"
