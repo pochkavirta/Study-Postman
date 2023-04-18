@@ -2164,7 +2164,7 @@
 													"var jsonData = pm.response.json();",
 													"",
 													"pm.test(\"Your test name\", function () {  ",
-													"    pm.expect(jsonData).to.nested.include({'fields.issuelinks[0].outwardIssue.summary': 'Новый баг'});",
+													"    pm.expect(jsonData).to.nested.include({'fields.issuelinks': []});",
 													"});"
 												],
 												"type": "text/javascript"
@@ -2179,8 +2179,8 @@
 										"auth": {
 											"type": "basic",
 											"basic": {
-												"password": "23D32QzT2shOzr2zG8Ur117C",
-												"username": "mail.for.testbase@yandex.ru"
+												"username": "pochkavirta@gmail.com",
+												"password": "ATATT3xFfGF0jGEjoo1SAOIpBUnBsHS2VgWkXSgOn9nrzlII3nvsBDD0PvdnrNwF5mnprrpIrBDojnQ4gjqboU6na01TX9GwusG13to_A7bqa76Gi6QGYf0BDC15bnl_nqScrVk--9v8iu-y7OoKBWkaBnAji8WuN3H0w9SXmOwb1hmCasUDB1U=AAC9C2F4"
 											}
 										},
 										"method": "GET",
@@ -2190,7 +2190,7 @@
 												"value": "application/json"
 											}
 										],
-										"url": "https://testbase.atlassian.net/rest/api/3/issue/TV-4"
+										"url": "https://pochkavirta.atlassian.net/rest/api/3/issue/POCH-2/"
 									},
 									"response": []
 								}
@@ -3944,7 +3944,7 @@
 	],
 	"variable": [
 		{
-			"id": "a01d7fb5-4afc-4be6-86a3-4b7aa667fc8b",
+			"id": "22b42af2-1dab-4022-b365-88c5cce96d41",
 			"key": "url",
 			"value": "",
 			"type": "string"
