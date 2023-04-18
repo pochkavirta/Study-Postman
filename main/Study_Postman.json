@@ -2043,6 +2043,11 @@
 					"name": "Lesson 4",
 					"item": [
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "3f313f7b-c176-4576-8aa0-3fb586396c91"
+						},
+						{
 							"name": "Text простой",
 							"event": [
 								{
@@ -3789,7 +3794,7 @@
 	],
 	"variable": [
 		{
-			"id": "9166bfac-0937-443e-bba4-793dfd971d29",
+			"id": "5d470a1d-13a4-4df8-8608-3b6c6e1a4f2a",
 			"key": "url",
 			"value": "",
 			"type": "string"
