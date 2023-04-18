@@ -2055,7 +2055,7 @@
 												"exec": [
 													"var jsonData = pm.response.json();",
 													"",
-													"//не было []",
+													"// не было []",
 													"pm.test(\"Блок why_block показывает, по чему искали\", function () {",
 													"    pm.expect(jsonData.results[0].why_block).to.deep.eql([",
 													"                {",
@@ -3945,7 +3945,7 @@
 	],
 	"variable": [
 		{
-			"id": "bf2bbcd6-e2b8-4eb6-be31-c531f5a5b030",
+			"id": "38802182-4a58-40a8-88c8-b1713826ddfe",
 			"key": "url",
 			"value": "",
 			"type": "string"
