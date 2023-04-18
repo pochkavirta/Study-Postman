@@ -3380,6 +3380,37 @@
 								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
+						},
+						{
+							"name": "Тестируем зайчика",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fa46d1d0-872d-4ab1-8d3a-4b557ceefd13",
+										"exec": [
+											"var zai = (\"\\\r",
+											"(\\\\__/)\\n\\\r",
+											"(='.'=)\\n\\\r",
+											"E[:]|||||[:]З\\n\\\r",
+											"(\\\")_(\\\")\");\r",
+											"\r",
+											"console.log(zai);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "3d1c0d8f-68d7-42d2-ac61-8ffb563783b2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://httpbin.org/deny"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -3522,7 +3553,7 @@
 	],
 	"variable": [
 		{
-			"id": "fb870e70-59fe-49d8-a4f0-18b6fca270e9",
+			"id": "cd5396b1-653f-42fd-a0d0-25b6fe331a0b",
 			"key": "url",
 			"value": "",
 			"type": "string"
