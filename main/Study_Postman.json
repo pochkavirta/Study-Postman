@@ -3527,6 +3527,84 @@
 								"url": "https://pochkavirta.atlassian.net/rest/api/3/issue/POCH-2/comment"
 							},
 							"response": []
+						},
+						{
+							"name": "Users: проверяем name компании в ответе",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"// сработает только deep\r",
+											"\r",
+											"pm.test(\"to.includes дочерний объект - одна компания\", function () {\r",
+											"    pm.expect(jsonData.companys).to.includes({\r",
+											"            \"name\": \"Алкоголики и тунеядцы\",\r",
+											"            \"id_company\": 15\r",
+											"        });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.includes дочерний объект - одна компания\", function () {\r",
+											"    pm.expect(jsonData.companys).to.deep.includes({\r",
+											"            \"name\": \"Алкоголики и тунеядцы\",\r",
+											"            \"id_company\": 15\r",
+											"        });\r",
+											"});\r",
+											"\r",
+											"pm.test(\"to.deep.includes дочерний объект - одна компания (ключи без кавычек)\", function () {\r",
+											"    pm.expect(jsonData.companys).to.deep.includes({\r",
+											"            name: \"Алкоголики и тунеядцы\",\r",
+											"            id_company: 15\r",
+											"        });\r",
+											"});\r",
+											"\r",
+											"// Ищем ключи в объекте\r",
+											"\r",
+											"pm.test(\"to.includes ключей в объекте\", function () {\r",
+											"    pm.expect(jsonData).to.includes({\r",
+											"        \"hobby\": \"\",\r",
+											"        \"name1\": \"Тестовый, ясен пень\",\r",
+											"        \"surname1\": \"Иванов\",\r",
+											"        \"fathername1\": \"Петров\",\r",
+											"        });\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "d8fe1347-4856-47ae-a259-41836f52e08c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
+							},
+							"response": []
 						}
 					],
 					"id": "3eb3c330-6873-4996-9930-c953ae29a0e9"
@@ -3669,7 +3747,7 @@
 	],
 	"variable": [
 		{
-			"id": "084471e5-38b4-4f28-bff0-83a2bbf1cd2f",
+			"id": "b4f88080-57d0-40d5-b9c0-4978fb3d4b6b",
 			"key": "url",
 			"value": "",
 			"type": "string"
