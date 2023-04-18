@@ -2055,7 +2055,7 @@
 												"exec": [
 													"var jsonData = pm.response.json();",
 													"",
-													"// не было [] - неправильно переписан массив",
+													"// не было [] (неправильно переписан массив)",
 													"pm.test(\"Блок why_block показывает, по чему искали\", function () {",
 													"    pm.expect(jsonData.results[0].why_block).to.deep.eql([",
 													"                {",
@@ -3946,7 +3946,7 @@
 	],
 	"variable": [
 		{
-			"id": "3c1d1342-10dc-4bff-85de-87d0226d528d",
+			"id": "8993d936-e228-42c5-8230-a2e8e0808b49",
 			"key": "url",
 			"value": "",
 			"type": "string"
