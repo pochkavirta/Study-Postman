@@ -3446,23 +3446,13 @@
 										"exec": [
 											"var jsonData = pm.response.json();\r",
 											"\r",
-											"projectIssue = jsonData.fields.project.name;\r",
-											"console.log(projectIssue);\r",
+											"pm.test(\"Подключилось к задаче\", function () {\r",
+											"    pm.response.to.have.status(200, \"OK\");\r",
+											"});\r",
 											"\r",
-											"urlIssue = jsonData.self;\r",
-											"console.log(urlIssue);\r",
-											"\r",
-											"numberIssue = jsonData.id;\r",
-											"console.log(numberIssue);\r",
-											"\r",
-											"keyIssue = jsonData.key;\r",
-											"console.log(keyIssue);\r",
-											"\r",
-											"nameAuthorIssue = jsonData.fields.creator.displayName;\r",
-											"console.log(nameAuthorIssue);\r",
-											"\r",
-											"emailAuthorIssue = jsonData.fields.creator.emailAddress;\r",
-											"console.log(emailAuthorIssue);"
+											"pm.test(\"Вернулась правильная задача\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"POCH-2\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -3476,7 +3466,7 @@
 								"auth": {
 									"type": "basic",
 									"basic": {
-										"password": "ATATT3xFfGF0B5iJ8LWXtRHbuz6kBlnRR98wo78IGHIfgf6YmAerLtxesiP2tTqzDe74ljqDMuHnQRBjBxmbhUMPVdpU99cD4i_mWzqACvziyShxgPhiaQXLmZ0w7cNTiXwLzNGajE9Y7GtiYSh8EzL0lH1mvZai4wLG9TqlWKVHH33JuBUxJz0=7D80DEB9",
+										"password": "ATATT3xFfGF0-EdDG6lT7sdcmCyMoj7zhD_iNlqV86GYz1iILF9MWuK8isCUYXG4omIxX17ykZjtTY-11thUg6bAANRloW7jnkdLf3HQF1VYQVwQkE8wjkIlvPGMmSyU6Bdy3QCFvrJQ0ZxkqR49vjreUCQaLifqtMiCAsV2XyYQ1TnDzTIrHdQ=9C38B0A6",
 										"username": "pochkavirta@gmail.com"
 									}
 								},
@@ -3691,7 +3681,7 @@
 	],
 	"variable": [
 		{
-			"id": "6e08cd51-5c54-4390-bada-bc1e955a16c3",
+			"id": "39010735-106d-4d74-bc35-ad896c039bf5",
 			"key": "url",
 			"value": "",
 			"type": "string"
