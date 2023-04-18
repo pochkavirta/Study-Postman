@@ -3546,6 +3546,13 @@
 											"\r",
 											"pm.test(\"Найти компанию Петушки через nested.include\", function () {\r",
 											"    pm.expect(jsonData).to.nested.include({'companys[1].name': 'Петушки'});\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Проверить есть ли компания Петушки\", function () {\r",
+											"    pm.expect(jsonData.companys).to.deep.include({\r",
+											"            \"name\": \"Петушки\",\r",
+											"            \"id_company\": 8\r",
+											"        });\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -3723,7 +3730,7 @@
 	],
 	"variable": [
 		{
-			"id": "b8620f50-a5f3-4526-be47-9537ba7a0aa8",
+			"id": "9ba86809-9423-4cc4-a61c-f8bb585737a8",
 			"key": "url",
 			"value": "",
 			"type": "string"
