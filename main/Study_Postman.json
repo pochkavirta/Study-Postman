@@ -3929,6 +3929,11 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.test(\"id_task - это число\", function () {\r",
+											"    pm.expect(jsonData.tasks[0].id_task).to.be.a(\"number\");\r",
+											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -4136,7 +4141,7 @@
 	],
 	"variable": [
 		{
-			"id": "0c0eb343-d0c3-48e4-9c36-c699817575a2",
+			"id": "f433f859-d587-4517-a201-48434a2b794c",
 			"key": "url",
 			"value": "",
 			"type": "string"
