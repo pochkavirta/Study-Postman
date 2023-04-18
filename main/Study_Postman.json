@@ -2165,6 +2165,7 @@
 												"exec": [
 													"var jsonData = pm.response.json();",
 													"",
+													"// не было доступа к базе, написал свой маршрут",
 													"pm.test(\"Your test name\", function () {  ",
 													"    pm.expect(jsonData).to.nested.include({'fields.assignee': null});",
 													"});"
@@ -3946,7 +3947,7 @@
 	],
 	"variable": [
 		{
-			"id": "f79ac3d9-f8bc-4fcd-a1ef-20f86dc14321",
+			"id": "6c8bdb3f-dabe-4098-aa51-2a63c91d7df4",
 			"key": "url",
 			"value": "",
 			"type": "string"
