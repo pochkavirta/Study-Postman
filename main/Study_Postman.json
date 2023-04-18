@@ -3883,11 +3883,6 @@
 									"script": {
 										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
 										"exec": [
-											"var jsonData = pm.response.json();\r",
-											"\r",
-											"pm.test(\"suggestions - это массив\", function () {\r",
-											"    pm.expect(jsonData.suggestions).to.be.a(\"array\");\r",
-											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -3918,73 +3913,6 @@
 									}
 								},
 								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
-							},
-							"response": []
-						},
-						{
-							"name": "JSON getuserfull instanceOf",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
-										"exec": [
-											"var jsonData = pm.response.json();\r",
-											"\r",
-											"pm.test(\"id_task - это число\", function () {\r",
-											"    pm.expect(jsonData.tasks[0].id_task).to.be.a(\"number\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Цепочка проверок\", function () {\r",
-											"    pm.expect(jsonData.tasks).to.be.a(\"array\").that.deep.includes({\r",
-											"            \"name\": \"Новая\",\r",
-											"            \"id_task\": 32\r",
-											"        });\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Тест из документации\", function () {\r",
-											"    pm.expect({a: 1}).to.have.property('a').that.is.a('number');\r",
-											"});\r",
-											"\r",
-											"pm.test(\"ключ - id_task; значение - число\", function () {\r",
-											"    pm.expect(jsonData.tasks[0]).to.have.property('id_task').that.is.a('number');\r",
-											"});\r",
-											"\r",
-											"pm.test(\"ключ - id_task; значение - число\", function () {\r",
-											"    pm.expect(jsonData.tasks[0]).to.have.property('name').that.is.a('string');\r",
-											"});"
-										],
-										"type": "text/javascript"
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "e3d4b6f5-957e-488a-8e49-2ef933da7fef",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
 						}
@@ -4159,7 +4087,7 @@
 	],
 	"variable": [
 		{
-			"id": "6d0a81ce-267c-4c0c-b0db-a658ffb8e77b",
+			"id": "78ac31d6-4207-426c-88f8-d93c60aacf1f",
 			"key": "url",
 			"value": "",
 			"type": "string"
