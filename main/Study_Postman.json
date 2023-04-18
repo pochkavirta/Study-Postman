@@ -3602,20 +3602,17 @@
 											"\r",
 											"console.log(jsonData);\r",
 											"\r",
-											"pm.test(\"Проверить компанию Петушки через обычный запрос\", function () {\r",
-											"    pm.expect(jsonData.companys[1].name).to.include(\"Петушки\");\r",
+											"pm.test(\"Проверяем наличие свойства tasks\", function () {\r",
+											"    pm.expect(jsonData).to.have.property(\"tasks\");\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Найти компанию Петушки через nested.include\", function () {\r",
-											"    pm.expect(jsonData).to.nested.include({'companys[1].name': 'Петушки'});\r",
+											"console.log(jsonData.tasks);\r",
+											"\r",
+											"pm.test(\"Проверяем наличие свойства companys\", function () {\r",
+											"    pm.expect(jsonData).to.have.property(\"companys\");\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Проверить есть ли компания Петушки\", function () {\r",
-											"    pm.expect(jsonData.companys).to.deep.include({\r",
-											"            \"name\": \"Петушки\",\r",
-											"            \"id_company\": 8\r",
-											"        });\r",
-											"});"
+											"console.log(jsonData.companys);"
 										],
 										"type": "text/javascript"
 									}
@@ -3792,7 +3789,7 @@
 	],
 	"variable": [
 		{
-			"id": "67f3f99f-54d8-4721-8e81-096d93bce453",
+			"id": "9166bfac-0937-443e-bba4-793dfd971d29",
 			"key": "url",
 			"value": "",
 			"type": "string"
