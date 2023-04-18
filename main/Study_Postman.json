@@ -2164,7 +2164,7 @@
 													"var jsonData = pm.response.json();",
 													"",
 													"pm.test(\"Your test name\", function () {  ",
-													"    pm.expect(jsonData).to.nested.include({'fields.issuelinks': []});",
+													"    pm.expect(jsonData).to.nested.include({'fields.assignee': null});",
 													"});"
 												],
 												"type": "text/javascript"
@@ -3944,7 +3944,7 @@
 	],
 	"variable": [
 		{
-			"id": "22b42af2-1dab-4022-b365-88c5cce96d41",
+			"id": "35470b02-9c79-41f7-a94d-d66efe5c6b63",
 			"key": "url",
 			"value": "",
 			"type": "string"
