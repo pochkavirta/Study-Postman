@@ -3912,47 +3912,6 @@
 					"id": "c12ccbed-d99b-4de1-8021-e48f4b963459"
 				},
 				{
-					"name": "JSON подсказки",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
-								"exec": [
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "7ac3a91c-722c-4a57-afdd-6dfbc58f2110",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "apikey",
-							"apikey": {
-								"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
-								"key": "Authorization"
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"query\": \"Ан\",\r\n\"gender\": \"FEMALE\",\r\n\"count\": 5\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
-					},
-					"response": []
-				},
-				{
 					"name": "JSON doRegister",
 					"event": [
 						{
@@ -4006,6 +3965,117 @@
 						"url": "http://users.bugred.ru/tasks/rest/doregister"
 					},
 					"response": []
+				},
+				{
+					"name": "JSON подсказки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7ac3a91c-722c-4a57-afdd-6dfbc58f2110",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": {
+								"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
+								"key": "Authorization"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"query\": \"Ан\",\r\n\"gender\": \"FEMALE\",\r\n\"count\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON getuserfull",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"console.log(jsonData);\r",
+									"\r",
+									"// Простой поиск свойств\r",
+									"\r",
+									"pm.test(\"Проверяем наличие свойства tasks\", function () {\r",
+									"    pm.expect(jsonData).to.have.property(\"tasks\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Проверяем свойство tasks\", function () {\r",
+									"    pm.expect(jsonData).to.have.deep.property(\"tasks\", [\r",
+									"        {\r",
+									"            \"name\": \"Новая\",\r",
+									"            \"id_task\": 32\r",
+									"        }\r",
+									"    ]);\r",
+									"});\r",
+									"\r",
+									"// Тип свойства\r",
+									"\r",
+									"pm.test(\"Проверяем тип свойства - число\", function () {\r",
+									"    pm.expect(jsonData.tasks[0]).to.have.property(\"id_task\").that.is.a(\"number\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Проверяем тип свойства - текст\", function () {\r",
+									"    pm.expect(jsonData.tasks[0]).to.have.property(\"name\").that.is.a(\"string\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "945ebd8d-ced9-43e5-8be4-645dedae7894",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://users.bugred.ru/tasks/rest/getuserfull"
+					},
+					"response": []
 				}
 			],
 			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
@@ -4035,7 +4105,7 @@
 	],
 	"variable": [
 		{
-			"id": "46a73a0a-6e95-48e2-8744-7e750b55a262",
+			"id": "c8a022b7-d325-426f-94ba-7eaf5a8278fa",
 			"key": "url",
 			"value": "",
 			"type": "string"
