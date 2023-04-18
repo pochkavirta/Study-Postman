@@ -3912,48 +3912,7 @@
 					"id": "c12ccbed-d99b-4de1-8021-e48f4b963459"
 				},
 				{
-					"name": "JSON подсказки",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
-								"exec": [
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "7ac3a91c-722c-4a57-afdd-6dfbc58f2110",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "apikey",
-							"apikey": {
-								"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
-								"key": "Authorization"
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"query\": \"Ан\",\r\n\"gender\": \"FEMALE\",\r\n\"count\": 5\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
-					},
-					"response": []
-				},
-				{
-					"name": "doRegister",
+					"name": "JSON doRegister",
 					"event": [
 						{
 							"listen": "test",
@@ -4006,6 +3965,91 @@
 						"url": "http://users.bugred.ru/tasks/rest/doregister"
 					},
 					"response": []
+				},
+				{
+					"name": "JSON подсказки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7ac3a91c-722c-4a57-afdd-6dfbc58f2110",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": {
+								"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
+								"key": "Authorization"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"query\": \"Ан\",\r\n\"gender\": \"FEMALE\",\r\n\"count\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON getuserfull",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "945ebd8d-ced9-43e5-8be4-645dedae7894",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://users.bugred.ru/tasks/rest/getuserfull"
+					},
+					"response": []
 				}
 			],
 			"id": "926a8645-a023-4a7c-96ea-1628b13e6f1f"
@@ -4035,7 +4079,7 @@
 	],
 	"variable": [
 		{
-			"id": "bad9f2b5-706e-4179-b4fb-cd5b73dd6b5b",
+			"id": "7f251253-b530-4a05-b2e0-9a87b9c730f6",
 			"key": "url",
 			"value": "",
 			"type": "string"
