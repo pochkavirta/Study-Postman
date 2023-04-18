@@ -3820,7 +3820,15 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											""
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.test(\"type - это строка\", function () {\r",
+											"    pm.expect(jsonData.type).to.be.a(\"string\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"jsonData - это объект\", function () {\r",
+											"    pm.expect(jsonData).to.be.a(\"object\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -3868,13 +3876,18 @@
 							"response": []
 						},
 						{
-							"name": "JSON подсказки property Copy",
+							"name": "JSON подсказки instanceOf",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
 										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
 										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.test(\"suggestions - это массив\", function () {\r",
+											"    pm.expect(jsonData.suggestions).to.be.a(\"array\");\r",
+											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -4079,7 +4092,7 @@
 	],
 	"variable": [
 		{
-			"id": "7f251253-b530-4a05-b2e0-9a87b9c730f6",
+			"id": "27ee455b-14eb-4684-86ae-0ca00e6899a5",
 			"key": "url",
 			"value": "",
 			"type": "string"
