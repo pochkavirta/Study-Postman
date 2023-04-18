@@ -3866,6 +3866,47 @@
 								"url": "http://users.bugred.ru/tasks/rest/doregister"
 							},
 							"response": []
+						},
+						{
+							"name": "JSON подсказки property Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "bd65ddc5-3151-44b6-a2f3-d0205c24b2fa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": {
+										"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
+										"key": "Authorization"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"query\": \"Ан\",\r\n\"gender\": \"FEMALE\",\r\n\"count\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+							},
+							"response": []
 						}
 					],
 					"id": "c12ccbed-d99b-4de1-8021-e48f4b963459"
@@ -3953,7 +3994,7 @@
 	],
 	"variable": [
 		{
-			"id": "15a33a9e-65b4-4931-891a-ba2264f152cd",
+			"id": "15702a33-38dd-4bd9-8cdf-051459c5c8a8",
 			"key": "url",
 			"value": "",
 			"type": "string"
