@@ -3486,7 +3486,7 @@
 							"response": []
 						},
 						{
-							"name": "JIRA: тестируем статус код после создания комментария и проверяем заголовок Content-Type Copy",
+							"name": "Jira: создаем комментарий",
 							"event": [
 								{
 									"listen": "test",
@@ -3669,7 +3669,7 @@
 	],
 	"variable": [
 		{
-			"id": "d4f1eaeb-08f0-4f6e-9203-59e65fced028",
+			"id": "084471e5-38b4-4f28-bff0-83a2bbf1cd2f",
 			"key": "url",
 			"value": "",
 			"type": "string"
