@@ -2043,8 +2043,156 @@
 					"name": "Lesson 4",
 					"item": [
 						{
-							"name": "New Folder",
-							"item": [],
+							"name": "4_bad_tests",
+							"item": [
+								{
+									"name": "1. why_block",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "d5b49581-efa7-4815-9a18-88b1de18d644",
+												"exec": [
+													"var jsonData = pm.response.json();",
+													"",
+													"pm.test(\"Блок why_block показывает, по чему искали\", function () {",
+													"    pm.expect(jsonData.results[0].why_block).to.deep.eql({",
+													"                    \"field\": \"name\",",
+													"                    \"value\": \"Ромашка\"",
+													"                });",
+													"});",
+													"",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "f19232c5-0dcb-41ee-a446-622409a1d89b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "multipart/form-data"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "query",
+													"value": "Ромашка",
+													"type": "text"
+												}
+											]
+										},
+										"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+									},
+									"response": []
+								},
+								{
+									"name": "2. Красавчик — алкоголик!",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "8c0b401f-aa76-44f4-971d-c5f782999174",
+												"exec": [
+													"var jsonData = pm.response.json();",
+													"",
+													"pm.test(\"Работает в алкоголиках и тунеяндцах\", function () {",
+													"    pm.expect(jsonData.results[0].companies).to.include({",
+													"                    \"name\": \"Алкоголики и тунеядцы\",",
+													"                    \"id_company\": 15",
+													"                });",
+													"});",
+													"",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "f1eea120-823c-43f1-96ed-cd53cf0cba01",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "multipart/form-data"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "query",
+													"value": "test_cu_11@mail.com",
+													"type": "text"
+												}
+											]
+										},
+										"url": "http://users.bugred.ru/tasks/rest/magicsearch"
+									},
+									"response": []
+								},
+								{
+									"name": "3. nested",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "db66fa58-56a0-43f6-a221-60502122d267",
+												"exec": [
+													"var jsonData = pm.response.json();",
+													"",
+													"pm.test(\"Your test name\", function () {  ",
+													"    pm.expect(jsonData).to.nested.include({'fields.issuelinks[0].outwardIssue.summary': 'Новый баг'});",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "e1593838-01a9-4e46-b78c-72f78ce609d4",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": {
+												"password": "23D32QzT2shOzr2zG8Ur117C",
+												"username": "mail.for.testbase@yandex.ru"
+											}
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": "https://testbase.atlassian.net/rest/api/3/issue/TV-4"
+									},
+									"response": []
+								}
+							],
 							"id": "3f313f7b-c176-4576-8aa0-3fb586396c91"
 						},
 						{
@@ -3794,7 +3942,7 @@
 	],
 	"variable": [
 		{
-			"id": "5d470a1d-13a4-4df8-8608-3b6c6e1a4f2a",
+			"id": "dff58658-bcbb-43b9-a96f-8c44d48495eb",
 			"key": "url",
 			"value": "",
 			"type": "string"
