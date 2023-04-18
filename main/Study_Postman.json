@@ -3432,7 +3432,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://httpbin.org/deny"
+								"url": "http://ya.ru"
 							},
 							"response": []
 						}
@@ -3577,7 +3577,7 @@
 	],
 	"variable": [
 		{
-			"id": "684473ec-0bb6-4041-8da2-3449e0f00334",
+			"id": "a1952eff-852d-4ebe-b890-ebff0fa6cf10",
 			"key": "url",
 			"value": "",
 			"type": "string"
