@@ -3826,7 +3826,7 @@
 											"    pm.expect(jsonData.type).to.be.a(\"string\");\r",
 											"});\r",
 											"\r",
-											"pm.test(\"jsonData - это объект\", function () {\r",
+											"pm.test(\"type - это строка\", function () {\r",
 											"    pm.expect(jsonData).to.be.a(\"object\");\r",
 											"});"
 										],
@@ -3876,18 +3876,13 @@
 							"response": []
 						},
 						{
-							"name": "JSON подсказки instanceOf",
+							"name": "JSON подсказки property Copy",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
 										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
 										"exec": [
-											"var jsonData = pm.response.json();\r",
-											"\r",
-											"pm.test(\"suggestions - это массив\", function () {\r",
-											"    pm.expect(jsonData.suggestions).to.be.a(\"array\");\r",
-											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -4092,7 +4087,7 @@
 	],
 	"variable": [
 		{
-			"id": "27ee455b-14eb-4684-86ae-0ca00e6899a5",
+			"id": "d46b82c4-37e6-4ca3-9225-89bc5fc86f99",
 			"key": "url",
 			"value": "",
 			"type": "string"
