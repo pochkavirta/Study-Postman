@@ -3548,7 +3548,7 @@
 											"    pm.expect(jsonData).to.nested.include({'companys[1].name': 'Петушки'});\r",
 											"});\r",
 											"\r",
-											"//по массиву\r",
+											"//поиск массива\r",
 											"pm.test(\"Проверить есть ли компания Петушки\", function () {\r",
 											"    pm.expect(jsonData.companys).to.deep.include({\r",
 											"            \"name\": \"Петушки\",\r",
@@ -3792,7 +3792,7 @@
 	],
 	"variable": [
 		{
-			"id": "10a21633-1a7d-4e55-9d03-88faa612001b",
+			"id": "67f3f99f-54d8-4721-8e81-096d93bce453",
 			"key": "url",
 			"value": "",
 			"type": "string"
