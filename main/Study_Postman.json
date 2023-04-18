@@ -3813,7 +3813,7 @@
 					"name": "Lesson 5",
 					"item": [
 						{
-							"name": "JSON doRegister instanceOF",
+							"name": "JSON doRegister instanceOf",
 							"event": [
 								{
 									"listen": "test",
@@ -3953,7 +3953,7 @@
 	],
 	"variable": [
 		{
-			"id": "fb189c94-9620-4c91-b71d-267907550ae3",
+			"id": "15a33a9e-65b4-4931-891a-ba2264f152cd",
 			"key": "url",
 			"value": "",
 			"type": "string"
