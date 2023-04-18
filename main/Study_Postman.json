@@ -3820,7 +3820,15 @@
 									"script": {
 										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 										"exec": [
-											""
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.test(\"type - это строка\", function () {\r",
+											"    pm.expect(jsonData.type).to.be.a(\"string\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"type - это строка\", function () {\r",
+											"    pm.expect(jsonData).to.be.a(\"object\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -3868,7 +3876,7 @@
 							"response": []
 						},
 						{
-							"name": "JSON подсказки property Copy",
+							"name": "JSON подсказки instanceOf",
 							"event": [
 								{
 									"listen": "test",
@@ -4015,33 +4023,7 @@
 							"script": {
 								"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
 								"exec": [
-									"var jsonData = pm.response.json();\r",
-									"console.log(jsonData);\r",
-									"\r",
-									"// Простой поиск свойств\r",
-									"\r",
-									"pm.test(\"Проверяем наличие свойства tasks\", function () {\r",
-									"    pm.expect(jsonData).to.have.property(\"tasks\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Проверяем свойство tasks\", function () {\r",
-									"    pm.expect(jsonData).to.have.deep.property(\"tasks\", [\r",
-									"        {\r",
-									"            \"name\": \"Новая\",\r",
-									"            \"id_task\": 32\r",
-									"        }\r",
-									"    ]);\r",
-									"});\r",
-									"\r",
-									"// Тип свойства\r",
-									"\r",
-									"pm.test(\"Проверяем тип свойства - число\", function () {\r",
-									"    pm.expect(jsonData.tasks[0]).to.have.property(\"id_task\").that.is.a(\"number\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Проверяем тип свойства - текст\", function () {\r",
-									"    pm.expect(jsonData.tasks[0]).to.have.property(\"name\").that.is.a(\"string\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -4105,7 +4087,7 @@
 	],
 	"variable": [
 		{
-			"id": "c8a022b7-d325-426f-94ba-7eaf5a8278fa",
+			"id": "27145a7e-10a2-4dd1-8ca1-afbd87395ad4",
 			"key": "url",
 			"value": "",
 			"type": "string"
