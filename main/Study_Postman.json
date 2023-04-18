@@ -3875,71 +3875,7 @@
 									"script": {
 										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
 										"exec": [
-											"// Распарсили JSON\r",
-											"var jsonData = pm.response.json();\r",
-											"\r",
-											"console.log(jsonData);\r",
-											"\r",
-											"// Простой поиск свойств\r",
-											"\r",
-											"pm.test(\"have.property есть свойство suggestions\", function () {\r",
-											"    pm.expect(jsonData).to.have.property(\"suggestions\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"have.property есть свойство unrestricted_value\", function () {\r",
-											"    pm.expect(jsonData.suggestions[0]).to.have.property(\"unrestricted_value\");\r",
-											"});\r",
-											"\r",
-											"// deep\r",
-											"\r",
-											"pm.test(\"Проверим дочерний объект - свойство data\", function () {\r",
-											"    pm.expect(jsonData.suggestions[0]).to.have.property(\"data\", {\r",
-											"                \"surname\": null,\r",
-											"                \"name\": \"Анна\",\r",
-											"                \"patronymic\": null,\r",
-											"                \"gender\": \"FEMALE\",\r",
-											"                \"source\": null,\r",
-											"                \"qc\": \"0\"\r",
-											"            });\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Проверим дочерний объект - свойство data через deep\", function () {\r",
-											"    pm.expect(jsonData.suggestions[0]).to.have.deep.property(\"data\", {\r",
-											"                \"surname\": null,\r",
-											"                \"name\": \"Анна\",\r",
-											"                \"patronymic\": null,\r",
-											"                \"gender\": \"FEMALE\",\r",
-											"                \"source\": null,\r",
-											"                \"qc\": \"0\"\r",
-											"            });\r",
-											"});\r",
-											"\r",
-											"// nested\r",
-											"\r",
-											"pm.test(\"have.property есть свойство gender\", function () {\r",
-											"    pm.expect(jsonData.suggestions[0].data).to.have.property(\"gender\", \"FEMALE\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"to.have.nested.property\", function () {\r",
-											"    pm.expect(jsonData).to.have.nested.property(\"suggestions[0].data.gender\", \"FEMALE\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Проверим дочерний объект - свойство data через deep.nested\", function () {\r",
-											"    pm.expect(jsonData).to.have.deep.nested.property(\"suggestions[0].data\", {\r",
-											"                \"surname\": null,\r",
-											"                \"name\": \"Анна\",\r",
-											"                \"patronymic\": null,\r",
-											"                \"gender\": \"FEMALE\",\r",
-											"                \"source\": null,\r",
-											"                \"qc\": \"0\"\r",
-											"            });\r",
-											"});\r",
-											"\r",
-											"// keys\r",
-											"\r",
-											"pm.test(\"keys для массива\", function () {\r",
-											"    pm.expect(jsonData.suggestions).to.have.all.keys(0, 1, 2, 3, 4);\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -3976,7 +3912,48 @@
 					"id": "c12ccbed-d99b-4de1-8021-e48f4b963459"
 				},
 				{
-					"name": "doRegister",
+					"name": "JSON подсказки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7ac3a91c-722c-4a57-afdd-6dfbc58f2110",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": {
+								"value": "Token 120c0451489c05101534fd1d970d33c1c5550dee",
+								"key": "Authorization"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"query\": \"Ан\",\r\n\"gender\": \"FEMALE\",\r\n\"count\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON doRegister",
 					"event": [
 						{
 							"listen": "test",
@@ -4058,7 +4035,7 @@
 	],
 	"variable": [
 		{
-			"id": "3403901a-b28b-4629-b8ea-2230c5adec0a",
+			"id": "46a73a0a-6e95-48e2-8744-7e750b55a262",
 			"key": "url",
 			"value": "",
 			"type": "string"
