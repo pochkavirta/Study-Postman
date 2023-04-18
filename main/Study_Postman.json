@@ -3395,7 +3395,31 @@
 											"E[:]|||||[:]З\\n\\\r",
 											"(\\\")_(\\\")\");\r",
 											"\r",
-											"console.log(zai);"
+											"console.log(zai);\r",
+											"\r",
+											"pm.test(\"Зайчик\", function () {\r",
+											"    pm.expect(zai).to.eql(\"\\\r",
+											"(\\\\__/)\\n\\\r",
+											"(='.'=)\\n\\\r",
+											"E[:]|||||[:]З\\n\\\r",
+											"(\\\")_(\\\")\");\r",
+											"    });\r",
+											"\r",
+											"    pm.test(\"Зайчик 1 строка\", function () {\r",
+											"    pm.expect(zai).to.include(\"(\\\\__/)\");\r",
+											"    });\r",
+											"\r",
+											"    pm.test(\"Зайчик 2 строка\", function () {\r",
+											"    pm.expect(zai).to.include(\"(='.'=)\");\r",
+											"    });\r",
+											"\r",
+											"    pm.test(\"Зайчик 3 строка\", function () {\r",
+											"    pm.expect(zai).to.include(\"E[:]|||||[:]З\");\r",
+											"    });\r",
+											"\r",
+											"    pm.test(\"Зайчик 4 строка\", function () {\r",
+											"    pm.expect(zai).to.include(\"(\\\")_(\\\")\");\r",
+											"    });"
 										],
 										"type": "text/javascript"
 									}
@@ -3553,7 +3577,7 @@
 	],
 	"variable": [
 		{
-			"id": "be569d35-6c2e-4c35-abf4-a4136d4a0fbf",
+			"id": "684473ec-0bb6-4041-8da2-3449e0f00334",
 			"key": "url",
 			"value": "",
 			"type": "string"
