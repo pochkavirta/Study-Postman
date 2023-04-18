@@ -3826,7 +3826,7 @@
 											"    pm.expect(jsonData.type).to.be.a(\"string\");\r",
 											"});\r",
 											"\r",
-											"pm.test(\"type - это строка\", function () {\r",
+											"pm.test(\"jsonData - это объект\", function () {\r",
 											"    pm.expect(jsonData).to.be.a(\"object\");\r",
 											"});"
 										],
@@ -3876,13 +3876,18 @@
 							"response": []
 						},
 						{
-							"name": "JSON подсказки property Copy",
+							"name": "JSON подсказки instanceOf",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
 										"id": "36ef4128-54be-463d-ae6a-5bda2c7cb830",
 										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.test(\"suggestions - это массив\", function () {\r",
+											"    pm.expect(jsonData.suggestions).to.be.a(\"array\");\r",
+											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -3913,6 +3918,50 @@
 									}
 								},
 								"url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio"
+							},
+							"response": []
+						},
+						{
+							"name": "JSON getuserfull instanceOf",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "08e2e740-c7b5-4936-a3ff-3bd3681b2519",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "22ff2ec6-2491-419c-b8ae-e3900ff0cb06",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "e3d4b6f5-957e-488a-8e49-2ef933da7fef",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test_cu_11@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://users.bugred.ru/tasks/rest/getuserfull"
 							},
 							"response": []
 						}
@@ -4087,7 +4136,7 @@
 	],
 	"variable": [
 		{
-			"id": "d46b82c4-37e6-4ca3-9225-89bc5fc86f99",
+			"id": "0c0eb343-d0c3-48e4-9c36-c699817575a2",
 			"key": "url",
 			"value": "",
 			"type": "string"
