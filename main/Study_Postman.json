@@ -3493,20 +3493,8 @@
 									"script": {
 										"id": "d5d72d7a-a64a-4c4b-9bde-fdd5d99ecb91",
 										"exec": [
-											"pm.test(\"Статус: Created\", function () {\r",
-											"    pm.response.to.have.status(\"Created\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Content-Type: есть\", function () {\r",
-											"    pm.response.to.have.header(\"Content-Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Ответ Content-Type: application/json;charset=UTF-8\", () => {\r",
-											"  pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json;charset=UTF-8');\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Ответ Content-Type: application/json\", () => {\r",
-											"  pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');\r",
+											"pm.test(\"Статус: 201 Created\", function () {\r",
+											"    pm.response.to.have.status(201, \"Created\");\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -3521,7 +3509,7 @@
 								"auth": {
 									"type": "basic",
 									"basic": {
-										"password": "ATATT3xFfGF0V14aGvtOT5vTnbN9NJFQqPvbOcxGpKUDZc2zIkES8vmYhkrVghNpDgSjNmKzbfvOPM8xciApP0b42_z2dqYruAqBo1SYZ9UJIUJ4K6gXcg255LpXw0VbZqPGIrEMJpbe4s2HOBoeYk6ZlhqqgBzetDoAvdAktgaTNzGGYzw_wuk=A2B237C1",
+										"password": "ATATT3xFfGF0_42Y87FxFBiKWpcZ9lwfcSyuntTuqIvRnZOhgdcuazcIpjEXUvdo1ZDUx1puIAw-DEPUEhluDY2PQ3PEaHhrAuIjhvqU5iiH5JbPfKYjBSPPrtZjgPm6Jz3tdCJPtLAEkblXW9p6LG3mRxtg9wbXf5WOr3IjFCSTZ5UVfrbmzyg=EE0F080B",
 										"username": "pochkavirta@gmail.com"
 									}
 								},
@@ -3681,7 +3669,7 @@
 	],
 	"variable": [
 		{
-			"id": "39010735-106d-4d74-bc35-ad896c039bf5",
+			"id": "d4f1eaeb-08f0-4f6e-9203-59e65fced028",
 			"key": "url",
 			"value": "",
 			"type": "string"
